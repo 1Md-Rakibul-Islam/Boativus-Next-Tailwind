@@ -98,72 +98,20 @@ const NavBar = () => {
   return (
     <header
       id="header"
-      className={`${scrolled ? "header-animation bg-BG" : "absolute"} ${
-        path === "/" && "bg-BG z-20"
+      className={`${scrolled ? "header-animation bg-blue-B900" : "absolute"}
       } w-full border-b border-[rgba(255,255,255,0.16)]
 `}
     >
       <div
-        className={`bg-black py-4 ${scrolled ? "hidden" : "lg:block"}  hidden`}
+        className={`bg-tra py-4 ${
+          scrolled ? "hidden" : "lg:block"
+        }  hidden py-2.5 border-b border-[#1F8EE5]`}
       >
-        <div className="container grid grid-cols-2">
-          <div className="flex-centerY">
-            <div className="flex-centerY sm:gap-3 gap-2">
-              <div className="border-BG border rounded-full xxl:p-3 p-2">
-                <IconMapPin className="xxl:w-6 xxl:h-6 w-5 h-5" />
-              </div>
-              <span className="my-text-16 text-black">
-                102/B New Market, Sandigo-USA
-              </span>
-            </div>
-            <div className="bg-black w-[1px] h-10 mx-6"></div>
-            <div className="flex-centerY sm:gap-3 gap-2">
-              <div className="border-BG border rounded-full xxl:p-3 p-2">
-                <IconMailOpened className="xxl:w-6 xxl:h-6 w-5 h-5" />
-              </div>
-              <Link
-                href="mailto:example@gmail.com"
-                className="my-text-16 text-black"
-              >
-                example@gmail.com
-              </Link>
-            </div>
-          </div>
-          <div className="flex-centerY justify-end">
-            <div className="flex-centerY sm:gap-3 gap-2.5">
-              <div className="border-BG border rounded-full xxl:p-3 p-2">
-                <IconPhoneCall className="xxl:w-6 xxl:h-6 w-5 h-5" />
-              </div>
-              <div>
-                <h6 className="sm:text-base text-sm font-bold leading-[130px] font-lexend text-BG">
-                  Contact Us:
-                </h6>
-                <Link href="tel:+9800009999" className="my-text-1 text-BG mb-1">
-                  +980 000 9999
-                </Link>
-              </div>
-            </div>
-            <div className="bg-black w-[1px] h-10 mx-6"></div>
-            <div className="flex-centerY sm:gap-3 gap-2.5">
-              <h6 className="sm:text-base text-sm font-bold leading-[130px] font-lexend text-BG">
-                Follow:
-              </h6>
-              <div className="flex-centerY gap-2">
-                <Link href="#" className="btn-outline-round hover:bg-white">
-                  <IconBrandFacebook className="xxl:w-6 xxl:h-6 w-5 h-5" />
-                </Link>
-                <Link href="#" className="btn-outline-round hover:bg-white">
-                  <IconBrandInstagram className="xxl:w-6 xxl:h-6 w-5 h-5" />
-                </Link>
-                <Link href="#" className="btn-outline-round hover:bg-white">
-                  <IconBrandTwitter className="xxl:w-6 xxl:h-6 w-5 h-5" />
-                </Link>
-                <Link href="#" className="btn-outline-round hover:bg-white">
-                  <IconBrandLinkedin className="xxl:w-6 xxl:h-6 w-5 h-5" />
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="container grid grid-cols-2 my-text-16 text-white">
+          <p className="text-left">
+            Mon - Dec: 7 am to8 pm & Sat - Sun: 10 pm to 9 am
+          </p>
+          <span className="text-right">Call us: +0327 888 111</span>
         </div>
       </div>
 

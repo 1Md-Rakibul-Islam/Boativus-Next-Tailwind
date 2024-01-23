@@ -320,7 +320,9 @@ label {
   font-family: var(--font-playfair_display);
 }
 
-p, span, li {
+p,
+span,
+li {
   font-family: var(--font-barlow);
 }
 

@@ -46,7 +46,7 @@ const config: Config = {
         "blue-B800": "#121d42",
         "blue-B900": "#061138",
 
-        white: "#ffffff",
+        white: "#FFF",
         black: "#000000",
 
       },
