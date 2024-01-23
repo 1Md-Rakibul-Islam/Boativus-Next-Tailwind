@@ -12,19 +12,19 @@
   }
 
   .btn-primary {
-    @apply shadow-[0px_5px_0px_#0b85cf,0px_16px_4px_rgba(56,174,246,0.27)] hover:shadow-[0px_5px_0px_#ff7a1f,0px_16px_4px_#ff791f87] bg-[linear-gradient(0deg,#357eff_0%,#357eff_1%,#1be9ff_100%)] hover:bg-primary-1 border-2 border-solid border-info hover:border-primary-1 rounded-full text-secondary-2 hover:text-black my-transition;
+    @apply shadow-[0px_5px_0px_#0b85cf,0px_16px_4px_rgba(56,174,246,0.27)] hover:shadow-[0px_5px_0px_#ff7a1f,0px_16px_4px_#ff791f87] bg-[linear-gradient(0deg,#357eff_0%,#357eff_1%,#1be9ff_100%)] hover:bg-black border-2 border-solid border-brown-B300 hover:border-black rounded-full text-white hover:text-black my-transition;
   }
 
   .btn-secondary {
-    @apply bg-primary-1 hover:bg-secondary-1 hover:text-primary-1 text-secondary-1 border border-primary-1;
+    @apply bg-black hover:bg- hover:text-black text- border border-black;
   }
 
   .btn-outline-round {
-    @apply border border-stroct-1 hover:border-white rounded-full xxl:p-3 p-2 my-transition cursor-pointer;
+    @apply border border-white hover:border-white rounded-full xxl:p-3 p-2 my-transition cursor-pointer;
   }
 
   .btn-outline {
-    @apply border-2 rounded-full hover:text-dark hover:bg-info border-info text-white;
+    @apply border-2 rounded-full hover:text-black hover:bg-brown-B300 border-brown-B300 text-white;
   }
 
   .btn-pagination {
@@ -32,7 +32,7 @@
   }
 
   .btn-play {
-    @apply xl:w-[90px] xl:h-[90px] lg:w-[80px] lg:h-[80px] md:w-[72px] md:h-[72px] sm:w-16 sm:h-16 w-14 h-14 relative flex items-center justify-center z-0 transition-[0.3s] rounded-[50%] before:content-[""] before:absolute before:w-[85%] before:h-[85%] before:bg-primary-1 before:opacity-60 before:z-[-1] before:animate-[pulse_2s_ease-out_infinite] before:rounded-[50%] after:content-[""] after:absolute after:w-[85%] after:h-[85%] after:bg-primary-1 after:opacity-60 after:z-[-1] after:animate-[pulse_2s_1s_ease-out_infinite] after:rounded-[50%];
+    @apply xl:w-[90px] xl:h-[90px] lg:w-[80px] lg:h-[80px] md:w-[72px] md:h-[72px] sm:w-16 sm:h-16 w-14 h-14 relative flex items-center justify-center z-0 transition-[0.3s] rounded-[50%] before:content-[""] before:absolute before:w-[85%] before:h-[85%] before:bg-black before:opacity-60 before:z-[-1] before:animate-[pulse_2s_ease-out_infinite] before:rounded-[50%] after:content-[""] after:absolute after:w-[85%] after:h-[85%] after:bg-black after:opacity-60 after:z-[-1] after:animate-[pulse_2s_1s_ease-out_infinite] after:rounded-[50%];
     background: transparent;
   }
 
@@ -42,7 +42,7 @@
   }
 
   .btn-linebar-effect {
-    @apply relative overflow-hidden before:content-[""] before:absolute before:w-0 before:h-0.5 before:bg-primary-1 before:transition-[width] before:duration-[0.3s] before:ease-[ease-out] before:left-0 before:bottom-0 group-hover:before:w-full;
+    @apply relative overflow-hidden before:content-[""] before:absolute before:w-0 before:h-0.5 before:bg-black before:transition-[width] before:duration-[0.3s] before:ease-[ease-out] before:left-0 before:bottom-0 group-hover:before:w-full;
   }
 
   .btn-play-ring {

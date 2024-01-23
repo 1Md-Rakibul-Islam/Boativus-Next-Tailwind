@@ -104,9 +104,7 @@ const NavBar = () => {
 `}
     >
       <div
-        className={`bg-primary-1 py-4 ${
-          scrolled ? "hidden" : "lg:block"
-        }  hidden`}
+        className={`bg-black py-4 ${scrolled ? "hidden" : "lg:block"}  hidden`}
       >
         <div className="container grid grid-cols-2">
           <div className="flex-centerY">
@@ -186,8 +184,8 @@ const NavBar = () => {
                     onMouseEnter={() => handleHover(idx)}
                     onMouseLeave={() => handleHover(idx)}
                     className={`${
-                      isMenuActive(menu) ? "text-primary-1" : "text-white"
-                    } hover:cursor-pointer  my-text-16 font-bold font-lexend leading-[130%] hover:text-primary-1 flex justify-center items-center group relative`}
+                      isMenuActive(menu) ? "text-black" : "text-white"
+                    } hover:cursor-pointer  my-text-16 font-bold font-lexend leading-[130%] hover:text-black flex justify-center items-center group relative`}
                   >
                     {menu?.isSubMenu ? (
                       <>
@@ -216,8 +214,8 @@ const NavBar = () => {
                           <li
                             key={id}
                             className={` ${
-                              path === link ? "text-primary-1" : "text-white"
-                            } my-text-16 font-bold font-lexend leading-[130%] hover:text-primary-1 w-full hover:translate-x-1 duration-700`}
+                              path === link ? "text-black" : "text-white"
+                            } my-text-16 font-bold font-lexend leading-[130%] hover:text-black w-full hover:translate-x-1 duration-700`}
                           >
                             <Link href={link}>{name}</Link>
                           </li>
@@ -263,7 +261,7 @@ const NavBar = () => {
                     />
                   </Link>
                   <IconX
-                    className="text-2xl cursor-pointer hover:duration-200 text-white hover:text-primary-1"
+                    className="text-2xl cursor-pointer hover:duration-200 text-white hover:text-black"
                     onClick={() => setHamburgerToggle((prev) => !prev)}
                   />
                 </div>
@@ -274,9 +272,9 @@ const NavBar = () => {
                         className={`  ${
                           (menu.name === "Services" || "Blogs") &&
                           isMenuActive(menu)
-                            ? "text-primary-1"
+                            ? "text-black"
                             : "text-white"
-                        }  hover:text-primary-1 hover:duration-700 my-text-16 font-bold font-lexend leading-[130%] cursor-pointer duration-500 group relative active:bg-transparent focus:bg-transparent`}
+                        }  hover:text-black hover:duration-700 my-text-16 font-bold font-lexend leading-[130%] cursor-pointer duration-500 group relative active:bg-transparent focus:bg-transparent`}
                         key={menu.id}
                         onClick={() => handleHover(idx)}
                       >
@@ -297,10 +295,8 @@ const NavBar = () => {
                           <Link
                             href={menu.link!}
                             className={`${
-                              path === menu.link
-                                ? "text-primary-1"
-                                : "text-white"
-                            } hover:text-primary-1 hover:duration-700 my-text-16 font-bold font-lexend leading-[130%]`}
+                              path === menu.link ? "text-black" : "text-white"
+                            } hover:text-black hover:duration-700 my-text-16 font-bold font-lexend leading-[130%]`}
                             onClick={() => setHamburgerToggle((prev) => !prev)}
                           >
                             {menu.name}
@@ -314,7 +310,7 @@ const NavBar = () => {
                             {menu?.subMenu?.map((subItem, j) => (
                               <li
                                 key={j}
-                                className="hover:text-primary-1  text-white hover:duration-700 my-text-16 font-bold font-lexend leading-[130%] pb-3"
+                                className="hover:text-black  text-white hover:duration-700 my-text-16 font-bold font-lexend leading-[130%] pb-3"
                                 onClick={() =>
                                   setHamburgerToggle((prev) => !prev)
                                 }
@@ -324,7 +320,7 @@ const NavBar = () => {
                                   aria-label="item"
                                   className={`${
                                     path === subItem?.link
-                                      ? "text-primary-1"
+                                      ? "text-black"
                                       : "text-white"
                                   } my-text-16 font-bold font-lexend leading-[130%]`}
                                 >
@@ -349,7 +345,7 @@ const NavBar = () => {
               {!hamburgerToggle && (
                 <IconMenu2
                   onClick={() => setHamburgerToggle((prev) => !prev)}
-                  className="text-3xl cursor-pointer hover:duration-200 text-white hover:text-primary-1"
+                  className="text-3xl cursor-pointer hover:duration-200 text-white hover:text-black"
                 />
               )}
             </div>

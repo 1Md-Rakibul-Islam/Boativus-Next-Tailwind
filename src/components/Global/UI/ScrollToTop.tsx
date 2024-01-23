@@ -24,7 +24,7 @@ const ScrollToTop = () => {
       className={`fixed
             ${
               scrolled ? "bottom-10" : "-bottom-40"
-            }  text-2xl  shadow-xl md:right-10 sm:right-8 right-5 py-2.5 px-2 rounded-md z-[9999] text-white bg-primary-1`}
+            }  text-2xl  shadow-xl md:right-10 sm:right-8 right-5 py-2.5 px-2 rounded-md z-[9999] text-white bg-black`}
       onClick={backtoTop}
       aria-label="bottom to top button"
     >

@@ -18,7 +18,7 @@ const Accordion = ({ faqItems }: { faqItems: faqType[] }) => {
               onClick={() =>
                 toggle !== item?.id ? setToggle(item?.id) : setToggle(null)
               }
-              className="my-rounded-10 bg-secondary-1 flex justify-between items-center md:gap-x-6 md:gap-y-[30px] gap-y-6 gap-x-5 xl:py-6 lg:py-5 md:py-4 sm:py-3.5 py-3 xl:px-[30px] lg:px-6 md:px-5 sm:px-4 px-3.5 duration-700 ease-in-out transition-all text-white"
+              className="my-rounded-10 bg- flex justify-between items-center md:gap-x-6 md:gap-y-[30px] gap-y-6 gap-x-5 xl:py-6 lg:py-5 md:py-4 sm:py-3.5 py-3 xl:px-[30px] lg:px-6 md:px-5 sm:px-4 px-3.5 duration-700 ease-in-out transition-all text-white"
             >
               <div className="w-full">
                 <div className="flex items-center justify-between my-grid-gap">

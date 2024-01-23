@@ -6,7 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class',
+  blackMode: 'class',
   theme: {
     screens: {
       sm: "576px",
@@ -19,21 +19,36 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "primary-1": "#ff7a1f",
-        "secondary-1": "#3a2274",
-        "secondary-2": "#201048",
-        "secondary-3": "#0B0B12",
-        "secondary-4": "#000642",
-        "stroct-1": "#cdc7e0",
-        "primary-32": "rgba(11, 11, 18, 0.32)",
-        "BG-1": "#f6f3ff",
-        "BG-2": "#2c1860",
-        "stoke": "#6142ab",
-        "dark": "#010530",
-        "info": "#37b0f7",
-        "glass-1": "rgba(58, 34, 116, 0.5019607843137255)",
+
+        "brown-B50": "#fbf7f3",
+        "brown-B75": "#eedecc",
+        "brown-B100": "#e7d0b7",
+        "brown-B200": "#dcbc97",
+        "brown-B300": "#d5ae82",
+        "brown-B400": "#957a5b",
+        "brown-B500": "#826a4f",
+
+        "blue-B0": "#ffffff",
+        "blue-B10": "#fafafb",
+        "blue-B20": "#f5f5f7",
+        "blue-30": "#ebecef",
+        "blue-40": "#dfe0e5",
+        "blue-B50": "#c1c4cd",
+        "blue-B60": "#b2b5c1",
+        "blue-B70": "#a5a9b7",
+        "blue-B80": "#969bab",
+        "blue-B90": "#878d9f",
+        "blue-B100": "#797e94",
+        "blue-B200": "#6a7088",
+        "blue-B500": "#3f4866",
+        "blue-B600": "#333c5c",
+        "blue-B700": "#212b4e",
+        "blue-B800": "#121d42",
+        "blue-B900": "#061138",
+
         white: "#ffffff",
         black: "#000000",
+
       },
       keyframes: {
         'bounce-slow': {

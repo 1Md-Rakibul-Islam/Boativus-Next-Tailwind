@@ -28,7 +28,7 @@ const NavSearchBar = () => {
           open ? "translate-y-0 " : " -translate-y-64 opacity-0"
         }`}
       >
-        <div className="bg-primary-1 shadow-[0px_1px_12px_0px_#000000b5] sm:rounded-xl rounded-b-xl  flex min-w-full items-center justify-between gap-6 p-3 max-sm:flex-col-reverse">
+        <div className="bg-black shadow-[0px_1px_12px_0px_#000000b5] sm:rounded-xl rounded-b-xl  flex min-w-full items-center justify-between gap-6 p-3 max-sm:flex-col-reverse">
           <div className="items-center gap-2 max-sm:flex">
             <form
               onSubmit={handleFormSubmit}
@@ -54,7 +54,7 @@ const NavSearchBar = () => {
             </form>
           </div>
           <button
-            className=" rounded-full p-1 bg-primary-4  text-primary-1 "
+            className=" rounded-full p-1 bg-primary-4  text-black "
             onClick={() => {
               setSearchData("");
               handleOption();

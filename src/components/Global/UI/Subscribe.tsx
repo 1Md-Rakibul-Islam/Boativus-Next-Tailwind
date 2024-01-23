@@ -29,7 +29,7 @@ const Subscribe = () => {
       />
       <button
         type="submit"
-        className="lg:py-5 md:py-4 sm:py-3 py-2.5 lg:px-5 md:px-4 sm:px-3 px-2.5 rounded-full flex-center text-white bg-primary-1"
+        className="lg:py-5 md:py-4 sm:py-3 py-2.5 lg:px-5 md:px-4 sm:px-3 px-2.5 rounded-full flex-center text-white bg-black"
         aria-label="subscribe"
       >
         <IconBrandTelegram className="md:text-xl sm:text-lg text-md" />

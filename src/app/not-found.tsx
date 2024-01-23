@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <main className="bg-dark">
+    <main className="bg-black">
       <section className="bg-primary-5 section-py">
         <div className="container min-h-screen flex lg:justify-start justify-center items-center flex-col">
           <Image

@@ -33,7 +33,7 @@ const Modal = ({ children, style, open, onClick }: Props) => {
   return (
     <div
       onClick={onClick}
-      className={`fixed inset-0 z-[500] min-h-screen w-screen bg-secondary-2 bg-opacity-[0.6] ${
+      className={`fixed inset-0 z-[500] min-h-screen w-screen bg-white bg-opacity-[0.6] ${
         open ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -49,7 +49,7 @@ const Modal = ({ children, style, open, onClick }: Props) => {
         <div className="relative w-full h-full">
           <button
             onClick={onClick}
-            className="absolute lg:top-4 md:top-3.5 sm:top-3 top-2.5 lg:right-4 md:right-3.5 sm:right-3 right-2.5 text-white hover:text-primary-1 z-[1000]"
+            className="absolute lg:top-4 md:top-3.5 sm:top-3 top-2.5 lg:right-4 md:right-3.5 sm:right-3 right-2.5 text-white hover:text-black z-[1000]"
             aria-label="close-modal"
           >
             <IconX className={`${style} md:text-base sm:text-sm text-[8px]`} />
