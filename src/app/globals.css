@@ -280,19 +280,19 @@
 
   /* gap m end */
 
-  .my-shadow-1 {
+  .shadow-1 {
     @apply shadow-[0px_40.009px_25.006px_-15.004px_rgba(0,00,0.15)];
   }
-  .my-shadow-2 {
+  .shadow-2 {
     @apply shadow-[0px_12.503px_40.009px_0px_rgba(00,0,0.15)];
   }
-  .my-shadow-3 {
+  .shadow-3 {
     @apply shadow-[0px_8px_15px_0px_rgba(0,0,0,0.05)];
   }
-  .my-shadow-4 {
+  .shadow-4 {
     @apply shadow-[0px_1px_2px_0px_rgba(0,0,0,0.20)];
   }
-  .my-shadow-5 {
+  .shadow-5 {
     @apply shadow-[1px_1px_1px_0px_rgba(0,0,0,0.15)];
   }
 

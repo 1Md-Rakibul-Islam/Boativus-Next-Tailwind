@@ -289,8 +289,11 @@ const NavBar = () => {
               </div>
               <div className=" flex items-center justify-between gap-4 md:gap-5">
                 <NavSearchBar />
-                <button onClick={handleModal} className="btn btn-primary  ">
-                  Connect Wallet
+                <button
+                  onClick={handleModal}
+                  className="btn bg-[#212B4EC2] text-white"
+                >
+                  Book now
                 </button>
                 {!hamburgerToggle && (
                   <List

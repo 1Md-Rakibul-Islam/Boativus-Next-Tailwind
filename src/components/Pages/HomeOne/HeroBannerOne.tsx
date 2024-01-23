@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const HeroBannerOne = () => {
   return (
-    <section className="min-h-screen flex items-center xl:pt-10 lg:pt-16 md:pt-20 sm:pt-20 pt-16 bg-dark bg-[url('/images/heroBanner1.png')] bg-no-repeat bg-cover">
-      <div className="absolute inset-0 bg-gradient-to-r from-[#061138] to-[rgba(6,17,56,0.00)]"></div>
+    <section className="min-h-screen xl:pt-72 lg:pt-52 md:pt-36 pt-32 bg-dark bg-[url('/images/heroBannerImg1.png')] bg-no-repeat bg-cover">
+      {/* <div className="absolute inset-0 bg-gradient-to-r from-[#061138] to-[rgba(6,17,56,0.00)]"></div> */}
       <div className="container relative">
         <div className="max-w-[636px]">
           <h1 className="gap-mb-32 text-76 text-white">
@@ -15,7 +15,7 @@ const HeroBannerOne = () => {
             <br />
             notch yacht charters.
           </p>
-          <div className="flex-centerY my-gap-24">
+          <div className="flex-centerY my-gap-24 mb-[190px]">
             <button
               type="button"
               className="btn text-white bg-blue-B700 bg-opacity-50 border border-blue-B900"
@@ -24,12 +24,15 @@ const HeroBannerOne = () => {
             </button>
             <Link
               href="/games"
-              className="bg-blue-B700 bg-opacity-50 p-4 rounded-full border border-blue-B900"
+              className="bg-blue-B700 bg-opacity-50 xl:p-4 md:p-3 sm:p-2 p-1.5 rounded-full border border-blue-B900"
             >
               <ArrowDown size={32} className="text-white" />
             </Link>
           </div>
         </div>
+      </div>
+      <div className="xl:py-16 lg:py-14 md:py-12 sm:py-10 py-8 shadow-3 bg-white rounded">
+        <div className="container"></div>
       </div>
     </section>
   );
