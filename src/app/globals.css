@@ -69,11 +69,11 @@
   }
 
   .my-text-16 {
-    @apply sm:text-base text-sm font-normal font-poppins;
+    @apply sm:text-base text-sm font-normal font-barlow;
   }
 
   .my-text-18 {
-    @apply font-poppins sm:text-lg text-base font-normal;
+    @apply font-barlow sm:text-lg text-base font-normal;
   }
 
   .my-text-20 {
@@ -101,7 +101,7 @@
   }
 
   .my-text-76 {
-    @apply xxl:text-[76px] lg:text-7xl md:text-6xl sm:text-5xl min-[400px]:text-4xl text-3xl xxl:leading-[99px] xl:leading-[80px] font-chakra_petch font-bold xl:-my-5;
+    @apply xxl:text-[76px] lg:text-7xl md:text-6xl sm:text-5xl min-[400px]:text-4xl text-3xl xxl:leading-[99px] xl:leading-[80px] font-playfair_display font-bold xl:-my-5;
   }
 
   .gradient-text-primary {
@@ -271,7 +271,19 @@
   /* gap m end */
 
   .my-shadow-1 {
-    @apply shadow-[0px_1px_20px_0px_#000000b5];
+    @apply shadow-[0px_40.009px_25.006px_-15.004px_rgba(0,00,0.15)];
+  }
+  .my-shadow-2 {
+    @apply shadow-[0px_12.503px_40.009px_0px_rgba(00,0,0.15)];
+  }
+  .my-shadow-3 {
+    @apply shadow-[0px_8px_15px_0px_rgba(0,0,0,0.05)];
+  }
+  .my-shadow-4 {
+    @apply shadow-[0px_1px_2px_0px_rgba(0,0,0,0.20)];
+  }
+  .my-shadow-5 {
+    @apply shadow-[1px_1px_1px_0px_rgba(0,0,0,0.15)];
   }
 
   /* rounded start */
@@ -305,19 +317,19 @@ h4,
 h5,
 h6,
 label {
-  font-family: var(--font-chakra_petch);
+  font-family: var(--font-playfair_display);
 }
 
-p {
-  font-family: var(--font-poppins);
+p, span, li {
+  font-family: var(--font-barlow);
 }
 
-.font-chakra_petch {
-  font-family: var(--font-chakra_petch) !important;
+.font-playfair_display {
+  font-family: var(--font-playfair_display) !important;
 }
 
-.font-poppins {
-  font-family: var(--font-poppins) !important;
+.font-barlow {
+  font-family: var(--font-barlow) !important;
 }
 
 .font-montserrat {

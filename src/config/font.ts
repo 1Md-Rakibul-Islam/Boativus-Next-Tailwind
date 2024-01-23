@@ -1,16 +1,16 @@
-import { Chakra_Petch, Montserrat, Poppins } from 'next/font/google';
+import { Barlow, Montserrat, Playfair_Display } from 'next/font/google';
 
-export const chakra_petch = Chakra_Petch({
+export const playfair_display = Playfair_Display({
     weight: ['400', '500', '600', '700'],
     subsets: ['latin'],
-    variable: '--font-chakra_petch',
+    variable: '--font-playfair_display',
     display: 'swap',
 });
 
-export const poppins = Poppins({
+export const barlow = Barlow({
     weight: ['400', '500', '600', '700'],
     subsets: ['latin'],
-    variable: '--font-poppins',
+    variable: '--font-barlow',
     display: 'swap',
 });
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { chakra_petch, poppins, montserrat } from "@/config/font";
+import { playfair_display, barlow, montserrat } from "@/config/font";
 import { CustomCursor, NavBar, ScrollToTop } from "@/components/Global/UI";
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${chakra_petch?.variable} ${montserrat?.variable} ${poppins?.variable}`}
+        className={`${playfair_display?.variable} ${montserrat?.variable} ${barlow?.variable}`}
       >
         <NavBar />
         {children}
