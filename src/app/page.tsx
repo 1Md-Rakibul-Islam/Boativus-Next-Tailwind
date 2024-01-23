@@ -1,3 +1,4 @@
+import BestLuxuryYacht from "@/components/Global/Section/BestLuxuryYacht";
 import { HeroBannerOne } from "@/components/Pages";
 
 const HomeOne = () => {
@@ -5,6 +6,7 @@ const HomeOne = () => {
     <>
       <main className="min-h-screen bg-black">
         <HeroBannerOne />
+        <BestLuxuryYacht />
       </main>
     </>
   );

@@ -150,6 +150,11 @@
   /* section end */
 
   /* my gap mb */
+
+  .gap-mb-64 {
+    @apply xl:mb-16 lg:mb-14 md:mb-12 sm:mb-10 mb-9;
+  }
+
   .gap-mb-60 {
     @apply xl:mb-[60px] lg:mb-14 md:mb-12 sm:mb-10 mb-9;
   }
@@ -183,6 +188,11 @@
   }
 
   /* my gap mt start */
+
+  .gap-mt-64 {
+    @apply xl:mt-16 lg:mt-14 md:mt-12 sm:mt-10 mt-9;
+  }
+
   .gap-mt-60 {
     @apply xl:mt-[60px] lg:mt-14 md:mt-12 sm:mt-10 mt-9;
   }

@@ -18,13 +18,13 @@ const HeroBannerOne = () => {
           <div className="flex-centerY my-gap-24 mb-[190px]">
             <button
               type="button"
-              className="btn text-white bg-blue-B700 bg-opacity-50 border border-blue-B900"
+              className="btn text-white bg-[rgba(6,17,56,0.50)] bg-opacity-70 border border-blue-B900"
             >
               Book now
             </button>
             <Link
               href="/games"
-              className="bg-blue-B700 bg-opacity-50 xl:p-4 md:p-3 sm:p-2 p-1.5 rounded-full border border-blue-B900"
+              className="bg-[rgba(6,17,56,0.50)] bg-opacity-70 xl:p-4 md:p-3 sm:p-2 p-1.5 rounded-full border border-blue-B900"
             >
               <ArrowDown size={32} className="text-white" />
             </Link>
