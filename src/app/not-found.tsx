@@ -13,10 +13,10 @@ const NotFound = () => {
             className="object-fit w-full gap-mb-40"
             alt="not-found"
           />
-          <h2 className="my-text-24 text-white text-center">
+          <h2 className="text-24 text-white text-center">
             Oops, You Still Haven’t Found what you looking for
           </h2>
-          <p className="my-text-16 text-white font-normal text-center gap-mb-32">
+          <p className="text-16 text-white font-normal text-center gap-mb-32">
             Please note that all tasks and associated rewards are subject to
             availability and are limited in quantity.{" "}
           </p>

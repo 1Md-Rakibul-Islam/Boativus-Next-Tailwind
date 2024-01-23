@@ -1,7 +1,7 @@
 "use client";
 
 import { useDropdown } from "@/hooks";
-import { IconSearch, IconX } from "@tabler/icons-react";
+import { MagnifyingGlass, X } from "@phosphor-icons/react";
 import { FormEvent, useState } from "react";
 const NavSearchBar = () => {
   const { open, handleOption, ref } = useDropdown();
@@ -13,7 +13,7 @@ const NavSearchBar = () => {
   };
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="flex-centerY">
       <button
         onClick={() => {
           handleOption();
@@ -21,7 +21,7 @@ const NavSearchBar = () => {
         }}
         aria-label="handleOption"
       >
-        <IconSearch className="icon-24 text-white" />
+        <MagnifyingGlass className="text-white" size={30} />
       </button>
       <div
         className={`absolute xl:-left-[50%] xl:top-16 lg:top-4 md:top-3 sm:top-2.5 top-0 left-0 md:w-auto w-full z-10 opacity-100 transition-all duration-700 ${
@@ -49,7 +49,7 @@ const NavSearchBar = () => {
                 }}
                 aria-label="handleOption"
               >
-                <IconSearch className="icon-24 text-foundation-blue-60" />
+                <MagnifyingGlass className="icon-24 text-white" />
               </button>
             </form>
           </div>
@@ -61,7 +61,7 @@ const NavSearchBar = () => {
             }}
             aria-label="close"
           >
-            <IconX size={30} />
+            <X size={30} />
           </button>
         </div>
       </div>

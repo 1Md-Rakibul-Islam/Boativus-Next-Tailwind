@@ -8,7 +8,7 @@
   }
 
   .btn {
-    @apply my-transition text-center cursor-pointer py-1.5 xl:px-12 lg:px-10 md:px-8 sm:px-6 px-4 sm:rounded-lg rounded-md my-text-18 font-bold uppercase leading-[150%];
+    @apply my-transition text-18 font-semibold capitalize text-center cursor-pointer lg:py-5 md:py-4 sm:py-3 py-2.5 lg:px-10 md:px-8 sm:px-6 px-4 rounded-10;
   }
 
   .btn-primary {
@@ -50,7 +50,7 @@
   }
 
   .form-input {
-    @apply block w-full sm:py-4 xl:px-7 lg:px-6 md:p-5 sm:p-4 p-3.5 my-rounded-20 outline-none border border-[#4b3583] bg-[#372170] text-white my-text-18 placeholder:text-[#b4acc8] focus:outline-none;
+    @apply block w-full sm:py-4 xl:px-7 lg:px-6 md:p-5 sm:p-4 p-3.5 rounded-20 outline-none border border-[#4b3583] bg-[#372170] text-white text-18 placeholder:text-[#b4acc8] focus:outline-none;
   }
 
   .my-transition {
@@ -64,43 +64,43 @@
 
   /* custom text start */
 
-  .my-text-14 {
+  .text-14 {
     @apply sm:text-sm text-xs font-normal;
   }
 
-  .my-text-16 {
+  .text-16 {
     @apply sm:text-base text-sm font-normal font-barlow;
   }
 
-  .my-text-18 {
+  .text-18 {
     @apply font-barlow sm:text-lg text-base font-normal;
   }
 
-  .my-text-20 {
+  .text-20 {
     @apply sm:text-xl text-base font-medium;
   }
 
-  .my-text-24 {
+  .text-24 {
     @apply font-bold md:text-2xl sm:text-xl text-lg;
   }
 
-  .my-text-32 {
+  .text-32 {
     @apply font-bold xl:text-[32px] lg:text-[28px] md:text-2xl sm:text-xl text-lg lg:leading-[42px];
   }
 
-  .my-text-43 {
+  .text-43 {
     @apply font-bold lg:text-[43px] md:text-4xl sm:text-3xl text-2xl lg:leading-[56px];
   }
 
-  .my-text-48 {
+  .text-48 {
     @apply lg:text-5xl md:text-[40px] sm:text-4xl text-3xl leading-[140%] font-bold;
   }
 
-  .my-text-57 {
+  .text-57 {
     @apply lg:text-[57px] md:text-5xl sm:text-4xl text-3xl lg:leading-[74px] font-bold xl:-my-5;
   }
 
-  .my-text-76 {
+  .text-76 {
     @apply xxl:text-[76px] lg:text-7xl md:text-6xl sm:text-5xl min-[400px]:text-4xl text-3xl xxl:leading-[99px] xl:leading-[80px] font-playfair_display font-bold xl:-my-5;
   }
 
@@ -215,9 +215,19 @@
     @apply lg:mt-4 md:mt-3 mt-2.5;
   }
 
-  .my-grid-gap {
+  /* Gap start */
+  .my-gap-20 {
+    @apply lg:gap-5 md:gap-4 gap-3;
+  }
+
+  .my-gap-24 {
     @apply lg:gap-6 md:gap-5 gap-4;
   }
+
+  .my-gap-28 {
+    @apply lg:gap-7 md:gap-6 gap-5;
+  }
+  /* Gap end */
 
   /* common padding start*/
   .p-32px {
@@ -288,19 +298,19 @@
 
   /* rounded start */
 
-  .my-rounded-40 {
+  .rounded-40 {
     @apply xl:rounded-[40px] lg:rounded-[36px] md:rounded-[32px] sm:rounded-[28px] rounded-3xl;
   }
 
-  .my-rounded-20 {
+  .rounded-20 {
     @apply lg:rounded-[20px] md:rounded-2xl rounded-xl;
   }
 
-  .my-rounded-16 {
+  .rounded-16 {
     @apply sm:rounded-2xl rounded-xl;
   }
 
-  .my-rounded-10 {
+  .rounded-10 {
     @apply sm:rounded-[10px] rounded-lg;
   }
   /* rounded end */

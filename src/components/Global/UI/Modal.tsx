@@ -1,5 +1,5 @@
 "use client";
-import { IconX } from "@tabler/icons-react";
+import { X } from "@phosphor-icons/react";
 import { ReactNode, useEffect } from "react";
 
 type Props = {
@@ -52,7 +52,7 @@ const Modal = ({ children, style, open, onClick }: Props) => {
             className="absolute lg:top-4 md:top-3.5 sm:top-3 top-2.5 lg:right-4 md:right-3.5 sm:right-3 right-2.5 text-white hover:text-black z-[1000]"
             aria-label="close-modal"
           >
-            <IconX className={`${style} md:text-base sm:text-sm text-[8px]`} />
+            <X className={`${style} md:text-base sm:text-sm text-[8px]`} />
           </button>
 
           <div onClick={(e) => e.stopPropagation()} className="relative">

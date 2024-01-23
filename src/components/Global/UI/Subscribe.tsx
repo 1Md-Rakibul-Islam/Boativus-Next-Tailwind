@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { IconBrandTelegram, IconSend } from "@tabler/icons-react";
 import { FormEvent } from "react";
+import { TelegramLogo } from "@phosphor-icons/react";
 
 const Subscribe = () => {
   const [email, setEmail] = useState<string>("");
@@ -23,7 +23,7 @@ const Subscribe = () => {
         type="email"
         placeholder="Enter your email"
         required
-        className="outline-none bg-transparent  my-text-18 w-full lg:px-[22px] md:px-4 sm:px-3 px-2.5 text-white"
+        className="outline-none bg-transparent  text-18 w-full lg:px-[22px] md:px-4 sm:px-3 px-2.5 text-white"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -32,7 +32,7 @@ const Subscribe = () => {
         className="lg:py-5 md:py-4 sm:py-3 py-2.5 lg:px-5 md:px-4 sm:px-3 px-2.5 rounded-full flex-center text-white bg-black"
         aria-label="subscribe"
       >
-        <IconBrandTelegram className="md:text-xl sm:text-lg text-md" />
+        <TelegramLogo className="md:text-xl sm:text-lg text-md" />
       </button>
     </form>
   );
