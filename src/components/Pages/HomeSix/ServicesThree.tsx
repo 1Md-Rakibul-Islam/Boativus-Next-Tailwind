@@ -26,7 +26,7 @@ const ServicesThree = () => {
               Fast, reliable and quality yacht repair services
             </h5>
             <h2 className="text-57 text-blue-B900 gap-mb-24">
-              We're the Only Yacht Care <br className="md:block hidden" />
+              We&lsquo;re the Only Yacht Care <br className="md:block hidden" />
               Company You Need
             </h2>
             <p className="text-18 text-blue-B300">

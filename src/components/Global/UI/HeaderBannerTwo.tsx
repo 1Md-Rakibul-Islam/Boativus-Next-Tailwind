@@ -2,6 +2,7 @@ import { usePathname } from "next/navigation";
 import { headerProps } from "@/config/types";
 import { ArrowRight } from "@phosphor-icons/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeaderBannerTwo = ({ headerData }: { headerData: headerProps }) => {
   const path = usePathname();

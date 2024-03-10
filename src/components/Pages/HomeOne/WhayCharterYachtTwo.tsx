@@ -36,7 +36,7 @@ const WhayCharterYachtTwo = () => {
                 </h2>
                 <p className="text-18 text-blue-B90 gap-mb-40">
                   The possibilities are endless on a luxury charter boat, so
-                  it's best to do some research beforehand.
+                  it&lsquo;s best to do some research beforehand.
                 </p>
               </FadeUp>
 

@@ -67,9 +67,9 @@ const JoinUs = () => {
                   Boativus unites boat owners, charter firms, and renters on a
                   safe, easy-to-use platform. Boativus has powerboats,
                   sailboats, super yachts, and catamarans across 3 continents,
-                  50 countries, and 500 locations. Our boats explore the world's
-                  most stunning yachting locales, providing thousands of people
-                  the experience of sailing each year.
+                  50 countries, and 500 locations. Our boats explore the
+                  world&lsquo;s most stunning yachting locales, providing
+                  thousands of people the experience of sailing each year.
                 </p>
                 <div className="flex-centerY my-gap-24">
                   <Link

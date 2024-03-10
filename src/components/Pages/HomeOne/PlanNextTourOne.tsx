@@ -52,7 +52,7 @@ const PlanNextTourOne = () => {
                 hours
               </h4>
               <h2 className="text-57 text-brown-B50 gap-mb-40">
-                Charter a luxury yacht Let's Plan
+                Charter a luxury yacht Let&lsquo;s Plan
                 <br className="xxl:block hidden" />
                 Your Next Tour!
               </h2>

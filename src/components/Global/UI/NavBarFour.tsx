@@ -12,6 +12,7 @@ import {
 } from "@phosphor-icons/react";
 import AnimateHeight from "react-animate-height";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBarFour = () => {
   const path = usePathname();

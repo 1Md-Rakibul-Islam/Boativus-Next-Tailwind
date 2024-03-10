@@ -13,6 +13,7 @@ import {
 import { useDropdown } from "@/hooks";
 import AnimateHeight from "react-animate-height";
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBarOne = () => {
   const path = usePathname();

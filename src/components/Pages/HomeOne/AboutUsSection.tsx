@@ -26,8 +26,8 @@ const AboutUsSection = () => {
               Exciting Yacht or Boat Trip!
             </h2>
             <p className="text-18 text-blue-B300 gap-mb-24">
-              The possibilities are endless on a luxury charter boat, so it's
-              best to do some research beforehand.
+              The possibilities are endless on a luxury charter boat, so
+              it&lsquo;s best to do some research beforehand.
             </p>
             <ul className="list-inside list-none grid sm:grid-cols-2 grid-cols-1 my-gap-24 gap-mb-40">
               <li className="flex-centerY gap-2">

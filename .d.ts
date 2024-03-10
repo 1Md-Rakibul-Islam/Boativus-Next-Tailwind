@@ -3,9 +3,9 @@
 // declare module '*.svg';
 // declare module '*.jpeg';
 
-// declare module "react-range-slider-input" {
-//     const rangeslider: any;
-//     export default rangeslider;
-// }
+declare module "react-range-slider-input" {
+    const rangeslider: any;
+    export default rangeslider;
+}
 
-declare module 'react-datepicker';
+// declare module 'react-datepicker';

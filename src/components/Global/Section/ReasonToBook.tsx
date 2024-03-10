@@ -28,8 +28,8 @@ const ReasonToBook = () => {
                 The Ultimate in Luxury & Freedom Is Now Open to the Whole World
               </h2>
               <p className="text-18 text-white gap-mb-32">
-                It's a good idea to become acquainted before embarking on a
-                luxury charter boat trip, as it can be anything and everything
+                It&lsquo;s a good idea to become acquainted before embarking on
+                a luxury charter boat trip, as it can be anything and everything
                 you wish it to be.
               </p>
             </FadeUp>

@@ -1,6 +1,7 @@
 import { headerProps } from "@/config/types";
 import { ArrowRight } from "@phosphor-icons/react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const HeaderBannerThree = ({ headerData }: { headerData: headerProps }) => {
