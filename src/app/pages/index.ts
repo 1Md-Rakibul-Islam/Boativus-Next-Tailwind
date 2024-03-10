@@ -1,4 +1,3 @@
-import HomePageOne from './HomePageOne';
 import HomePageTwo from './HomePageTwo';
 import NotFound from '../NotFound';
 import HomePageThree from './HomePageThree';
@@ -22,5 +21,5 @@ import Login from './Login';
 import Register from './Register';
 import OrdersPage from './OrdersPage';
 export {
-    NotFound, HomePageOne, HomePageTwo, HomePageThree, HomePageFour, HomePageFive, HomePageSix, AboutPageOne, AboutPageTwo, SellYachtPage, BuyYachtPage, ServicesPage, PricingPlansPage, ContactUsPage, ImageGallery, BlogsPage, FaqPage, OurTeamPage, BlogDetailsPage, YachtsDetailsPage, Login, Register, OrdersPage
+    NotFound, HomePageTwo, HomePageThree, HomePageFour, HomePageFive, HomePageSix, AboutPageOne, AboutPageTwo, SellYachtPage, BuyYachtPage, ServicesPage, PricingPlansPage, ContactUsPage, ImageGallery, BlogsPage, FaqPage, OurTeamPage, BlogDetailsPage, YachtsDetailsPage, Login, Register, OrdersPage
 }
