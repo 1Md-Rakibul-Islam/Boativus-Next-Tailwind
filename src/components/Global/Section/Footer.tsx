@@ -9,6 +9,7 @@ import {
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import Preloader from "../UI/Preloader";
+import Image from "next/image";
 
 const Footer = ({ bgStyle }: { bgStyle: string }) => {
   const currentYear = new Date().getFullYear();
@@ -20,7 +21,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
           <div className="section-pt">
             <div className="flex flex-col sm:flex-row justify-between sm:items-center my-gap-32 gap-mb-60">
               <Link href="/">
-                <img src="../media/icons/logo.png" alt="logo" />
+                <Image src="/media/icons/logo.png" alt="logo" />
               </Link>
               <div className="flex-centerY my-gap-24">
                 <a

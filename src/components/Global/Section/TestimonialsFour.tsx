@@ -10,10 +10,11 @@ import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { testimonialsOne } from "@public/data/testimonials";
 import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const TestimonialsFour = () => {
   return (
-    <section className="section-py bg-[url('../media/images/testimonialBG6.png')] bg-cover bg-center">
+    <section className="section-py bg-[url('/media/images/testimonialBG6.png')] bg-cover bg-center">
       <div className="container">
         <FadeUp className="text-center gap-mb-64">
           <h5 className="text-24 text-brown-B300 gap-mb-16">
@@ -51,18 +52,18 @@ const TestimonialsFour = () => {
             {testimonialsOne?.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <div className="flex-center flex-col">
-                  <img
+                  <Image
                     className="gap-mb-40"
-                    src="../media/icons/arrow-two-icon.png"
+                    src="/media/icons/arrow-two-icon.png"
                     alt="icon"
                   />
                   <p className="text-18 text-center text-blue-B20 gap-mb-40">
                     {item?.details}
                   </p>
                   <div className="flex-centerY gap-3">
-                    <img
+                    <Image
                       className="md:w-12 md:h-12 sm:w-10 sm:h-10 w-8 h-8 rounded-full"
-                      src={item?.userImage}
+                      src={item?.userImage?.src}
                       alt="icon"
                     />
                     <div>

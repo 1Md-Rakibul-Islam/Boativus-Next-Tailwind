@@ -14,6 +14,7 @@ import img3 from "@public/media/images/home6-banner3.png";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
 import FadeDown from "@/motion/FadeDown";
+import Image from "next/image";
 
 const HomeSixBanner = () => {
   const bannerSlider = [
@@ -101,7 +102,7 @@ const HomeSixBanner = () => {
             >
               {bannerSlider?.map((item, idx) => (
                 <SwiperSlide key={idx} className="swiper-slide">
-                  <img
+                  <Image
                     className="w-full h-full object-cover"
                     src={item?.image}
                     alt="img"

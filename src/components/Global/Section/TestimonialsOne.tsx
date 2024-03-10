@@ -11,6 +11,7 @@ import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { testimonialsOne } from "@public/data/testimonials";
 import { ArrowLeft, ArrowRight, Star } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 // My modules
 
 const TestimonialsOne = () => {
@@ -78,7 +79,7 @@ const TestimonialsOne = () => {
                       {item?.details}
                     </p>
                     <div className="flex-centerY sm:gap-x-3 gap-x-2">
-                      <img
+                      <Image
                         className="w-h-14 h-14 sm:w-[88px] sm:h-[88px] rounded-full overflow-hidden gap-mb-16"
                         src={item?.userImage}
                         alt="img"
@@ -94,14 +95,14 @@ const TestimonialsOne = () => {
                     </div>
                   </div>
                   <div>
-                    <img
+                    <Image
                       className="absolute left-[4%] top-[5%] sm:w-[44px] w-9 sm:h-[44px] h-9"
-                      src="../media/icons/carousel-errow.svg"
+                      src="/media/icons/carousel-errow.svg"
                       alt="icon"
                     />
-                    <img
+                    <Image
                       className="absolute right-[4%] bottom-[5%] sm:w-[44px] w-9 sm:h-[44px] h-9"
-                      src="../media/icons/carousel-errow.svg"
+                      src="/media/icons/carousel-errow.svg"
                       alt="icon"
                     />
                   </div>
@@ -127,16 +128,16 @@ const TestimonialsOne = () => {
           </div>
         </div>
       </div>
-      <img
+      <Image
         draggable="false"
         className="xxl:w-[400px] xxl:h-[400px] md:w-[300px] md:h-[300px] md:block hidden absolute -left-[8%] -bottom-28 animate-spin-slow opacity-40"
-        src="../media/icons/gallery-star-cercel.png"
+        src="/media/icons/gallery-star-cercel.png"
         alt="img"
       />
-      <img
+      <Image
         draggable="false"
         className="xxl:w-[400px] xxl:h-[400px] md:w-[320px] md:h-[320px] md:block hidden absolute -right-[9%] -top-32 animate-spin-slow opacity-40"
-        src="../media/icons/gallery-star-cercel.png"
+        src="/media/icons/gallery-star-cercel.png"
         alt="img"
       />
     </section>

@@ -1,6 +1,7 @@
 import FadeUp from "@/motion/FadeUp";
 import { ProgressBar } from "../../Global/UI";
 import { skillsProgress } from "@public/data/progressData";
+import Image from "next/image";
 
 const OurSkills = () => {
   return (
@@ -10,38 +11,38 @@ const OurSkills = () => {
           <div className="xl:col-start-1 xl:col-end-6 xl:order-1 order-2 xxl:mr-0 xl:mr-5 mr-0 xl:flex items-center justify-end w-full h-full">
             <div className="xl:absolute 3xl:left-[10%] xxl:left-[6%] left-[1%] xl:flex-center my-gap-24">
               <div className="3xl:max-w-[unset] w-full h-full sm:w-[560px] sm:h-[536px] sm:block flex-center flex-col sm:relative">
-                <img
+                <Image
                   className="sm:absolute top-0 left-0 rounded-full border-[12px] border-white z-[1] sm:max-w-[310px] sm:min-w-fit sm:block hidde animate-bounce-slow-left"
-                  src="../media/images/aboutUs1.png"
+                  src="/media/images/aboutUs1.png"
                   alt="about"
                 />
-                <img
+                <Image
                   className="sm:absolute sm:left-1/3 left-0 bottom-0 rounded-full sm:max-w-[504px] sm:min-w-fit sm:animate-bounce-slow-down animate-bounce-slow-right"
-                  src="../media/images/aboutUs2.png"
+                  src="/media/images/aboutUs2.png"
                   alt="about"
                 />
-                <img
+                <Image
                   className="sm:absolute bottom-0 xxl:-right-[10%] xl:-right-[4.9%] md:-right-[20%] md:left-auto left-0 rounded-full border-[12px] border-white z-[1] sm:max-w-[310px] sm:min-w-fit sm:block hidde sm:animate-bounce-slow-right animate-bounce-slow-left"
-                  src="../media/images/aboutUs3.png"
+                  src="/media/images/aboutUs3.png"
                   alt="about"
                 />
-                <img
+                <Image
                   className="sm:absolute 3xl:top-[18%] top-0 right-0 z-[1] animate-bounce-slow-top sm:block hidde"
-                  src="../media/images/cloud.png"
+                  src="/media/images/cloud.png"
                   alt="about"
                 />
                 <div className="sm:absolute 3xl:bottom-[18%] bottom-0 left-[20%] z-[1] sm:animate-bounce-slow-left animate-bounce-slow-right flex-centerY gap-2.5  bg-white rounded-full py-1.5 px-4 shadow-md sm:mb-0 gap-mb-40">
-                  <img
+                  <Image
                     draggable="false"
-                    src="../media/icons/location.png"
+                    src="/media/icons/location.png"
                     alt="icon"
                   />
                   <span className="text-18 text-black">New York</span>
                 </div>
                 <div className="sm:absolute 3xl:top-[30%] top-0 3xl:-right-[20%] ring-0 z-[1] animate-bounce-slow-left flex-centerY gap-2.5  bg-white rounded-full py-1.5 px-4 shadow-md">
-                  <img
+                  <Image
                     draggable="false"
-                    src="../media/icons/star.png"
+                    src="/media/icons/star.png"
                     alt="icon"
                   />
                   <span className="text-18 text-black">5.0</span>

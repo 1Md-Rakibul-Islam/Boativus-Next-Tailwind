@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { galleryFive } from "@public/data/gallery";
+import Image from "next/image";
 // My modules
 
 const GalleryTwo = () => {
@@ -62,7 +63,7 @@ const GalleryTwo = () => {
       >
         {galleryFive?.map((item, idx) => (
           <SwiperSlide key={idx}>
-            <img
+            <Image
               className="w-full lg:h-[278px] md:h-[240px] sm:h-[200px] h-[160px] object-cover"
               src={item?.image}
               alt="user"

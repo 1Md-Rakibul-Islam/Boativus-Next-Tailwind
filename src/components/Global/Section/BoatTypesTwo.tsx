@@ -1,5 +1,6 @@
 import FadeUp from "@/motion/FadeUp";
 import { boatsTypes } from "@public/data/boatsTypes";
+import Image from "next/image";
 const BoatTypeTwo = () => {
   return (
     <section className="section-py bg-white">
@@ -11,7 +12,7 @@ const BoatTypeTwo = () => {
               className="w-full border border-[#A88A69] p-2 relative"
             >
               <div className="relative z-[2] bg-white hover:bg-[#F2EBE2] my-transition p-[18px] rounded-10 flex-center">
-                <img
+                <Image
                   className="w-[106px] h-[106px]"
                   src={item?.image}
                   alt="icon"

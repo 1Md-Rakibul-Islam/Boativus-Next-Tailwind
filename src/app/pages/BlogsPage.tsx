@@ -12,7 +12,7 @@ const BlogsPage = () => {
   const headerData: headerProps = {
     title: "Buy Yachts",
     bgImgClasses:
-      "bg-[url('../media/images/commonheaderBG3.png')] bg-no-repeat bg-cover",
+      "bg-[url('/media/images/commonheaderBG3.png')] bg-no-repeat bg-cover",
     navLinks,
   };
   return (

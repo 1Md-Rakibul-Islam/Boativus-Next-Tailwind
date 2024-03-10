@@ -3,7 +3,7 @@ import { CounterElement } from "../../Global/UI";
 
 const FeaturesCounter = () => {
   return (
-    <section className="relative section-py overflow-hidden bg-[url('../media/images/counterBG.png')] bg-no-repeat bg-cover bg-right-bottom bg-[#030408]">
+    <section className="relative section-py overflow-hidden bg-[url('/media/images/counterBG.png')] bg-no-repeat bg-cover bg-right-bottom bg-[#030408]">
       <div className="container sm:grid grid-cols-12">
         <div className="relative col-start-1 xxl:col-end-10 xl:col-end-9 sm:col-end-8 grid items-center divide-y sm:divide-[#493C30] divide-blue-B80">
           <FadeUp className="flex-centerY gap-x-[60px] lg:pb-[30px] md:pb-6 sm:pb-5 pb-4 sm:text-left text-center ">

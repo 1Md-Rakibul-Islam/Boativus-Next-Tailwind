@@ -3,6 +3,7 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import { EnvelopeSimpleOpen, PhoneCall, Play } from "@phosphor-icons/react";
+import Image from "next/image";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.min.css";
@@ -10,17 +11,17 @@ import "react-modal-video/css/modal-video.min.css";
 const PlanNextTourThree = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="relative z-[1] section-pb overflow-hidden lg:bg-white bg-blue-B900 lg:bg-[url('../media/images/FeaBg.png')] bg-no-repeat bg-cover">
+    <section className="relative z-[1] section-pb overflow-hidden lg:bg-white bg-blue-B900 lg:bg-[url('/media/images/FeaBg.png')] bg-no-repeat bg-cover">
       <div className="container lg:pt-0 section-pt">
         <div className="relative">
-          <img
+          <Image
             className="lg:max-w-[unset]"
-            src="../media/images/plan-next-tourBG3.png"
+            src="/media/images/plan-next-tourBG3.png"
             alt="img"
           />
           <div className="absolute xxl:left-[54%] lg:left-[46%] top-1/2 left-1/2 lg:translate-x-0 -translate-x-1/2 -translate-y-1/2 z-10">
             <div className="relative">
-              <div className="bg-[url('../media/icons/watch-tour-btn-ring.png')] bg-no-repeat bg-center bg-cover md:w-[264px] md:h-[264px] sm:w-[200px] sm:h-[200px] w-[140px] h-[140px]">
+              <div className="bg-[url('/media/icons/watch-tour-btn-ring.png')] bg-no-repeat bg-center bg-cover md:w-[264px] md:h-[264px] sm:w-[200px] sm:h-[200px] w-[140px] h-[140px]">
                 <button
                   onClick={() => setOpen(true)}
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 popup-video btn_effect"
@@ -57,9 +58,9 @@ const PlanNextTourThree = () => {
           </FadeDown>
           <FadeUp className="grid md:grid-cols-2 grid-cols-1 my-gap-24 lg:gap-y-16 ">
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
-              <img
+              <Image
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
-                src="../media/icons/next-tour-icon1.png"
+                src="/media/icons/next-tour-icon1.png"
                 alt="icon"
               />
               <div>
@@ -73,9 +74,9 @@ const PlanNextTourThree = () => {
               </div>
             </div>
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
-              <img
+              <Image
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
-                src="../media/icons/next-tour-icon2.png"
+                src="/media/icons/next-tour-icon2.png"
                 alt="icon"
               />
               <div>
@@ -89,9 +90,9 @@ const PlanNextTourThree = () => {
               </div>
             </div>
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
-              <img
+              <Image
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
-                src="../media/icons/next-tour-icon3.png"
+                src="/media/icons/next-tour-icon3.png"
                 alt="icon"
               />
               <div>
@@ -105,9 +106,9 @@ const PlanNextTourThree = () => {
               </div>
             </div>
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
-              <img
+              <Image
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
-                src="../media/icons/next-tour-icon4.png"
+                src="/media/icons/next-tour-icon4.png"
                 alt="icon"
               />
               <div>

@@ -23,7 +23,7 @@ const YachtsPages = () => {
         <HeaderBannerThree headerData={headerData} />
         <Yachts />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

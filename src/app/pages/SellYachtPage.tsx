@@ -11,7 +11,7 @@ const SellYachtPage = () => {
   const headerData: headerProps = {
     title: "Sell Yachts",
     bgImgClasses:
-      "bg-[url('../media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
+      "bg-[url('/media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
     navLinks,
   };
 
@@ -22,7 +22,7 @@ const SellYachtPage = () => {
         <HeaderBannerTwo headerData={headerData} />
         <SellYachts />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

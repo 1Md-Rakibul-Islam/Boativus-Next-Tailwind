@@ -14,6 +14,7 @@ import {
   VideoCamera,
 } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const OptionalServices = () => {
   const optionalServices = [
@@ -71,7 +72,7 @@ const OptionalServices = () => {
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 my-gap-24">
           {optionalServices?.map((item, idx) => (
             <FadeUp key={idx} className="relative overflow-hidden">
-              <img
+              <Image
                 className="w-full lg:pb-16 md:pb-14 sm:pb-12 pb-10 hover:scale-110 my-transition"
                 src={item?.image}
                 alt="img"

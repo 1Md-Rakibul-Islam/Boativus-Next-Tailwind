@@ -14,11 +14,12 @@ import { CaretLeft, CaretRight, Play, Star } from "@phosphor-icons/react";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.min.css";
+import Image from "next/image";
 
 const TestimonialsThree = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="relative z-[1] overflow-hidden bg-[url('../media/images/testimonialBG5.png')] bg-no-repeat bg-cover">
+    <section className="relative z-[1] overflow-hidden bg-[url('/media/images/testimonialBG5.png')] bg-no-repeat bg-cover">
       <div className="relative section-pt container">
         <div className="grid grid-cols-12 md:justify-start justify-center">
           <div className="xxl:col-span-6 xl:col-span-5 lg:col-span-4 md:col-span-3 col-span-12"></div>
@@ -42,7 +43,7 @@ const TestimonialsThree = () => {
               {testimonialsOne?.map((item, idx) => (
                 <SwiperSlide key={idx}>
                   <div>
-                    <img
+                    <Image
                       className="sm:w-20 sm:h-20 w-16 h-16 rounded-full object-fill gap-mb-16"
                       src={item?.userImage}
                       alt="user"

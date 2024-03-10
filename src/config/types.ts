@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export type NavLinkProps = {
@@ -47,7 +48,7 @@ export type blogType = {
     author: string;
     authImg: string;
     title: string;
-    image: string;
+    image: string | StaticImageData;
     details: string;
     views: number;
     publish: string;
@@ -56,7 +57,7 @@ export type blogType = {
 export type categoryType = {
     id: string | number;
     title: string;
-    image: string; // Assuming the image is a string URL
+    image: string | StaticImageData; // Assuming the image is a string URL
     details: string;
 };
 
@@ -64,7 +65,7 @@ export type yachtType = {
     id: string | number;
     category: string;
     title: string;
-    image: string[]; // Assuming the image paths are string
+    image: string[] | StaticImageData[]; // Assuming the image paths are string
     guests: number;
     rating: number;
     length: number;

@@ -13,6 +13,7 @@ import img2 from "@public/media/images/home3-hero-banner2.png";
 import img3 from "@public/media/images/home3-hero-banner3.png";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const HomeThreeBanner = () => {
   const bannerSlider = [
@@ -99,7 +100,7 @@ const HomeThreeBanner = () => {
             >
               {bannerSlider?.map((item, idx) => (
                 <SwiperSlide key={idx}>
-                  <img
+                  <Image
                     className="w-full object-cover xl:h-[1082px] lg:h-full md:h-[520px] sm:h-[380px] h-[300px]"
                     src={item?.image}
                     alt="img"

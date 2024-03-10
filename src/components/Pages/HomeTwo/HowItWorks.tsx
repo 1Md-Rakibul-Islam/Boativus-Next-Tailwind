@@ -1,4 +1,5 @@
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const HowItWorks = () => {
   return (
@@ -16,9 +17,9 @@ const HowItWorks = () => {
         </FadeUp>
         <FadeUp className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-gap-24">
           <div className="flex-center flex-col text-center">
-            <img
+            <Image
               className="max-w-20 min-w-fit gap-mb-24"
-              src="../media/icons/works1.png"
+              src="/media/icons/works1.png"
               alt="icon"
               draggable="false"
             />
@@ -29,9 +30,9 @@ const HowItWorks = () => {
             </p>
           </div>
           <div className="flex-center flex-col text-center">
-            <img
+            <Image
               className="max-w-20 min-w-fit gap-mb-24"
-              src="../media/icons/works2.png"
+              src="/media/icons/works2.png"
               alt="icon"
               draggable="false"
             />
@@ -41,9 +42,9 @@ const HowItWorks = () => {
             </p>
           </div>
           <div className="flex-center flex-col text-center">
-            <img
+            <Image
               className="max-w-20 min-w-fit gap-mb-24"
-              src="../media/icons/works3.png"
+              src="/media/icons/works3.png"
               alt="icon"
               draggable="false"
             />

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const BlogsTwo = () => {
   return (
@@ -35,13 +36,13 @@ const BlogsTwo = () => {
               href={`/blogs/${item?.id}`}
               className="relative group overflow-hidden"
             >
-              <img
+              <Image
                 className="w-full max-h-[768px] h-full group-hover:scale-110 my-transition"
                 src={item?.image}
                 alt="blogs"
               />
               <div className="absolute left-8 right-8 top-8 flex-centerY sm:gap-4 gap-3 z-[1]">
-                <img
+                <Image
                   className="sm:w-[60px] sm:h-[60px] w-12 h-12 rounded-full"
                   src={item?.authImg}
                   alt=""

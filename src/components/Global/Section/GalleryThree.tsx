@@ -1,8 +1,11 @@
+"use client";
+
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { Eye } from "@phosphor-icons/react";
 import { galleryAll } from "@public/data/gallery";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const GalleryThree = () => {
   return (
@@ -22,9 +25,9 @@ const GalleryThree = () => {
           <div id="dynamic-size-photos" className="relative">
             {galleryAll?.map((item, idx) => (
               <FadeUp key={idx}>
-                <PhotoView src={item?.image}>
+                <PhotoView src={item?.image?.src}>
                   <div className="image-popup-vertical-fit cursor-pointer hover-eye-link-card group relative overflow-hidden mb-2">
-                    <img
+                    <Image
                       className="w-full h-auto my-transition"
                       src={item?.image}
                       alt="img"

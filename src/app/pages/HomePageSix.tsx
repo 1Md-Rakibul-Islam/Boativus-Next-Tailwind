@@ -25,7 +25,7 @@ const HomePageSix = () => {
         <TestimonialsThree />
         <BlogsTwo />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

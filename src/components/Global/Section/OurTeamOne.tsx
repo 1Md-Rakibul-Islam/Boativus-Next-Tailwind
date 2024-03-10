@@ -16,6 +16,7 @@ import {
 } from "@phosphor-icons/react";
 import { team } from "@public/data/team";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 // My modules
 
 const OurTeamOne = () => {
@@ -103,7 +104,7 @@ const OurTeamOne = () => {
                     <InstagramLogo className="text-2xl text-white my-transition" />
                   </a>
                 </div>
-                <img
+                <Image
                   className="w-full h-full rounded-10"
                   src={item?.image}
                   alt="team"

@@ -23,7 +23,7 @@ const HomePageFour = () => {
         <BlogsFour />
         <PlanNextTourThree />
         <OptionalServices />
-        <TestimonialsTwo bgImage="bg-[url('../media/images/testimonialsBg3.png')]" />
+        <TestimonialsTwo bgImage="bg-[url('/media/images/testimonialsBg3.png')]" />
         <BlogsFive />
         <GalleryTwo />
 

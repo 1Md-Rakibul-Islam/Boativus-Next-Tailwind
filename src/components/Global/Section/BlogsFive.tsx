@@ -2,6 +2,7 @@ import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const BlogsFive = () => {
   return (
@@ -15,7 +16,7 @@ const BlogsFive = () => {
             >
               <div>
                 <div className="overflow-hidden gap-mb-32">
-                  <img
+                  <Image
                     className="w-full hover:scale-110 my-transition"
                     src={item?.image}
                     alt="img"

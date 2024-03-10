@@ -1,5 +1,6 @@
 import FadeUp from "@/motion/FadeUp";
 import { CounterElement } from "../UI";
+import Image from "next/image";
 
 const MakeHappen = () => {
   return (
@@ -7,9 +8,9 @@ const MakeHappen = () => {
       <div className="container">
         <div className="grid xl:grid-cols-12 lg:grid-cols-2 items-center my-gap-24">
           <div className="xl:col-start-1 xl:col-end-6 overflow-hidden xl:mr-0 lg:mr-5 gap-mb-40">
-            <img
+            <Image
               className="w-full hover:scale-110 my-transition"
-              src="../media/images/making-happenBaner.png"
+              src="/media/images/making-happenBaner.png"
               alt=""
             />
           </div>

@@ -1,6 +1,7 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleDown } from "@phosphor-icons/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const DealOfWeek = () => {
@@ -9,9 +10,9 @@ const DealOfWeek = () => {
       <div className="container">
         <div className="grid items-center xl:grid-cols-12 lg:grid-cols-2 grid-cols-1 my-gap-24 lg:rounded-3xl md:rounded-2xl rounded-xl border border-blue-B900 xl:py-16 lg:py-14 md:py-12 sm:py-9 lg:px-[60px] md:px-12 sm:px-8 p-5">
           <div className="xl:col-span-5">
-            <img
+            <Image
               className="w-full"
-              src="../media/images/dealBanner.png"
+              src="/media/images/dealBanner.png"
               alt="dealBanner"
             />
           </div>

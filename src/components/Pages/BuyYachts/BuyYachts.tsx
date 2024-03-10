@@ -13,6 +13,7 @@ import {
 import { buyYachts } from "@public/data/buyYachts";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const sortType = [
   "Best Yacth",
@@ -95,7 +96,7 @@ const BuyYachts = () => {
               className="p-24px grid lg:grid-cols-12 grid-cols-1 lg:items-center my-gap-24 shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]"
             >
               <div className="xxl:col-span-4 lg:col-span-5 col-span-6 overflow-hidden">
-                <img
+                <Image
                   className="w-full max-h-[365px] h-full hover:scale-110 my-transition"
                   src={item?.image}
                   alt=""

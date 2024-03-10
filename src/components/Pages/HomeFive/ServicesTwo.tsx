@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { services } from "@public/data/services";
 import { ArrowCircleRight } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const ServicesTwo = () => {
   return (
@@ -55,7 +56,7 @@ const ServicesTwo = () => {
               <SwiperSlide key={idx} className="swiper-slide">
                 <div className="p-32px bg-brown-B50 grid xxl:grid-cols-12 lg:grid-cols-2 grid-cols-1  items-center my-gap-24">
                   <div className="xxl:col-start-1 xxl:col-end-6 overflow-hidden xxl:mr-0 xl:mr-5">
-                    <img
+                    <Image
                       className="w-full hover:scale-110 my-transition"
                       src={item?.image}
                       alt=""

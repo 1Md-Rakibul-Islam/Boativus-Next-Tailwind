@@ -17,7 +17,7 @@ const ImageGallery = () => {
   const headerData: headerProps = {
     title: "Image Gallery",
     bgImgClasses:
-      "bg-[url('../media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
+      "bg-[url('/media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
     navLinks,
   };
 

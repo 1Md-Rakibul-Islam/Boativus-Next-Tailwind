@@ -4,6 +4,7 @@ import { ArrowCircleRight } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const BestLuxuryYachtSection = () => {
   const bestYachts = yachts?.filter((yacht) => yacht?.category === "best");
@@ -36,7 +37,7 @@ const BestLuxuryYachtSection = () => {
               <div key={idx} className="rounded-lg bg-blue-B800">
                 <div className="relative">
                   <div className="overflow-hidden max-h-[297px] min-h-fit rounded-t-lg w-full">
-                    <img
+                    <Image
                       className="rounded-t-lg w-full h-auto hover:scale-110 my-transition"
                       alt="boat"
                       src={item?.image[0]}

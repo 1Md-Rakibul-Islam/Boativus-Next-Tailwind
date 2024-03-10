@@ -11,6 +11,7 @@ import {
   X,
 } from "@phosphor-icons/react";
 import AnimateHeight from "react-animate-height";
+import Image from "next/image";
 
 const NavBarFour = () => {
   const path = usePathname();
@@ -85,9 +86,9 @@ const NavBarFour = () => {
             <nav className="w-full flex justify-between items-center text-black">
               <div className="relative">
                 <Link href="/">
-                  <img
+                  <Image
                     className="w-[142px] h-[34px]"
-                    src="../media/icons/logo.png"
+                    src="/media/icons/logo.png"
                     alt="brand"
                   />
                 </Link>
@@ -103,9 +104,9 @@ const NavBarFour = () => {
                         onClick={() => setHamburgerToggle((prev) => !prev)}
                         className="sm:hidden block"
                       >
-                        <img
+                        <Image
                           className="w-[142px] h-[34px]"
-                          src="../media/icons/logo.png"
+                          src="/media/icons/logo.png"
                           alt="boativus"
                         />
                       </Link>
@@ -213,9 +214,9 @@ const NavBarFour = () => {
                         <div className="sm:block hidden">
                           <div className="flex-centerY justify-between gap-2 gap-mb-20">
                             <Link href="/">
-                              <img
+                              <Image
                                 className="w-[142px] h-[34px]"
-                                src="../media/icons/logo.png"
+                                src="/media/icons/logo.png"
                                 alt="boativus"
                               />
                             </Link>

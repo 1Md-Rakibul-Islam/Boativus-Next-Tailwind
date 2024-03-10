@@ -9,6 +9,7 @@ import {
   MapPinLine,
   UsersThree,
 } from "@phosphor-icons/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const WhayCharterYachtOne = () => {
@@ -18,15 +19,15 @@ const WhayCharterYachtOne = () => {
         <div className="relative z-[1]">
           <FadeUp className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center my-gap-24 section-pb ">
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
-              <img
-                src="../media/icons/whay-charter-yacht-icon1.png"
+              <Image
+                src="/media/icons/whay-charter-yacht-icon1.png"
                 alt="icon"
               />
               <h5 className="text-24 text-blue-B900">Expert instructors</h5>
             </div>
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
-              <img
-                src="../media/icons/whay-charter-yacht-icon2.png"
+              <Image
+                src="/media/icons/whay-charter-yacht-icon2.png"
                 alt="icon"
               />
               <h5 className="text-24 text-blue-B900">
@@ -34,8 +35,8 @@ const WhayCharterYachtOne = () => {
               </h5>
             </div>
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
-              <img
-                src="../media/icons/whay-charter-yacht-icon3.png"
+              <Image
+                src="/media/icons/whay-charter-yacht-icon3.png"
                 alt="icon"
               />
               <h5 className="text-24 text-blue-B900">
@@ -43,8 +44,8 @@ const WhayCharterYachtOne = () => {
               </h5>
             </div>
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
-              <img
-                src="../media/icons/whay-charter-yacht-icon4.png"
+              <Image
+                src="/media/icons/whay-charter-yacht-icon4.png"
                 alt="icon"
               />
               <h5 className="text-24 text-blue-B900">Cost-effectiveness</h5>
@@ -53,9 +54,9 @@ const WhayCharterYachtOne = () => {
           <div className="grid xl:grid-cols-12 lg:grid-cols-2 grid-cols-1 xl:my-gap-24 gap-x-20 items-center">
             <div className="xl:col-start-1 xl:col-end-6 lg:mb-0 gap-mb-64">
               <div className="overflow-hidden">
-                <img
+                <Image
                   className="md:w-fit w-full mx-auto hover:scale-110 my-transition"
-                  src="../media/images/why-charter-banner.png"
+                  src="/media/images/why-charter-banner.png"
                   alt="img"
                 />
               </div>
@@ -157,9 +158,9 @@ const WhayCharterYachtOne = () => {
         </div>
       </div>
       <div className="absolute top-0 right-0 animate-fade-slow-right">
-        <img
+        <Image
           className="animate-bounce-slow-top-2"
-          src="../media/images/boat-ilistation1.png"
+          src="/media/images/boat-ilistation1.png"
           alt="boat"
         />
       </div>

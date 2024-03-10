@@ -26,6 +26,7 @@ import FadeUp from "@/motion/FadeUp";
 import FadeDown from "@/motion/FadeDown";
 import FadeLeft from "@/motion/FadeLeft";
 import FadeRight from "@/motion/FadeRight";
+import Image from "next/image";
 
 const HomeTwoBanner = () => {
   const bannerSlider = [
@@ -90,9 +91,9 @@ const HomeTwoBanner = () => {
               </div>
             </div>
             <div className="relative">
-              <img
+              <Image
                 className="xxl:pt-[120px] xl:pt-[160px] lg:pt-[80px] w-[466px] h-auto absolute top-[52%] lg:left-1/2 right-0 -translate-y-1/2 z-[20]"
-                src="../media/images/home2-banner-featur.png"
+                src="/media/images/home2-banner-featur.png"
                 alt="img"
               />
             </div>
@@ -123,7 +124,7 @@ const HomeTwoBanner = () => {
               {bannerSlider?.map((item, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="relative w-full">
-                    <img
+                    <Image
                       className="w-full object-fill xxl:h-[1082px] xl:h-[820px] lg:h-[820px] md:h-[580px] sm:h-[520px] h-[380px]"
                       src={item?.image}
                       alt=""

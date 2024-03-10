@@ -5,6 +5,7 @@ import { useState } from "react";
 import AnimateHeight from "react-animate-height";
 import { faqType } from "@/config/types";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const Accordion = ({ faqItems }: { faqItems: faqType[] }) => {
   const [toggle, setToggle] = useState<number | null>(null);
@@ -19,9 +20,9 @@ const Accordion = ({ faqItems }: { faqItems: faqType[] }) => {
           >
             <div className="flex my-gap-24 items-center justify-between accordion-header cursor-pointer">
               <div className="flex-centerY my-gap-20">
-                <img
+                <Image
                   className="sm:w-10 sm:h-10 w-8 h-8"
-                  src="../media/icons/faq-icon.png"
+                  src="/media/icons/faq-icon.png"
                   alt="faq"
                 />
                 <h4 className="text-24 text-blue-B900">{item?.question}</h4>

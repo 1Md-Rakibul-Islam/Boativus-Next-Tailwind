@@ -50,7 +50,7 @@ const HomeFourBanner = () => {
   };
 
   return (
-    <section className="relative z-[2] bg-[url('../media/images/home4-hero-banner.png')] bg-no-repeat bg-cover">
+    <section className="relative z-[2] bg-[url('/media/images/home4-hero-banner.png')] bg-no-repeat bg-cover">
       <div className="relative w-full xl:pt-72 lg:pt-52 md:pt-36 pt-32">
         <div className="container relative z-[1] xl:pb-[316px] lg:pb-[390px] lg:mb-0 gap-mb-64">
           <FadeUp className="max-w-[636px]">

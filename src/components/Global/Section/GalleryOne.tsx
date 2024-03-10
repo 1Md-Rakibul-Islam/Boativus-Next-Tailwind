@@ -1,3 +1,5 @@
+"use client";
+
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { Eye } from "@phosphor-icons/react";
@@ -6,6 +8,7 @@ import gallery2 from "@public/media/images/gallery2.png";
 import gallery3 from "@public/media/images/gallery3.png";
 import gallery4 from "@public/media/images/gallery4.png";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const GalleryOne = () => {
   return (
@@ -25,9 +28,9 @@ const GalleryOne = () => {
           <PhotoProvider>
             <div className="relative grid lg:grid-cols-12 md:grid-cols-2 my-gap-24 ">
               <div className="grid my-gap-24 lg:col-span-4 w-full">
-                <PhotoView src={gallery1}>
+                <PhotoView src={gallery1.src}>
                   <div className="image-popup-vertical-fit cursor-pointer hover-eye-link-card group relative overflow-hidden h-full">
-                    <img
+                    <Image
                       className="w-full h-full my-transition"
                       src={gallery1}
                       alt="img"
@@ -37,9 +40,9 @@ const GalleryOne = () => {
                     </span>
                   </div>
                 </PhotoView>
-                <PhotoView src={gallery2}>
+                <PhotoView src={gallery2.src}>
                   <div className="image-popup-vertical-fit cursor-pointer hover-eye-link-card group relative overflow-hidden h-full">
-                    <img
+                    <Image
                       className="w-full h-full my-transition"
                       src={gallery2}
                       alt="img"
@@ -52,9 +55,9 @@ const GalleryOne = () => {
               </div>
 
               <div className="lg:col-span-3 w-full">
-                <PhotoView src={gallery3}>
+                <PhotoView src={gallery3.src}>
                   <div className="image-popup-vertical-fit cursor-pointer hover-eye-link-card group relative overflow-hidden h-full">
-                    <img
+                    <Image
                       className="w-full h-full my-transition"
                       src={gallery3}
                       alt="img"
@@ -66,9 +69,9 @@ const GalleryOne = () => {
                 </PhotoView>
               </div>
               <div className="lg:col-span-5 w-full">
-                <PhotoView src={gallery4}>
+                <PhotoView src={gallery4.src}>
                   <div className="image-popup-vertical-fit cursor-pointer hover-eye-link-card group relative overflow-hidden h-full">
-                    <img
+                    <Image
                       className="w-full h-full my-transition"
                       src={gallery4}
                       alt="img"
@@ -83,16 +86,16 @@ const GalleryOne = () => {
           </PhotoProvider>
         </FadeUp>
       </div>
-      <img
+      <Image
         draggable="false"
         className="xxl:w-[400px] xxl:h-[400px] md:w-[300px] md:h-[300px] md:block hidden absolute left-0 top-[7%] animate-spin-slow"
-        src="../media/icons/gallery-star-cercel.png"
+        src="/media/icons/gallery-star-cercel.png"
         alt="img"
       />
-      <img
+      <Image
         draggable="false"
         className="xxl:w-[400px] xxl:h-[400px] md:w-[300px] md:h-[300px] md:block hidden absolute -right-[9%] -top-44 animate-spin-slow"
-        src="../media/icons/gallery-star-cercel.png"
+        src="/media/icons/gallery-star-cercel.png"
         alt="img"
       />
     </section>

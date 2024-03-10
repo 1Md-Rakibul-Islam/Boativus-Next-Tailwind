@@ -8,7 +8,7 @@ const OrdersPage = () => {
       <main className="min-h-screen pt-20">
         <ShoppingCart />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

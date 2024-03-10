@@ -2,7 +2,7 @@ import { CounterElement } from "../../Global/UI";
 
 const RatioCounter = () => {
   return (
-    <section className="relative bg-blue-B900 bg-[url('../media/images/high-performance-yachtsBg2.png')] bg-no-repeat bg-cover bg-center">
+    <section className="relative bg-blue-B900 bg-[url('/media/images/high-performance-yachtsBg2.png')] bg-no-repeat bg-cover bg-center">
       <div className="container section-py ">
         <div className="grid md:grid-cols-3 grid-cols-1 my-gap-24 gap-y-8 ">
           <div className="tex:text-left text-center">

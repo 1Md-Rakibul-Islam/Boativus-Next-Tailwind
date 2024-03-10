@@ -13,6 +13,7 @@ import {
   StarHalf,
   User,
 } from "@phosphor-icons/react";
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -30,7 +31,7 @@ const YachtDetails = ({ yacht }: { yacht: yachtType }) => {
         <div className="grid md:grid-cols-12 grid-cols-1 my-gap-24 gap-mb-64">
           <div className="md:col-span-7">
             <div className="overflow-hidden sm:rounded-3xl rounded-2xl relative group">
-              <img
+              <Image
                 className="w-full md:h-[550px] h-auto object-cover hover:scale-110 my-transition sm:rounded-3xl rounded-2xl"
                 src={yacht?.image[0]}
                 alt=""
@@ -43,7 +44,7 @@ const YachtDetails = ({ yacht }: { yacht: yachtType }) => {
           <div className="md:col-span-5">
             <div className="grid my-gap-24">
               <div className="overflow-hidden sm:rounded-3xl rounded-2xl relative group">
-                <img
+                <Image
                   className="w-full md:h-[260px] h-auto object-cover hover:scale-110 my-transition sm:rounded-3xl rounded-2xl"
                   src={yacht?.image[1]}
                   alt=""
@@ -53,7 +54,7 @@ const YachtDetails = ({ yacht }: { yacht: yachtType }) => {
                 </span>
               </div>
               <div className="overflow-hidden sm:rounded-3xl rounded-2xl relative group">
-                <img
+                <Image
                   className="w-full md:h-[260px] h-auto object-cover hover:scale-110 my-transition sm:rounded-3xl rounded-2xl"
                   src={yacht?.image[2]}
                   alt=""

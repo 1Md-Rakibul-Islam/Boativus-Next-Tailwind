@@ -6,7 +6,7 @@ const Culture = () => {
     <section className="bg-white">
       <FadeUp className="grid md:grid-cols-2 grid-cols-1 ">
         <div>
-          <div className="relative w-full h-full px-8 bg-[url('../media/images/culture2.png')] bg-no-repeat bg-cover">
+          <div className="relative w-full h-full px-8 bg-[url('/media/images/culture2.png')] bg-no-repeat bg-cover">
             <div className="relative z-[1] flex-center flex-col text-center">
               <h6 className="text-18 text-white gap-mt-60 gap-mb-16">
                 Culture
@@ -28,7 +28,7 @@ const Culture = () => {
           </div>
         </div>
         <div>
-          <div className="relative w-full h-full px-8 bg-[url('../media/images/culture1.png')] bg-no-repeat bg-cover">
+          <div className="relative w-full h-full px-8 bg-[url('/media/images/culture1.png')] bg-no-repeat bg-cover">
             <div className="relative z-[1] flex-center flex-col text-center">
               <h6 className="text-18 text-white gap-mt-60 gap-mb-16">
                 Culture

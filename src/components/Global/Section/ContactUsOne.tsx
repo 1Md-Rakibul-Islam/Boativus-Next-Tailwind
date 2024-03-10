@@ -7,7 +7,7 @@ const ContactUsOne = () => {
     e.preventDefault();
   };
   return (
-    <section className="section-py bg-[url('../media/images/contactUsBG1.png')] bg-fixed bg-cover bg-center">
+    <section className="section-py bg-[url('/media/images/contactUsBG1.png')] bg-fixed bg-cover bg-center">
       <div className="container">
         <FadeUp>
           <h2 className="text-57 text-white gap-mb-24 text-center">

@@ -17,6 +17,7 @@ import Link from "next/link";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { countries } from "@public/data/countries";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const PopularCountries = () => {
   return (
@@ -91,7 +92,7 @@ const PopularCountries = () => {
             {countries?.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <div className="relative group">
-                  <img
+                  <Image
                     className="w-full object-cover max-h-[768px] h-full"
                     src={item?.image}
                     alt="service"

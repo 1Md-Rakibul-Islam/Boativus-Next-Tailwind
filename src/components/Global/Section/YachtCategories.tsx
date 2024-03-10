@@ -11,6 +11,7 @@ import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { yachtCategories } from "@public/data/yachtCategories";
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 // My modules
 
 const YachtCategories = () => {
@@ -83,7 +84,7 @@ const YachtCategories = () => {
                     href={`/yachts`}
                     className="bg-blue-B10 w-full h-full p-24px rounded-lg shadow-4 flex-center flex-col"
                   >
-                    <img
+                    <Image
                       className="min-w-fit max-w-16 gap-mb-16"
                       src={item?.image}
                       alt="img"

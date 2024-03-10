@@ -18,7 +18,7 @@ const ServicesPage = () => {
   const headerData: headerProps = {
     title: "Services",
     bgImgClasses:
-      "bg-[url('../media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
+      "bg-[url('/media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
     navLinks,
   };
 
@@ -37,10 +37,10 @@ const ServicesPage = () => {
         />
         <PlanNextTourThree />
         <OurSkills />
-        <TestimonialsTwo bgImage="bg-[url('../media/images/testimonialBG4.png')] bg-no-repeat bg-cover" />
+        <TestimonialsTwo bgImage="bg-[url('/media/images/testimonialBG4.png')] bg-no-repeat bg-cover" />
         <OptionalServices />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

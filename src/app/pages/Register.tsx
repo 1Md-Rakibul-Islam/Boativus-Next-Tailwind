@@ -6,6 +6,7 @@ import {
 } from "@phosphor-icons/react";
 import { FormEvent } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Register = () => {
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
@@ -16,23 +17,24 @@ const Register = () => {
       <section className="bg-blue-B900 min-h-screen flex justify-center">
         <div className="max-w-[1920px] grid lg:grid-cols-2 grid-cols-1">
           <div className="relative lg:block hidden">
-            <img
+            <Image
               className="w-full h-full object-cover object-left"
-              src="../media/images/home3-hero-banner2.png"
+              src="/media/images/home3-hero-banner2.png"
               alt=""
             />
 
             <div className="absolute top-[14%] left-[14%] z-[2] right-[8%]">
               <Link href="/">
-                <img
-                  src="../media/icons/logo.png"
+                <Image
+                  src="/media/icons/logo.png"
                   className="w-[158px] h-auto gap-mb-60"
                   alt=""
                 />
               </Link>
               <h2 className="text-57 text-white ">
-                Charter a luxury <br className="xl:block hidden" /> yacht Let's
-                Plan Your <br className="xl:block hidden" /> Next Tour!
+                Charter a luxury <br className="xl:block hidden" /> yacht
+                Let&lsquo;s Plan Your <br className="xl:block hidden" /> Next
+                Tour!
               </h2>
             </div>
             <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-[#061138_2.25%] to-[rgba(6,17,56,0.00)_97.18%]"></div>
@@ -40,9 +42,9 @@ const Register = () => {
           <div className="flex-center section-py">
             <div className="lg:px-10 px-5 max-w-[520px]">
               <Link href="/" className="gap-mb-48 block lg:hidden">
-                <img
+                <Image
                   className="w-[148px] h-[38px]"
-                  src="../media/icons/logo.png"
+                  src="/media/icons/logo.png"
                   alt="logo"
                 />
               </Link>

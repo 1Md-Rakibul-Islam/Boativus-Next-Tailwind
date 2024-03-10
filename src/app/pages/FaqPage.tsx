@@ -13,7 +13,7 @@ const FaqPage = () => {
   const headerData: headerProps = {
     title: "Faq",
     bgImgClasses:
-      "bg-[url('../media/images/commonheaderBG3.png')] bg-no-repeat bg-cover",
+      "bg-[url('/media/images/commonheaderBG3.png')] bg-no-repeat bg-cover",
     navLinks,
   };
   return (
@@ -23,7 +23,7 @@ const FaqPage = () => {
         <HeaderBannerThree headerData={headerData} />
         <FaqOne />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

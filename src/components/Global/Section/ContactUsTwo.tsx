@@ -1,5 +1,6 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const ContactUsTwo = () => {
   return (
@@ -83,9 +84,9 @@ const ContactUsTwo = () => {
             </div>
           </form>
           <div className="xxl:col-start-8 lg:col-start-7 lg:col-end-13">
-            <img
+            <Image
               className="lg:max-w-[unset] animate-bounce-slow-top"
-              src="../media/images/faq-banner.png"
+              src="/media/images/faq-banner.png"
               alt=""
             />
           </div>

@@ -1,33 +1,34 @@
 import FadeLeft from "@/motion/FadeLeft";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const OurActivity = () => {
   const activities = [
     {
       id: 1,
       title: "Sailing",
-      image: "../media/icons/activity-icon1.png",
+      image: "/media/icons/activity-icon1.png",
       details:
         "Phasellus porttitor libero quis diam sagittis, at vehicula exlaoreet.",
     },
     {
       id: 2,
       title: "Diving",
-      image: "../media/icons/activity-icon2.png",
+      image: "/media/icons/activity-icon2.png",
       details:
         "Phasellus porttitor libero quis diam sagittis, at vehicula ex laoreet.",
     },
     {
       id: 3,
       title: "Events",
-      image: "../media/icons/activity-icon3.png",
+      image: "/media/icons/activity-icon3.png",
       details:
         "Phasellus porttitor libero quis diam sagittis, at vehicula ex laoreet.",
     },
     {
       id: 4,
       title: "Fishing",
-      image: "../media/icons/activity-icon4.png",
+      image: "/media/icons/activity-icon4.png",
       details:
         "Phasellus porttitor libero quis diam sagittis, at vehicula ex laoreet.",
     },
@@ -38,9 +39,9 @@ const OurActivity = () => {
         <div className="grid xl:grid-cols-12 lg:grid-cols-2 items-center my-gap-24">
           <div className="xl:col-start-1 xl:col-end-6 h-full w-full flex justify-end lg:order-1 order-2">
             <FadeLeft>
-              <img
+              <Image
                 className="lg:max-w-[unset]"
-                src="../media/images/activityBanner.png"
+                src="/media/images/activityBanner.png"
                 alt="img"
               />
             </FadeLeft>
@@ -57,7 +58,7 @@ const OurActivity = () => {
             <div className="grid sm:grid-cols-2 grid-cols-1 my-gap-24 gap-y-10 ">
               {activities?.map((item, idx) => (
                 <FadeUp key={idx} className="flex-center flex-col text-center">
-                  <img
+                  <Image
                     className="max-w-20 min-w-fit gap-mb-24"
                     src={item?.image}
                     alt="icon"
@@ -75,10 +76,10 @@ const OurActivity = () => {
       </div>
 
       <div className="xxl:w-[784px] xxl:h-[784px] lg:w-[664px] lg:h-[664px] sm:w-[400px] sm:h-[400px] sm:block hidden absolute xxl:-right-[20%] lg:-right-[24%] lg:top-1/2 top-1/4 -translate-y-1/2">
-        <img
+        <Image
           draggable="false"
           className="animate-spin-slow"
-          src="../media/icons/compass3.png"
+          src="/media/icons/compass3.png"
           alt="img"
         />
       </div>

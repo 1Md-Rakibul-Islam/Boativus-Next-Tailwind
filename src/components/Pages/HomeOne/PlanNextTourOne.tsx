@@ -10,6 +10,7 @@ import icon2 from "../../../../public//media/icons/next-tour-icon2.png";
 import icon3 from "../../../../public//media/icons/next-tour-icon3.png";
 import icon4 from "../../../../public//media/icons/next-tour-icon4.png";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const PlanNextTourOne = () => {
   const [isOpen, setOpen] = useState(false);
@@ -41,7 +42,7 @@ const PlanNextTourOne = () => {
   ];
 
   return (
-    <section className="section-pt bg-[url('../media/images/plan-next-tour-bg.png')] bg-no-repeat bg-top bg-white">
+    <section className="section-pt bg-[url('/media/images/plan-next-tour-bg.png')] bg-no-repeat bg-top bg-white">
       <div className="container">
         <div className="section-pb grid grid-cols-12 my-gap-24">
           <div className="xl:col-span-8 lg:col-span-9 col-span-12 lg:mb-0 gap-mb-32 md:text-left text-center">
@@ -92,7 +93,7 @@ const PlanNextTourOne = () => {
                 key={idx}
                 className="w-full h-full flex-center flex-col px-24-py-40px rounded-lg shadow-4 bg-blue-B10"
               >
-                <img
+                <Image
                   className="min-w-fit max-w-16 gap-mb-16"
                   src={item?.image}
                   alt="img"

@@ -11,7 +11,7 @@ const ContactUsPage = () => {
   const headerData: headerProps = {
     title: "Contact Us",
     bgImgClasses:
-      "bg-[url('../media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
+      "bg-[url('/media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
     navLinks,
   };
 

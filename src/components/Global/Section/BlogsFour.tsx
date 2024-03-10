@@ -2,6 +2,7 @@ import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
+import Image from "next/image";
 
 const BlogsFour = () => {
   const ratedYachts = yachts?.filter(
@@ -38,7 +39,7 @@ const BlogsFour = () => {
           {ratedYachts?.map((item, idx) => (
             <FadeUp key={idx} className="overflow-hidden">
               <div className="relative group w-full">
-                <img
+                <Image
                   className="w-full sm:h-[649px] h-[460px] min-h-fit group-hover:scale-110 my-transition"
                   src={item?.image[0]}
                   alt="yachts"

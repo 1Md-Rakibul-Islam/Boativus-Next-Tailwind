@@ -17,6 +17,7 @@ import {
 import { useDropdown } from "@/hooks";
 import AnimateHeight from "react-animate-height";
 import { Listbox } from "@headlessui/react";
+import Image from "next/image";
 
 const languages = ["Bangla", "English", "Hindi", "Arabic"];
 
@@ -271,9 +272,9 @@ const NavBarFive = () => {
               <div className="relative flex-centerY justify-end gap-x-14 ">
                 {/* Big logo start */}
                 <Link href="/" className="absolute xxl:-left-56 -left-44 block">
-                  <img
+                  <Image
                     className="xxl:w-[160px] w-[140px]"
-                    src="../media/images/logo-big-cercel.png"
+                    src="/media/images/logo-big-cercel.png"
                     alt="icon"
                   />
                 </Link>
@@ -328,9 +329,9 @@ const NavBarFive = () => {
             <nav className="w-full flex justify-between items-center text-black xl:hidden">
               <div className="relative">
                 <Link href="/">
-                  <img
+                  <Image
                     className="w-[142px] h-[34px]"
-                    src="../media/icons/logo.png"
+                    src="/media/icons/logo.png"
                     alt="brand"
                   />
                 </Link>
@@ -345,9 +346,9 @@ const NavBarFive = () => {
                       onClick={() => setHamburgerToggle((prev) => !prev)}
                       className="sm:hidden block"
                     >
-                      <img
+                      <Image
                         className="w-[142px] h-[34px]"
-                        src="../media/icons/logo.png"
+                        src="/media/icons/logo.png"
                         alt="boativus"
                       />
                     </Link>
@@ -455,9 +456,9 @@ const NavBarFive = () => {
                       <div className="sm:block hidden">
                         <div className="flex-centerY justify-between gap-2 gap-mb-20">
                           <Link href="/">
-                            <img
+                            <Image
                               className="w-[142px] h-[34px]"
-                              src="../media/icons/logo.png"
+                              src="/media/icons/logo.png"
                               alt="boativus"
                             />
                           </Link>

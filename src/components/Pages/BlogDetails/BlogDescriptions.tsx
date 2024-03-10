@@ -5,6 +5,7 @@ import {
   LinkedinLogo,
   TwitchLogo,
 } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const BlogDescriptions = ({ blog }: { blog: blogType }) => {
   return (
@@ -22,7 +23,7 @@ const BlogDescriptions = ({ blog }: { blog: blogType }) => {
         Cras vestibulum eleifend purus non convallis.
       </p>
       <div className="overflow-hidden rounded-20 gap-mb-64">
-        <img
+        <Image
           className="w-full max-h-[416px] h-auto object-cover hover:scale-110 my-transition rounded-20"
           src={blog?.image}
           alt=""
@@ -62,9 +63,9 @@ const BlogDescriptions = ({ blog }: { blog: blogType }) => {
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
       </ul>
       <div className="overflow-hidden rounded-20 gap-mb-64">
-        <img
+        <Image
           className="w-full h-auto object-cover hover:scale-110 my-transition rounded-20"
-          src="../media/images/blog-feachers-img2.png"
+          src="/media/images/blog-feachers-img2.png"
           alt=""
         />
       </div>
@@ -86,7 +87,7 @@ const BlogDescriptions = ({ blog }: { blog: blogType }) => {
         vestibulum .
       </p>
       <div className="flex items-center xl:flex-row flex-col my-gap-32 rounded-20 p-32px shadow-[0px_4px_20px_0px_rgba(74,73,79,0.20)] xl:text-left text-center gap-mb-64">
-        <img className="rounded-full" src="../media/images/user8.png" alt="" />
+        <Image className="rounded-full" src="/media/images/user8.png" alt="" />
         <div>
           <div className="w-full flex xl:flex-row flex-col xl:justify-start items-center my-gap-24 gap-mb-24">
             <div>

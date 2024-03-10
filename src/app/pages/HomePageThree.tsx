@@ -30,10 +30,10 @@ const HomePageThree = () => {
         <PlanNextTourTwo />
         <FaqTwo />
         <GalleryOne />
-        <TestimonialsTwo bgImage="bg-[url('../media/images/testimonialBG2.png')]" />
+        <TestimonialsTwo bgImage="bg-[url('/media/images/testimonialBG2.png')]" />
         <BlogsTwo />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

@@ -6,6 +6,7 @@ import {
   TwitterLogo,
 } from "@phosphor-icons/react";
 import { team } from "@public/data/team";
+import Image from "next/image";
 
 const OurTeamThree = () => {
   return (
@@ -56,7 +57,7 @@ const OurTeamThree = () => {
                   </a>
                 </div>
                 <div className="bg-blue-B5">
-                  <img
+                  <Image
                     className="w-full rounded-10 gap-mb-32"
                     src={item?.image}
                     alt="team"

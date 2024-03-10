@@ -14,6 +14,7 @@ import {
 } from "@phosphor-icons/react";
 import { team } from "@public/data/team";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 // My modules
 
 const TeamTwo = ({ padding }: { padding?: string }) => {
@@ -102,7 +103,7 @@ const TeamTwo = ({ padding }: { padding?: string }) => {
                   </a>
                 </div>
                 <div className="bg-blue-B5">
-                  <img
+                  <Image
                     className="w-full rounded-10 gap-mb-32"
                     src={item?.image}
                     alt="team"

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HomeFiveBanner = () => {
   return (
-    <section className="relative z-[1] bg-[url('../media/images/heroBannerBG5.png')] bg-no-repeat bg-cover">
+    <section className="relative z-[1] bg-[url('/media/images/heroBannerBG5.png')] bg-no-repeat bg-cover">
       <div className="relative w-full xl:pt-[360px] lg:pt-80 md:pt-48 pt-32">
         <div className="container relative z-[1] lg:pb-[400px] lg:mb-0 gap-mb-64">
           <div className="max-w-[636px] lg:text-left text-center">

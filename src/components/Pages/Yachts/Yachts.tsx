@@ -1,6 +1,7 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight, ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
+import Image from "next/image";
 import Link from "next/link";
 
 const Yachts = () => {
@@ -21,7 +22,7 @@ const Yachts = () => {
                 key={idx}
                 className="overflow-hidden relative group w-full"
               >
-                <img
+                <Image
                   className="w-full xl:h-[730px] lg:h-[620px] sm:h-[520px] h-[500px] min-h-fit object-cover group-hover:scale-110 my-transition"
                   src={item?.image[0]}
                   alt="blog"
@@ -54,9 +55,9 @@ const Yachts = () => {
                     <div className="flex justify-between items-center sm:divide-x divide-white text-16 text-white gap-mb-40">
                       <div className="w-full z-[1] text-left">
                         <div className="flex-centerY justify-center gap-2 gap-mb-16">
-                          <img
+                          <Image
                             className="w-5 h-5"
-                            src="../media/icons/yachts-feachers-icon1.png"
+                            src="/media/icons/yachts-feachers-icon1.png"
                             alt="icon"
                           />
                           <h6 className="text-16 text-white">
@@ -64,9 +65,9 @@ const Yachts = () => {
                           </h6>
                         </div>
                         <div className="flex-centerY justify-center gap-2">
-                          <img
+                          <Image
                             className="w-5 h-5"
-                            src="../media/icons/yachts-feachers-icon2.png"
+                            src="/media/icons/yachts-feachers-icon2.png"
                             alt="icon"
                           />
                           <h6 className="text-16 text-white">Crew Included</h6>
@@ -74,8 +75,8 @@ const Yachts = () => {
                       </div>
                       <div className="w-full z-[1] text-left">
                         <div className="flex-centerY justify-center gap-2 gap-mb-16">
-                          <img
-                            src="../media/icons/yachts-feachers-icon3.png"
+                          <Image
+                            src="/media/icons/yachts-feachers-icon3.png"
                             alt="icon"
                           />
                           <h6 className="text-16 text-white">
@@ -83,8 +84,8 @@ const Yachts = () => {
                           </h6>
                         </div>
                         <div className="flex-centerY justify-center gap-2">
-                          <img
-                            src="../media/icons/yachts-feachers-icon4.png"
+                          <Image
+                            src="/media/icons/yachts-feachers-icon4.png"
                             alt="icon"
                           />
                           <h6 className="text-16 text-white">Live Chef</h6>

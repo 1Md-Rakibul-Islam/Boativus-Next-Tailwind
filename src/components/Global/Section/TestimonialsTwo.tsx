@@ -9,6 +9,7 @@ import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 // My modules
 import { testimonialsOne } from "@public/data/testimonials";
 import { CaretLeft, CaretRight, Star } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const TestimonialsTwo = ({ bgImage }: { bgImage: string }) => {
   return (
@@ -35,7 +36,7 @@ const TestimonialsTwo = ({ bgImage }: { bgImage: string }) => {
               {testimonialsOne?.map((item, idx) => (
                 <SwiperSlide key={idx}>
                   <div>
-                    <img
+                    <Image
                       className="sm:w-20 sm:h-20 w-16 h-16 rounded-full object-fill gap-mb-16"
                       src={item?.userImage}
                       alt="user"

@@ -1,4 +1,5 @@
 import { blogs } from "@public/data/blogs";
+import Image from "next/image";
 import Link from "next/link";
 
 const BlogSidebar = () => {
@@ -34,7 +35,7 @@ const BlogSidebar = () => {
               href={`/blogs/${item?.id}`}
               className="group flex-centerY gap-4 my-transition text-18 text-white px-6 py-4"
             >
-              <img
+              <Image
                 className="w-[86px] h-[70px] object-cover"
                 src={item?.image}
                 alt="img"

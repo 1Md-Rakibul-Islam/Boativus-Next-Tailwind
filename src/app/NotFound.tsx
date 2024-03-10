@@ -4,7 +4,7 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <main>
-      <section className="min-h-screen flex-center section-py bg-[url('../media/images/notFound.png')] bg-center bg-cover">
+      <section className="min-h-screen flex-center section-py bg-[url('/media/images/notFound.png')] bg-center bg-cover">
         <div className="container text-center text-white">
           <h1 className="xl:text-[262px] lg:text-[240px] md:text-[200px] sm:text-[160px] text-[100px] font-playfair font-bold">
             404

@@ -1,6 +1,7 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { blogs } from "@public/data/blogs";
+import Image from "next/image";
 import Link from "next/link";
 
 const BlogsSix = () => {
@@ -24,14 +25,14 @@ const BlogsSix = () => {
               href={`/blogs/${item?.id}`}
               className="relative group overflow-hidden"
             >
-              <img
+              <Image
                 className="w-full h-[416px] object-fill group-hover:scale-110 my-transition"
                 src={item?.image}
                 alt="service"
               />
               <div className="absolute left-0 top-0 flex-centerY sm:gap-4 gap-3 z-[1]">
                 <div className="p-32px">
-                  <img
+                  <Image
                     className="sm:w-[60px] sm:h-[60px] w-12 h-12 rounded-full"
                     src={item?.authImg}
                     alt=""

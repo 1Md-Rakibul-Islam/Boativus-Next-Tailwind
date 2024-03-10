@@ -12,6 +12,7 @@ import { ArrowCircleRight, CaretLeft, CaretRight } from "@phosphor-icons/react";
 import { services } from "@public/data/services";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 // Import Swiper React components
 
 const ServicesThree = () => {
@@ -93,13 +94,13 @@ const ServicesThree = () => {
               <SwiperSlide key={idx}>
                 <div className="relative group">
                   <div className="overflow-hidden">
-                    <img
+                    <Image
                       className="w-full 3xl:h-[558px] xxl:h-[458px] h-[358px] object-cover group-hover:scale-110 my-transition-2"
                       src={item?.image}
                       alt="service"
                     />
                   </div>
-                  <div className="translate-y-full group-hover:translate-y-0 my-transition-2 absolute bottom-0 left-0 right-0 bg-[url('../media/images/repair-service-shape.svg')] bg-no-repeat bg-bottom bg-cover px-32px py-40px xl:pt-[100px] lg:pt-[90px] pt-20 w-full h-[246px]">
+                  <div className="translate-y-full group-hover:translate-y-0 my-transition-2 absolute bottom-0 left-0 right-0 bg-[url('/media/images/repair-service-shape.svg')] bg-no-repeat bg-bottom bg-cover px-32px py-40px xl:pt-[100px] lg:pt-[90px] pt-20 w-full h-[246px]">
                     <h4 className="text-32 text-blue-B900 gap-mb-16">
                       {item?.title}
                     </h4>

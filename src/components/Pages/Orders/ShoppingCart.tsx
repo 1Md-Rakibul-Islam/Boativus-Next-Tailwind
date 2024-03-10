@@ -4,6 +4,7 @@ import { CaretRight, Minus, Plus, X } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ShoppingCart = () => {
   //   const orders = yachts?.slice(0, 3);
@@ -77,7 +78,7 @@ const ShoppingCart = () => {
             >
               <div className="flex items-center flex-col min-[550px]:flex-row gap-3 min-[550px]:gap-6 w-full max-xl:justify-center max-xl:max-w-xl max-xl:mx-auto">
                 <div className="img-box">
-                  <img
+                  <Image
                     src={item?.image[0]}
                     alt="perfume bottle image"
                     className="xl:w-[140px] h-[120px] object-cover"

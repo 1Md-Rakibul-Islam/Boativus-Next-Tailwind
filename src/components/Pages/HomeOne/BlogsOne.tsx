@@ -2,6 +2,7 @@ import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import { ArrowRight, Calendar, User } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 const BlogsOne = () => {
   return (
     <section className="section-py relative overflow-hidden bg-white">
@@ -33,7 +34,7 @@ const BlogsOne = () => {
                 className="sm:p-2.5 p-2 rounded-lg bg-white overflow-hidden shadow-[0px_6px_30px_0px_rgba(0,0,0,0.08)]"
               >
                 <div className="overflow-hidden rounded-10 gap-mb-24">
-                  <img
+                  <Image
                     className="w-full rounded-10 hover:scale-110 my-transition"
                     src={item?.image}
                     alt="blog"

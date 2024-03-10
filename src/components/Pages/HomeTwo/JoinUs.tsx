@@ -3,6 +3,7 @@ import CounterElement from "../../Global/UI/CounterElement";
 import { ArrowDown } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
 import FadeDown from "@/motion/FadeDown";
+import Image from "next/image";
 const JoinUs = () => {
   return (
     <section className="section-py bg-white relative overflow-hidden">
@@ -12,14 +13,14 @@ const JoinUs = () => {
             <div className="xxl:block flex-center">
               <div className="xxl:max-w-[unset] xxl:w-full xxl:h-full sm:w-[684px] sm:h-[536px] sm:relative ">
                 <div className="sm:absolute top-0 left-0 sm:block grid my-gap-24">
-                  <img
+                  <Image
                     className="sm:max-w-[275px] sm:min-w-min w-full relative z-[2] hover:z-[4] sm:hover:scale-110 my-transition"
-                    src="../media/images/yacthExprience1.png"
+                    src="/media/images/yacthExprience1.png"
                     alt=""
                   />
-                  <img
+                  <Image
                     className="sm:max-w-[275px] sm:min-w-min w-full relative z-0 hover:z-[4] sm:-mt-[16%] sm:-ml-[16%] sm:hover:scale-110 my-transition"
-                    src="../media/images/yacthExprience2.png"
+                    src="/media/images/yacthExprience2.png"
                     alt=""
                   />
                 </div>
@@ -38,9 +39,9 @@ const JoinUs = () => {
                       <p>Collection</p>
                     </div>
                   </div>
-                  <img
+                  <Image
                     className="sm:max-w-[275px] sm:min-w-min w-full sm:hover:scale-110 my-transition"
-                    src="../media/images/yacthExprience3.png"
+                    src="/media/images/yacthExprience3.png"
                     alt=""
                   />
                 </div>
@@ -90,9 +91,9 @@ const JoinUs = () => {
         </div>
       </div>
       <div className="absolute top-0 right-0 animate-fade-slow-right">
-        <img
+        <Image
           className="animate-bounce-slow-top-2"
-          src="../media/images/boat-ilistation1.png"
+          src="/media/images/boat-ilistation1.png"
           alt="boat"
         />
       </div>

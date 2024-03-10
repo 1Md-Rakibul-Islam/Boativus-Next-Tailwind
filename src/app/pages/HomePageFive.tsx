@@ -22,10 +22,10 @@ const HomePageFive = () => {
         <TopSupperYachts />
         <PlanNextTourThree />
         <TeamTwo />
-        <TestimonialsTwo bgImage="bg-[url('../media/images/testimonialBG4.png')] bg-no-repeat bg-cover" />
+        <TestimonialsTwo bgImage="bg-[url('/media/images/testimonialBG4.png')] bg-no-repeat bg-cover" />
         <BlogsFive />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

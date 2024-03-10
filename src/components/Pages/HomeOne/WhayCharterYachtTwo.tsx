@@ -8,6 +8,7 @@ import {
   MapPinLine,
   UsersThree,
 } from "@phosphor-icons/react";
+import Image from "next/image";
 import Link from "next/link";
 
 const WhayCharterYachtTwo = () => {
@@ -18,9 +19,9 @@ const WhayCharterYachtTwo = () => {
           <div className="grid xl:grid-cols-12 lg:grid-cols-2 grid-cols-1 xl:my-gap-24 gap-x-20 items-center">
             <div className="xl:col-start-1 xl:col-end-6 lg:mb-0 gap-mb-64">
               <div className="overflow-hidden">
-                <img
+                <Image
                   className="md:w-fit w-full mx-auto hover:scale-110 my-transition"
-                  src="../media/images/why-charter-banner.png"
+                  src="/media/images/why-charter-banner.png"
                   alt="img"
                 />
               </div>

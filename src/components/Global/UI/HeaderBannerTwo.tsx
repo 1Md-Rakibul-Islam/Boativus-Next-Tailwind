@@ -1,6 +1,7 @@
 import { usePathname } from "next/navigation";
 import { headerProps } from "@/config/types";
 import { ArrowRight } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const HeaderBannerTwo = ({ headerData }: { headerData: headerProps }) => {
   const path = usePathname();
@@ -53,17 +54,17 @@ const HeaderBannerTwo = ({ headerData }: { headerData: headerProps }) => {
           </ul>
         </div>
       </div>
-      <img
+      <Image
         draggable="false"
         className="xxl:w-[500px] xxl:h-[500px] md:w-[300px] md:h-[300px] md:block hidden absolute -left-[6%] -bottom-24 animate-spin-slow opacity-[0.3]"
-        src="../media/icons/gallery-star-cercel.png"
+        src="/media/icons/gallery-star-cercel.png"
         alt="img"
       />
       <div className="md:block hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <img
+        <Image
           draggable="false"
           className="xxl:w-[500px] xxl:h-[500px] md:w-[320px] md:h-[320px] animate-spin-slow opacity-[0.16] rotate-180"
-          src="../media/icons/gallery-star-cercel.png"
+          src="/media/icons/gallery-star-cercel.png"
           alt="img"
         />
       </div>

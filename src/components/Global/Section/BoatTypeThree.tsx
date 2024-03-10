@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 // My modules
 import { boatsTypes } from "@public/data/boatsTypes";
+import Image from "next/image";
 
 const BoatTypeThree = () => {
   return (
@@ -67,7 +68,7 @@ const BoatTypeThree = () => {
             <SwiperSlide key={idx}>
               <div className="w-full border border-[#A88A69] p-2 relative">
                 <div className="relative z-[2] bg-white hover:bg-[#F2EBE2] my-transition p-[18px] rounded-10 flex-center">
-                  <img
+                  <Image
                     className="w-[106px] h-[106px]"
                     src={item?.image}
                     alt="icon"

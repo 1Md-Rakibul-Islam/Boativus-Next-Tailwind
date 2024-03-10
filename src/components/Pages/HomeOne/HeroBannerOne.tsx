@@ -78,7 +78,7 @@ const HeroBannerOne = () => {
   };
 
   return (
-    <section className="bg-blue-B300 sm:bg-[url('../media/images/heroBannerImg1.1.png')] bg-no-repeat bg-[100%_100%] bg-cover">
+    <section className="bg-blue-B300 sm:bg-[url('/media/images/heroBannerImg1.1.png')] bg-no-repeat bg-[100%_100%] bg-cover">
       <div className="relative w-full xxl:pt-72 xl:pt-60 lg:pt-56 md:pt-44 pt-32">
         <div className="container relative z-[1] xxl:pb-[190px] xl:pb-40 lg:pb-32 md:pb-24 sm:pb-20 pb-16">
           <FadeUp>

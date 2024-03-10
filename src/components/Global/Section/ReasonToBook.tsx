@@ -16,7 +16,7 @@ import FadeUp from "@/motion/FadeUp";
 
 const ReasonToBook = () => {
   return (
-    <section className="section-pt bg-blue-B900 bg-[url('../media/images/reason-to-book-yachtBG.png')] bg-no-repeat bg-cover md:bg-center bg-left relative">
+    <section className="section-pt bg-blue-B900 bg-[url('/media/images/reason-to-book-yachtBG.png')] bg-no-repeat bg-cover md:bg-center bg-left relative">
       <div className="container relative xl:pb-[132px] lg:mb-0 gap-mb-64">
         <div className="lg:section-pb grid grid-cols-12">
           <div className="xxl:col-span-6 xl:col-span-7 lg:col-span-8 md:col-span-9 col-span-12">

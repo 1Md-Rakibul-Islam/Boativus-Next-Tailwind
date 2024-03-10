@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const BlogsThree = () => {
   return (
@@ -30,7 +31,7 @@ const BlogsThree = () => {
               className="overflow-hidden mb-6 block"
             >
               <FadeUp className="relative group">
-                <img
+                <Image
                   className="w-full min-h-fit h-auto group-hover:scale-110 my-transition"
                   src={item?.image}
                   alt="blog"

@@ -29,7 +29,7 @@ const HomePageOne = () => {
         <TestimonialsOne />
         <BlogsOne />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };

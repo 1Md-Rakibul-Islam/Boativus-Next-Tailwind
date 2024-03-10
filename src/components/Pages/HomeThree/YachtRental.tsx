@@ -11,6 +11,7 @@ import { yachtsRental } from "@public/data/yachtsRental";
 import Link from "next/link";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const YachtRental = () => {
   return (
@@ -80,7 +81,7 @@ const YachtRental = () => {
               {yachtsRental?.map((item, idx) => (
                 <SwiperSlide key={idx} className="gap-mb-64">
                   <div className="relative max-h-[698px] min-h-fit">
-                    <img
+                    <Image
                       className="w-full md:min-h-[440px] min-h-[400px] h-full lg:pb-16 md:pb-14 sm:pb-12 pb-10"
                       src={item?.image}
                       alt="img"

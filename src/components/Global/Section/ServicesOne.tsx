@@ -12,6 +12,7 @@ import { ArrowCircleRight, Star } from "@phosphor-icons/react";
 import { services } from "@public/data/services";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 // My modules
 
 interface sectionHeaderType {
@@ -105,7 +106,7 @@ const ServicesOne = ({
               <SwiperSlide key={idx}>
                 <div className="relative">
                   <div className="relative group">
-                    <img
+                    <Image
                       className="w-full max-h-[768px] h-full"
                       src={item?.image}
                       alt="service"

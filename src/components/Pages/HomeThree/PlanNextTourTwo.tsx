@@ -9,7 +9,7 @@ import "react-modal-video/css/modal-video.min.css";
 const PlanNextTourTwo = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="relative section-pt bg-[url('../media/images/plan-next-tourBG2.png')] bg-no-repeat bg-cover bg-white">
+    <section className="relative section-pt bg-[url('/media/images/plan-next-tourBG2.png')] bg-no-repeat bg-cover bg-white">
       <div className="container">
         <div className="section-pb grid grid-cols-12 my-gap-24 relative z-[1]">
           <div className="xl:col-span-8 lg:col-span-9 col-span-12 lg:mb-0 gap-mb-32 md:text-left text-center">
@@ -49,7 +49,7 @@ const PlanNextTourTwo = () => {
           </div>
           <div className="xl:col-span-4 lg:col-span-3 col-span-12 flex-center">
             <div className="relative">
-              <div className="bg-[url('../media/icons/watch-tour-btn-ring.png')] bg-no-repeat bg-center bg-contain md:w-[264px] md:h-[264px] sm:w-[240px] sm:h-[240px] w-[200px] h-[200px]">
+              <div className="bg-[url('/media/icons/watch-tour-btn-ring.png')] bg-no-repeat bg-center bg-contain md:w-[264px] md:h-[264px] sm:w-[240px] sm:h-[240px] w-[200px] h-[200px]">
                 <button
                   onClick={() => setOpen(true)}
                   className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 popup-video btn_effect"

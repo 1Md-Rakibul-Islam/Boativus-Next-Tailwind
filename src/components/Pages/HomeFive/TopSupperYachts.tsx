@@ -13,6 +13,7 @@ import { yachts } from "@public/data/yachts";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const TopSupperYachts = () => {
   const currentYear = new Date().getFullYear();
@@ -72,15 +73,16 @@ const TopSupperYachts = () => {
           {yachts?.slice(7, 11)?.map((item, idx) => (
             <SwiperSlide key={idx} className="swiper-slide">
               <div className="relative">
-                <img
+                <Image
                   className="w-full lg:pb-16 md:pb-14 sm:pb-12 pb-10"
                   src={item?.image[0]}
                   alt="img"
                 />
                 <div className="absolute sm:left-auto left-0 right-0 bottom-0 p-24px bg-white">
                   <div className="flex-centerY gap-2 text-18 text-blue-B200 font-normal pb-2 border-b border-[#DFE0E5] gap-mb-24">
-                    <span>{item?.length}"</span>.<span>{item?.size}m</span>.
-                    <span>Turquoise</span>.<span>{currentYear}</span>
+                    <span>{item?.length}&ldquo;</span>.
+                    <span>{item?.size}m</span>.<span>Turquoise</span>.
+                    <span>{currentYear}</span>
                   </div>
                   <h5 className="text-18 font-semibold text-blue-B900 gap-mb-24">
                     Turquoise €{item?.price}

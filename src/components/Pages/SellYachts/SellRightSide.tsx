@@ -2,6 +2,7 @@ import { ArrowCircleRight, ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { yachtType } from "@/config/types";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 
 const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
   return (
@@ -10,7 +11,7 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
         {yachts?.map((item, idx) => (
           <FadeUp key={idx}>
             <div className="overflow-hidden relative group w-full">
-              <img
+              <Image
                 className="w-full sm:h-[478px] h-[420px] min-h-fit object-cover group-hover:scale-110 my-transition"
                 src={item?.image[0]}
                 alt="blog"
@@ -43,17 +44,17 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                   <div className="flex justify-between items-center sm:divide-x divide-white text-16 text-white gap-mb-40">
                     <div className="w-full z-[1] text-left">
                       <div className="flex-centerY gap-2 mb-2">
-                        <img
+                        <Image
                           className="w-4 h-4"
-                          src="../media/icons/yachts-feachers-icon1.png"
+                          src="/media/icons/yachts-feachers-icon1.png"
                           alt="icon"
                         />
                         <h6 className="text-16 text-white">Unlimited Drinks</h6>
                       </div>
                       <div className="flex-centerY gap-2">
-                        <img
+                        <Image
                           className="w-4 h-4"
-                          src="../media/icons/yachts-feachers-icon2.png"
+                          src="/media/icons/yachts-feachers-icon2.png"
                           alt="icon"
                         />
                         <h6 className="text-16 text-white">Crew Included</h6>
@@ -61,15 +62,15 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                     </div>
                     <div className="w-full z-[1] text-left xxl:pl-6 xl:pl-5 lg:xl:pl-4 sm:pl-3 pl-2.5">
                       <div className="flex-centerY gap-2 mb-2">
-                        <img
-                          src="../media/icons/yachts-feachers-icon3.png"
+                        <Image
+                          src="/media/icons/yachts-feachers-icon3.png"
                           alt="icon"
                         />
                         <h6 className="text-16 text-white">Jetski Available</h6>
                       </div>
                       <div className="flex-centerY gap-2">
-                        <img
-                          src="../media/icons/yachts-feachers-icon4.png"
+                        <Image
+                          src="/media/icons/yachts-feachers-icon4.png"
                           alt="icon"
                         />
                         <h6 className="text-16 text-white">Live Chef</h6>

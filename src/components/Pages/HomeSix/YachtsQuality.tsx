@@ -1,5 +1,6 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight, Checks } from "@phosphor-icons/react";
+import Image from "next/image";
 
 const YachtsQuality = () => {
   return (
@@ -9,9 +10,9 @@ const YachtsQuality = () => {
           <div className="xl:col-start-1 xxl:col-end-6 xl:col-end-7 flex justify-end xl:order-1 order-2 h-full xxl:mr-0 xl:mr-5 mr-0">
             <div className="relative">
               <div className="overflow-hidden">
-                <img
+                <Image
                   className="xl:max-w-[unset] min-h-[400px] object-cover hover:scale-110 my-transition"
-                  src="../media/images/why-boutivus.png"
+                  src="/media/images/why-boutivus.png"
                   alt=""
                 />
               </div>

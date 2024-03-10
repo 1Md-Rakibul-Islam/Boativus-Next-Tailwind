@@ -3,6 +3,7 @@ import { ArrowCircleRight } from "@phosphor-icons/react";
 import pricing1 from "@public/media/images/pricing1.png";
 import pricing2 from "@public/media/images/pricing2.png";
 import pricing3 from "@public/media/images/pricing3.png";
+import Image from "next/image";
 
 const Pricing = () => {
   const pricingData = [
@@ -70,7 +71,7 @@ const Pricing = () => {
             >
               <div>
                 <div className="overflow-hidden">
-                  <img
+                  <Image
                     className="w-full object-cover hover:scale-110 my-transition"
                     src={item?.image}
                     alt=""

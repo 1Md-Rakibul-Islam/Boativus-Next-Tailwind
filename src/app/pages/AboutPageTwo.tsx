@@ -21,7 +21,7 @@ const AboutPageTwo = () => {
   const headerData: headerProps = {
     title: "About Us",
     bgImgClasses:
-      "bg-[url('../media/images/aboutHeaderBG.png')] bg-no-repeat bg-cover bg-center",
+      "bg-[url('/media/images/aboutHeaderBG.png')] bg-no-repeat bg-cover bg-center",
     navLinks,
   };
 
@@ -39,7 +39,7 @@ const AboutPageTwo = () => {
         <BlogsTwo />
         <GalleryTwo />
       </main>
-      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };
