@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { playfair_display, barlow, montserrat } from "@/config/font";
-import { CustomCursor, NavBar, ScrollToTop } from "@/components/Global/UI";
+import { playfair_display, barlow, montserrat } from "@/config/fonts";
+import { CustomCursor, ScrollToTop } from "@/components/Global/UI";
 
 export const metadata: Metadata = {
   title: "Xmiro - Gaming Studio Next.js & Tailwind CSS Template",
@@ -17,9 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair_display?.variable} ${montserrat?.variable} ${barlow?.variable}`}
+      // className={`${playfair_display?.variable} ${montserrat?.variable} ${barlow?.variable}`}
       >
-        <NavBar />
         {children}
         <CustomCursor />
         <ScrollToTop />

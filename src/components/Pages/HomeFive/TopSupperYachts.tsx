@@ -11,7 +11,7 @@ import { Autoplay, FreeMode } from "swiper/modules";
 
 import { yachts } from "@public/data/yachts";
 import { ArrowCircleRight } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 
 const TopSupperYachts = () => {
@@ -86,7 +86,7 @@ const TopSupperYachts = () => {
                     Turquoise €{item?.price}
                   </h5>
                   <Link
-                    to={`/yachts/${item?.id}`}
+                    href={`/yachts/${item?.id}`}
                     className="text-brown-B300 hover:text-blue-B900 text-18 font-semibold flex-centerY gap-2.5 my-transition"
                   >
                     Buy now
@@ -99,7 +99,7 @@ const TopSupperYachts = () => {
         </Swiper>
         <div className="flex-center">
           <Link
-            to="/sell"
+            href="/sell"
             className="btn flex-centerY gap-2 text-white hover:text-blue-B900 bg-blue-B700 hover:bg-brown-B300 group"
           >
             Yachts for Sale

@@ -11,7 +11,7 @@ import {
   MapPinLine,
 } from "@phosphor-icons/react";
 import { buyYachts } from "@public/data/buyYachts";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 
 const sortType = [
@@ -36,7 +36,7 @@ const BuyYachts = () => {
           <div className="flex-centerY">
             <p className="text-18 text-white">
               <span>{buyYachts?.length}</span> items found for
-              <span className="text-brown-B300"> "Boats"</span>
+              <span className="text-brown-B300"> &ldquo;Boats&ldquo;</span>
             </p>
           </div>
           <div className="flex-centerY gap-2">
@@ -108,7 +108,7 @@ const BuyYachts = () => {
                       {item?.boatType}
                     </h5>
                     <Link
-                      to={`/yachts/${item?.id}`}
+                      href={`/yachts/${item?.id}`}
                       className="inline-block text-24 text-blue-B900 hover:text-brown-B500 my-transition font-playfair gap-mb-16"
                     >
                       {item?.title}
@@ -147,7 +147,7 @@ const BuyYachts = () => {
                       Year Built {item?.built}
                     </span>
                     <Link
-                      to={`/yachts/${item?.id}`}
+                      href={`/yachts/${item?.id}`}
                       className="sm:py-3 py-2.5 xxl:px-8 xl:px-6 lg:px-4 px-3 text-center text-18 rounded-10 bg-blue-B700 hover:bg-brown-B300 hover:text-blue-B900 text-white font-semibold block"
                     >
                       Show offer

@@ -1,5 +1,5 @@
 import { blogs } from "@public/data/blogs";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const BlogSidebar = () => {
   const popularBlog = blogs?.filter((blogs) => blogs?.category === "popular");
@@ -14,7 +14,7 @@ const BlogSidebar = () => {
           {blogCategories?.map((item, idx) => (
             <Link
               key={idx}
-              to="/blogs"
+              href="/blogs"
               className="block hover:text-brown-B300 my-transition text-18 text-white px-6 py-4"
             >
               {item}
@@ -31,7 +31,7 @@ const BlogSidebar = () => {
           {popularBlog?.map((item, idx) => (
             <Link
               key={idx}
-              to={`/blogs/${item?.id}`}
+              href={`/blogs/${item?.id}`}
               className="group flex-centerY gap-4 my-transition text-18 text-white px-6 py-4"
             >
               <img
@@ -59,31 +59,31 @@ const BlogSidebar = () => {
         </div>
         <div className="p-24px bg-blue-B800 rounded-b-lg flex flex-wrap gap-3">
           <Link
-            to="/blogs"
+            href="/blogs"
             className="btn-2 hover:bg-brown-B300 bg-blue-B900 text-white hover:text-blue-B900"
           >
             Travel
           </Link>
           <Link
-            to="/blogs"
+            href="/blogs"
             className="btn-2 hover:bg-brown-B300 bg-blue-B900 text-white hover:text-blue-B900"
           >
             Yachts
           </Link>
           <Link
-            to="/blogs"
+            href="/blogs"
             className="btn-2 hover:bg-brown-B300 bg-blue-B900 text-white hover:text-blue-B900"
           >
             Tours
           </Link>
           <Link
-            to="/blogs"
+            href="/blogs"
             className="btn-2 hover:bg-brown-B300 bg-blue-B900 text-white hover:text-blue-B900"
           >
             Destinations
           </Link>
           <Link
-            to="/blogs"
+            href="/blogs"
             className="btn-2 hover:bg-brown-B300 bg-blue-B900 text-white hover:text-blue-B900"
           >
             Rental

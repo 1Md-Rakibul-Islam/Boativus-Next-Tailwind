@@ -1,5 +1,5 @@
 import { ArrowCircleRight } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const NotFound = () => {
   return (
@@ -11,7 +11,7 @@ const NotFound = () => {
           </h1>
           <h2 className="text-57 gap-mb-40">Oops, Something Went Wrong !</h2>
           <Link
-            to="/"
+            href="/"
             className="btn bg-blue-B400 hover:bg-brown-B300 text-white hover:text-blue-B900 inline-flex items-center gap-2"
           >
             Back to Home

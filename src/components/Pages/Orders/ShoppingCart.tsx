@@ -3,7 +3,7 @@
 import { CaretRight, Minus, Plus, X } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const ShoppingCart = () => {
   //   const orders = yachts?.slice(0, 3);
@@ -85,7 +85,7 @@ const ShoppingCart = () => {
                 </div>
                 <div className="pro-data w-full max-w-sm ">
                   <Link
-                    to={`/yachts/${item?.id}`}
+                    href={`/yachts/${item?.id}`}
                     className="font-semibold text-xl leading-8 text-black max-[550px]:text-center"
                   >
                     {item?.title}
@@ -171,7 +171,7 @@ const ShoppingCart = () => {
         </div>
         <div className="flex items-center flex-col sm:flex-row justify-center gap-3 mt-8">
           <Link
-            to="/sell-yacht"
+            href="/sell-yacht"
             className="rounded-full py-4 w-full max-w-[280px]  flex items-center bg-brown-B75 justify-center my-transition hover:bg-brown-B200"
           >
             <span className="px-2 font-semibold text-lg leading-8 text-blue-B900">
@@ -180,7 +180,7 @@ const ShoppingCart = () => {
             <CaretRight className="icon-24" />
           </Link>
           <Link
-            to="#"
+            href="#"
             className="rounded-full w-full max-w-[280px] py-4 text-center justify-center items-center bg-blue-B900 font-semibold text-lg text-white flex my-transition hover:bg-blue-B600"
           >
             Continue to Payment

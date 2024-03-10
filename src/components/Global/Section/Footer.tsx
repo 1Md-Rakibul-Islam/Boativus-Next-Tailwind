@@ -7,7 +7,7 @@ import {
   LinkedinLogo,
   TwitterLogo,
 } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Preloader from "../UI/Preloader";
 
 const Footer = ({ bgStyle }: { bgStyle: string }) => {
@@ -19,7 +19,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
         <div className="container">
           <div className="section-pt">
             <div className="flex flex-col sm:flex-row justify-between sm:items-center my-gap-32 gap-mb-60">
-              <Link to="/">
+              <Link href="/">
                 <img src="../media/icons/logo.png" alt="logo" />
               </Link>
               <div className="flex-centerY my-gap-24">
@@ -69,13 +69,13 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
                 <ul className="text-18 text-white list-inside grid md:gap-4 sm:gap-3 gap-2.5">
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/about-1" className="my-transition">
+                    <Link href="/about-1" className="my-transition">
                       About Us
                     </Link>
                   </li>
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/services" className="my-transition">
+                    <Link href="/services" className="my-transition">
                       Our Services
                     </Link>
                   </li>
@@ -87,7 +87,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
                   </li>
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/yachts" className="my-transition">
+                    <Link href="/yachts" className="my-transition">
                       Yatch Rent
                     </Link>
                   </li>
@@ -98,25 +98,25 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
                 <ul className="text-18 text-white list-inside grid md:gap-4 sm:gap-3 gap-2.5">
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/sell-yacht" className="my-transition">
+                    <Link href="/sell-yacht" className="my-transition">
                       Shop
                     </Link>
                   </li>
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/contact-us" className="my-transition">
+                    <Link href="/contact-us" className="my-transition">
                       Contact
                     </Link>
                   </li>
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/yachts" className="my-transition">
+                    <Link href="/yachts" className="my-transition">
                       Yatch
                     </Link>
                   </li>
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/blogs/20" className="my-transition">
+                    <Link href="/blogs/20" className="my-transition">
                       Blog Details
                     </Link>
                   </li>
@@ -127,13 +127,13 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
                 <ul className="text-18 text-white list-inside grid md:gap-4 sm:gap-3 gap-2.5">
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/blogs" className="my-transition">
+                    <Link href="/blogs" className="my-transition">
                       Our Blogs
                     </Link>
                   </li>
                   <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                     <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                    <Link to="/contact-us" className="my-transition">
+                    <Link href="/contact-us" className="my-transition">
                       Terms & Condition
                     </Link>
                   </li>

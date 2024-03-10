@@ -13,7 +13,7 @@ import {
   Scrollbar,
 } from "swiper/modules";
 // My modules
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { countries } from "@public/data/countries";
 import FadeUp from "@/motion/FadeUp";
@@ -37,7 +37,7 @@ const PopularCountries = () => {
           </FadeUp>
           <div className="lg:flex hidden items-end">
             <Link
-              to="/yachts"
+              href="/yachts"
               className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900 flex-centerY gap-2 "
             >
               View All
@@ -104,7 +104,7 @@ const PopularCountries = () => {
                       {item?.title}
                     </h5>
                     <Link
-                      to={`/yachts/${item?.id}`}
+                      href={`/yachts/${item?.id}`}
                       className="text-white flex-centerY gap-2.5 translate-y-[1000px] group-hover:translate-y-0 my-transition"
                     >
                       Book now
@@ -122,7 +122,7 @@ const PopularCountries = () => {
         </div>
         <div className="flex justify-center lg:hidden">
           <Link
-            to="/yachts"
+            href="/yachts"
             className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900 flex-centerY gap-2 "
           >
             View All

@@ -21,7 +21,7 @@ import {
 import img1 from "@public/media/images/home3-hero-banner1.png";
 import img2 from "@public/media/images/home3-hero-banner2.png";
 import img3 from "@public/media/images/home3-hero-banner3.png";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 import FadeDown from "@/motion/FadeDown";
 import FadeLeft from "@/motion/FadeLeft";
@@ -168,7 +168,7 @@ const HomeTwoBanner = () => {
                       </p>
                     </FadeRight>
                     <Link
-                      to="/buy-yacht"
+                      href="/buy-yacht"
                       className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
                     >
                       Book Now

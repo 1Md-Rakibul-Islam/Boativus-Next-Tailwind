@@ -1,7 +1,7 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleDown } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const DealOfWeek = () => {
   return (
@@ -35,7 +35,7 @@ const DealOfWeek = () => {
               </h4>
             </FadeUp>
             <Link
-              to="/sell"
+              href="/sell"
               className="btn bg-blue-B700 group text-white inline-flex items-center gap-2.5 my-transition whitespace-nowrap"
             >
               Reserve

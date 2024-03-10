@@ -1,7 +1,7 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { blogs } from "@public/data/blogs";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const BlogsSix = () => {
   return (
@@ -21,7 +21,7 @@ const BlogsSix = () => {
           {blogs?.slice(3, 12)?.map((item, idx) => (
             <Link
               key={idx}
-              to={`/blogs/${item?.id}`}
+              href={`/blogs/${item?.id}`}
               className="relative group overflow-hidden"
             >
               <img

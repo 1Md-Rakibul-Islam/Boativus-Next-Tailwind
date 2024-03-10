@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import CounterElement from "../../Global/UI/CounterElement";
 import { ArrowDown } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
@@ -72,14 +72,14 @@ const JoinUs = () => {
                 </p>
                 <div className="flex-centerY my-gap-24">
                   <Link
-                    to="/buy-yacht"
+                    href="/buy-yacht"
                     className="btn hover:text-blue-B900 text-white bg-blue-B700 hover:bg-brown-B300"
                   >
                     Book now
                   </Link>
                   <Link
                     className=" bg-blue-B700 hover:bg-brown-B300 md:w-16 md:h-16 sm:w-14 sm:h-14 w-11 h-11 flex-center rounded-full group"
-                    to="./yachts"
+                    href="./yachts"
                   >
                     <ArrowDown className="icon-24 text-2xl group-hover:text-blue-B900 text-white group-hover:-rotate-90 my-transition" />
                   </Link>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import FadeUp from "@/motion/FadeUp";
 
@@ -25,7 +25,7 @@ const BlogsThree = () => {
         <div id="dynamic-size-photos">
           {blogs?.slice(3, 8)?.map((item, idx) => (
             <Link
-              to={`/blogs/${item?.id}`}
+              href={`/blogs/${item?.id}`}
               key={idx}
               className="overflow-hidden mb-6 block"
             >
@@ -59,7 +59,7 @@ const BlogsThree = () => {
           ))}
         </div>
         <div className="md:hidden flex-center">
-          <Link to="/blogs" className="btn bg-blue-B800 text-white">
+          <Link href="/blogs" className="btn bg-blue-B800 text-white">
             View All Blog
           </Link>
         </div>

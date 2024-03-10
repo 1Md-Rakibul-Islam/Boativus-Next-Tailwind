@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import { ArrowRight, Calendar, User } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
@@ -18,7 +18,7 @@ const BlogsOne = () => {
           </FadeUp>
           <div className="md:flex hidden items-end">
             <Link
-              to="/blogs"
+              href="/blogs"
               className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
             >
               View All Blog
@@ -66,7 +66,7 @@ const BlogsOne = () => {
                   </p>
                   <div className="bg-blue-B50 w-full h-[1px] gap-mb-28"></div>
                   <Link
-                    to={`/blogs/${item?.id}`}
+                    href={`/blogs/${item?.id}`}
                     className="text-18 text-blue-B800 hover:text-brown-B300 flex items-center sm:gap-2 gap-1.5 group my-transition"
                   >
                     Read more
@@ -77,7 +77,7 @@ const BlogsOne = () => {
             ))}
           </div>
           <div className="md:hidden flex-center">
-            <Link to="/blogs" className="btn bg-blue-B800 text-white">
+            <Link href="/blogs" className="btn bg-blue-B800 text-white">
               View All Blog
             </Link>
           </div>

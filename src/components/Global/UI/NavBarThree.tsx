@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 import { navMenu } from "@public/data/navMenu";
 import {
   CaretDown,
@@ -14,7 +14,7 @@ import { useDropdown } from "@/hooks";
 import AnimateHeight from "react-animate-height";
 
 const NavBarThree = () => {
-  const { pathname } = useLocation();
+  const path = usePathname();
   const [toggle, setToggle] = useState<number | null>(null);
   const [hamburgerToggle, setHamburgerToggle] = useState(false);
   const [height, setHeight] = useState<string | number>(0);
@@ -71,11 +71,9 @@ const NavBarThree = () => {
 
   const isMenuActive = (menu: MenuItem) => {
     if (menu.isSubMenu && menu.subMenu) {
-      return menu.subMenu.some(
-        (submenu: SubMenuItem) => pathname === submenu.link
-      );
+      return menu.subMenu.some((submenu: SubMenuItem) => path === submenu.link);
     }
-    return pathname === menu.link;
+    return path === menu.link;
   };
 
   return (
@@ -91,7 +89,7 @@ const NavBarThree = () => {
         <div className="w-full xxl:px-[60px] xl:px-10 lg:px-8 md:px-7 sm:px-6 px-4 relative">
           <div className="flex items-center justify-between gap-x-2 mx-auto lg:py-6 md:py-5 sm:py-5 py-3.5">
             <nav className="w-full xl:flex justify-between items-center text-black hidden text-semibold">
-              <Link to="/">
+              <Link href="/">
                 <img
                   className="w-[142px] h-[34px]"
                   src="../media/icons/logo.png"
@@ -115,7 +113,7 @@ const NavBarThree = () => {
                           <CaretDown className="ml-2 text-xl group-hover:text-brown-B300 group-hover:-rotate-180 my-transition" />
                         </>
                       ) : (
-                        <Link to={menu.link!}>{menu?.name}</Link>
+                        <Link href={menu.link!}>{menu?.name}</Link>
                       )}
 
                       {menu?.isSubMenu && (
@@ -126,12 +124,10 @@ const NavBarThree = () => {
                             <li
                               key={id}
                               className={` ${
-                                pathname === link
-                                  ? "text-brown-B300"
-                                  : "text-white"
+                                path === link ? "text-brown-B300" : "text-white"
                               } hover:text-brown-B300 w-full hover:translate-x-1 my-transition`}
                             >
-                              <Link to={link}>{name}</Link>
+                              <Link href={link}>{name}</Link>
                             </li>
                           ))}
                         </ul>
@@ -141,7 +137,7 @@ const NavBarThree = () => {
                 </ul>
               </div>
               <div className="flex items-center flex-wrap gap-5 relative">
-                <Link to="/orders" className="relative">
+                <Link href="/orders" className="relative">
                   <Handbag className="text-3xl text-white" />
                   <span className="absolute bottom-0.5 -right-0.5 w-4 h-4 rounded-full flex-center bg-brown-B300  text-xs text-white">
                     2
@@ -176,7 +172,7 @@ const NavBarThree = () => {
                   </div>
                 </div>
                 <Link
-                  to="/register"
+                  href="/register"
                   className="btn bg-[#212B4EC2] hover:bg-brown-B300 hover:text-blue-B900 text-white"
                 >
                   Sign Up
@@ -186,7 +182,7 @@ const NavBarThree = () => {
             {/* Mobail Menu start */}
             <nav className="w-full flex justify-between items-center text-black xl:hidden">
               <div className="relative">
-                <Link to="/">
+                <Link href="/">
                   <img
                     className="w-[142px] h-[34px]"
                     src="../media/icons/logo.png"
@@ -200,7 +196,7 @@ const NavBarThree = () => {
                 >
                   <div className="relative flex justify-between items-center w-full">
                     <Link
-                      to="/"
+                      href="/"
                       onClick={() => setHamburgerToggle((prev) => !prev)}
                       className="sm:hidden block"
                     >
@@ -263,9 +259,9 @@ const NavBarThree = () => {
                               </span>
                             ) : (
                               <Link
-                                to={menu.link!}
+                                href={menu.link!}
                                 className={`${
-                                  pathname === menu.link
+                                  path === menu.link
                                     ? "text-brown-B300"
                                     : "text-white"
                                 } text-24 hover:text-brown-B300 my-transition border-brown-B100 w-full pb-5`}
@@ -291,10 +287,10 @@ const NavBarThree = () => {
                                     className="pb-3"
                                   >
                                     <Link
-                                      to={subItem?.link}
+                                      href={subItem?.link}
                                       aria-label="item"
                                       className={`${
-                                        pathname === subItem?.link
+                                        path === subItem?.link
                                           ? "text-brown-B300"
                                           : "text-white"
                                       } text-20 hover:text-brown-B300 my-transition `}
@@ -313,14 +309,14 @@ const NavBarThree = () => {
                     <div className="md:col-span-4 flex flex-col justify-between my-gap-24">
                       <div className="sm:block hidden">
                         <div className="flex-centerY justify-between gap-2 gap-mb-20">
-                          <Link to="/">
+                          <Link href="/">
                             <img
                               className="w-[142px] h-[34px]"
                               src="../media/icons/logo.png"
                               alt="boativus"
                             />
                           </Link>
-                          <Link to="/orders" className="relative">
+                          <Link href="/orders" className="relative">
                             <Handbag className="text-3xl text-white" />
                             <span className="absolute bottom-0.5 -right-0.5 w-4 h-4 rounded-full flex-center bg-blue-B500  text-xs text-white">
                               2
@@ -359,7 +355,7 @@ const NavBarThree = () => {
                           <span className="text-left mb-1.5 block">
                             Call us:
                           </span>
-                          <Link to="tel:+0327888111" className="block">
+                          <Link href="tel:+0327888111" className="block">
                             +0327 888 111
                           </Link>
                         </div>
@@ -369,7 +365,7 @@ const NavBarThree = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between gap-4 md:gap-5">
-                <Link to="/orders" className="hidden md:block relative">
+                <Link href="/orders" className="hidden md:block relative">
                   <Handbag className="text-3xl text-white" />
                   <span className="absolute bottom-0.5 -right-0.5 w-4 h-4 rounded-full flex-center bg-blue-B500  text-xs text-white">
                     2
@@ -404,7 +400,7 @@ const NavBarThree = () => {
                   </div>
                 </div>
                 <Link
-                  to="/register"
+                  href="/register"
                   className="hidden md:block btn bg-[#212B4EC2] hover:bg-brown-B300 hover:text-blue-B900 text-white"
                 >
                   Sign Up

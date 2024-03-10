@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
@@ -30,7 +30,7 @@ const BlogsFive = () => {
               </div>
               <div>
                 <Link
-                  to={`/blogs/${item?.id}`}
+                  href={`/blogs/${item?.id}`}
                   className="btn group inline-flex items-center gap-2 hover:text-blue-B900 text-white bg-blue-B700 hover:bg-brown-B300"
                 >
                   Discover Now

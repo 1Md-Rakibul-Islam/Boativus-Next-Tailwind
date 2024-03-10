@@ -1,9 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 import { headerProps } from "@/config/types";
 import { ArrowRight } from "@phosphor-icons/react";
 
 const HeaderBannerTwo = ({ headerData }: { headerData: headerProps }) => {
-  const { pathname } = useLocation();
+  const path = usePathname();
   return (
     <section className="w-full  relative overflow-hidden">
       <div className={`${headerData?.bgImgClasses}`}>
@@ -12,17 +12,17 @@ const HeaderBannerTwo = ({ headerData }: { headerData: headerProps }) => {
           <ul className="flex sm:flex-nowrap flex-wrap gap-2 w-full relative z-[1]">
             {headerData?.navLinks?.map((link) => (
               <li key={link?.id}>
-                {link?.url === pathname || link.label === "Pages" ? (
+                {link?.url === path || link.label === "Pages" ? (
                   <span
                     className={`font-medium text-lg leading-6 flex items-center gap-2 my-transition ${
-                      pathname === link?.url && link.label === "Pages"
+                      path === link?.url && link.label === "Pages"
                         ? "text-white"
-                        : pathname !== link?.url && link.label === "Pages"
+                        : path !== link?.url && link.label === "Pages"
                         ? "text-white"
                         : "text-brown-B300 hover:text-brown-B300"
                     }`}
                   >
-                    {pathname === link?.url ? (
+                    {path === link?.url ? (
                       link?.label
                     ) : (
                       <>
@@ -32,14 +32,14 @@ const HeaderBannerTwo = ({ headerData }: { headerData: headerProps }) => {
                   </span>
                 ) : (
                   <Link
-                    to={link?.url}
+                    href={link?.url}
                     className={`${
-                      pathname === link?.url &&
+                      path === link?.url &&
                       link.label !== "Pages" &&
                       "text-brown-B300"
                     } font-medium text-lg leading-6 text-white  hover:text-brown-B300 flex items-center gap-2`}
                   >
-                    {pathname === link?.url ? (
+                    {path === link?.url ? (
                       link?.label
                     ) : (
                       <>

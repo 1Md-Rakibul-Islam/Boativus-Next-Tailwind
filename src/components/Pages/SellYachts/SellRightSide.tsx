@@ -1,6 +1,6 @@
 import { ArrowCircleRight, ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { yachtType } from "@/config/types";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 
 const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
@@ -15,7 +15,7 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                 src={item?.image[0]}
                 alt="blog"
               />
-              <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('../media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
+              <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('/media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
                 <div className="relative pt-5 px-2.5 pb-12 text-center text-white">
                   <h5 className="text-24">${item?.price}</h5>
                   <span className="text-16">Per Hour</span>
@@ -33,7 +33,7 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                       </h6>
                     </div>
                     <Link
-                      to={`/yachts/${item?.id}`}
+                      href={`/yachts/${item?.id}`}
                       className="text-18 group-hover:text-white text-blue-B900 my-transition flex-centerY gap-1 my-transition whitespace-nowrap"
                     >
                       Book now

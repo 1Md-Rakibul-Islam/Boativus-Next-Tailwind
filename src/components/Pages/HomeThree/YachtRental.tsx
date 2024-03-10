@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
 // My modules
 import { yachtsRental } from "@public/data/yachtsRental";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import FadeUp from "@/motion/FadeUp";
 
@@ -27,7 +27,7 @@ const YachtRental = () => {
           </FadeUp>
           <div className="xl:col-span-6 md:col-span-4 md:flex hidden justify-end items-end">
             <Link
-              to="/blogs"
+              href="/blogs"
               className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
             >
               View All Blogs
@@ -101,7 +101,7 @@ const YachtRental = () => {
       </div>
       <div className="flex-center md:hidden">
         <Link
-          to="/yachts"
+          href="/yachts"
           className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900 flex-centerY gap-2 "
         >
           View All Blogs

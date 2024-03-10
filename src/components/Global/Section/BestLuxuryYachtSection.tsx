@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Star } from "@phosphor-icons/react/dist/ssr";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
@@ -93,7 +93,7 @@ const BestLuxuryYachtSection = () => {
                   </p>
                   <div className="flex-centerY my-gap-24">
                     <Link
-                      to="/yachts/1"
+                      href="/yachts/1"
                       className="btn inline-flex items-center gap-2 hover:text-blue-B900 text-white bg-blue-B700 hover:bg-brown-B300"
                     >
                       Book now

@@ -10,7 +10,7 @@ import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
 
 import { ArrowCircleRight, Star } from "@phosphor-icons/react";
 import { services } from "@public/data/services";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 // My modules
 
@@ -127,7 +127,7 @@ const ServicesOne = ({
                         Adventure Trip
                       </h5>
                       <Link
-                        to={`/yachts/${item?.id}`}
+                        href={`/yachts/${item?.id}`}
                         className="text-white flex-centerY gap-2.5 translate-y-[1000px] group-hover:translate-y-0 my-transition"
                       >
                         Book now

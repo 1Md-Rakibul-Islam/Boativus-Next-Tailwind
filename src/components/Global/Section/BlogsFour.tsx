@@ -43,7 +43,7 @@ const BlogsFour = () => {
                   src={item?.image[0]}
                   alt="yachts"
                 />
-                <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('../media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
+                <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('/media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
                   <div className="relative pt-5 px-2.5 pb-12 text-center text-white">
                     <h5 className="text-24">${item?.price}</h5>
                     <span className="text-16">Per Hour</span>

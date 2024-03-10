@@ -11,7 +11,7 @@ import { ArrowLeft, ArrowRight, Check } from "@phosphor-icons/react";
 import img1 from "@public/media/images/home3-hero-banner1.png";
 import img2 from "@public/media/images/home3-hero-banner2.png";
 import img3 from "@public/media/images/home3-hero-banner3.png";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 
 const HomeThreeBanner = () => {
@@ -67,7 +67,7 @@ const HomeThreeBanner = () => {
               </li>
             </ul>
             <Link
-              to="/yachts"
+              href="/yachts"
               className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900 "
             >
               Book now

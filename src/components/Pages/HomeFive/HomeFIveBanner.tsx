@@ -1,7 +1,7 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight, ArrowDown } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const HomeFiveBanner = () => {
   return (
@@ -23,14 +23,14 @@ const HomeFiveBanner = () => {
             </FadeDown>
             <FadeUp className="flex-centerY lg:justify-start justify-center my-gap-24">
               <Link
-                to="/buy-yacht"
+                href="/buy-yacht"
                 className="btn hover:text-blue-B900 text-white bg-blue-B900 hover:bg-brown-B300"
               >
                 Get to know more
               </Link>
               <Link
                 className=" bg-blue-B900 hover:bg-brown-B300 md:w-16 md:h-16 sm:w-14 sm:h-14 w-11 h-11 flex-center rounded-full group"
-                to="/yachts"
+                href="/yachts"
               >
                 <ArrowDown className="icon-24 text-2xl group-hover:text-blue-B900 text-white group-hover:-rotate-90 my-transition" />
               </Link>
@@ -46,7 +46,7 @@ const HomeFiveBanner = () => {
                   Buying a Yacht?
                 </h5>
                 <Link
-                  to="/yachts"
+                  href="/yachts"
                   className="text-white hover:text-brown-B300 my-transition  text-18 flex-centerY gap-2.5"
                 >
                   Browse more
@@ -59,7 +59,7 @@ const HomeFiveBanner = () => {
                   Yacht Chartering?
                 </h5>
                 <Link
-                  to="/buy-yacht"
+                  href="/buy-yacht"
                   className="text-white hover:text-brown-B300 my-transition text-18 flex-centerY gap-2.5"
                 >
                   Browse more
@@ -72,7 +72,7 @@ const HomeFiveBanner = () => {
                   Selling a Yacht?
                 </h5>
                 <Link
-                  to="/sell"
+                  href="/sell"
                   className="text-white hover:text-brown-B300 my-transition text-18 flex-centerY gap-2.5"
                 >
                   Browse more

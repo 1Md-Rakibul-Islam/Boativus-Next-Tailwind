@@ -1,6 +1,6 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight, CalendarCheck, Timer } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const YachtOfferDetails = () => {
   return (
@@ -62,7 +62,7 @@ const YachtOfferDetails = () => {
               <span className="text-18 text-white opacity-50">€28,200</span>
             </div>
             <Link
-              to="/yachts"
+              href="/yachts"
               className="btn bg-blue-B700 group text-white flex-centerY gap-2.5 my-transition whitespace-nowrap"
             >
               Reserve

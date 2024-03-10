@@ -5,7 +5,7 @@ import {
   TwitchLogo,
 } from "@phosphor-icons/react";
 import { FormEvent } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Register = () => {
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
@@ -23,7 +23,7 @@ const Register = () => {
             />
 
             <div className="absolute top-[14%] left-[14%] z-[2] right-[8%]">
-              <Link to="/">
+              <Link href="/">
                 <img
                   src="../media/icons/logo.png"
                   className="w-[158px] h-auto gap-mb-60"
@@ -39,7 +39,7 @@ const Register = () => {
           </div>
           <div className="flex-center section-py">
             <div className="lg:px-10 px-5 max-w-[520px]">
-              <Link to="/" className="gap-mb-48 block lg:hidden">
+              <Link href="/" className="gap-mb-48 block lg:hidden">
                 <img
                   className="w-[148px] h-[38px]"
                   src="../media/icons/logo.png"
@@ -121,7 +121,7 @@ const Register = () => {
                         className="select-none cursor-pointer items-center text-18 text-white -mt-1"
                       >
                         I agree to all statements with{" "}
-                        <Link to="#" className="text-brown-B300">
+                        <Link href="#" className="text-brown-B300">
                           Terms of Use
                         </Link>
                       </label>
@@ -173,7 +173,7 @@ const Register = () => {
 
               <p className="text-18 text-white text-center">
                 Already a member?{" "}
-                <Link to="/login" className="text-brown-B300">
+                <Link href="/login" className="text-brown-B300">
                   Sign In
                 </Link>
               </p>

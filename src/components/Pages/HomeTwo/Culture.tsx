@@ -1,5 +1,5 @@
 import FadeUp from "@/motion/FadeUp";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Culture = () => {
   return (
@@ -18,7 +18,7 @@ const Culture = () => {
               </p>
 
               <Link
-                to="/about-1"
+                href="/about-1"
                 className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 border border-blue-B500 gap-mb-40"
               >
                 Explore now
@@ -40,7 +40,7 @@ const Culture = () => {
               </p>
 
               <Link
-                to="/our-team"
+                href="/our-team"
                 className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 border border-blue-B500 gap-mb-40"
               >
                 Explore now

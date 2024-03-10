@@ -1,7 +1,7 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight, ArrowLeft, ArrowRight } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Yachts = () => {
   // yachts slice
@@ -26,7 +26,7 @@ const Yachts = () => {
                   src={item?.image[0]}
                   alt="blog"
                 />
-                <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('../media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
+                <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('/media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
                   <div className="relative pt-5 px-2.5 pb-12 text-center text-white">
                     <h5 className="text-24">${item?.price}</h5>
                     <span className="text-16">Per Hour</span>
@@ -44,7 +44,7 @@ const Yachts = () => {
                         </h6>
                       </div>
                       <Link
-                        to={`/yachts/${item?.id}`}
+                        href={`/yachts/${item?.id}`}
                         className="text-18 group-hover:text-white text-blue-B900 my-transition flex-centerY gap-1 my-transition whitespace-nowrap"
                       >
                         Book now

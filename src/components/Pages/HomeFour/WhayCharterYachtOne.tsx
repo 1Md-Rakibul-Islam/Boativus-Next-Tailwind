@@ -9,7 +9,7 @@ import {
   MapPinLine,
   UsersThree,
 } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const WhayCharterYachtOne = () => {
   return (
@@ -140,14 +140,14 @@ const WhayCharterYachtOne = () => {
               </FadeUp>
               <div className="flex-centerY my-gap-24">
                 <Link
-                  to="/sell"
+                  href="/sell"
                   className="btn text-white hover:text-blue-B900 bg-blue-B700 hover:bg-brown-B300"
                 >
                   Book now
                 </Link>
                 <Link
                   className="text-white hover:text-blue-B900 bg-blue-B700 hover:bg-brown-B300 flex-center md:w-16 w-11 md:h-16 h-11 rounded-full group"
-                  to="/yachts"
+                  href="/yachts"
                 >
                   <ArrowDown className="text-2xl group-hover:-rotate-90 my-transition" />
                 </Link>

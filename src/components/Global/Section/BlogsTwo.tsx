@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import FadeUp from "@/motion/FadeUp";
 
@@ -21,7 +21,7 @@ const BlogsTwo = () => {
           </FadeUp>
           <div className="lg:col-span-4 lg:flex justify-end hidden items-end">
             <Link
-              to="/blogs"
+              href="/blogs"
               className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
             >
               View All Blog
@@ -32,7 +32,7 @@ const BlogsTwo = () => {
           {blogs?.slice(8, 11)?.map((item, idx) => (
             <Link
               key={idx}
-              to={`/blogs/${item?.id}`}
+              href={`/blogs/${item?.id}`}
               className="relative group overflow-hidden"
             >
               <img
@@ -68,7 +68,7 @@ const BlogsTwo = () => {
         </FadeUp>
         <div className="lg:hidden flex-center">
           <Link
-            to="/blogs"
+            href="/blogs"
             className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
           >
             View All Blog

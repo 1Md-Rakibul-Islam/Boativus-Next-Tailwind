@@ -33,7 +33,7 @@ const SellYachts = () => {
           <div className="flex-centerY">
             <p className="text-18 text-white">
               <span>{allYachts?.length}</span> items found for
-              <span className="text-brown-B300"> "Boats"</span>
+              <span className="text-brown-B300"> &ldquo;Boats&ldquo;</span>
             </p>
           </div>
           <div className="flex-centerY gap-2">

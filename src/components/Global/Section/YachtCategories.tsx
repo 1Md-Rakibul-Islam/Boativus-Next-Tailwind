@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -80,7 +80,7 @@ const YachtCategories = () => {
               <SwiperSlide key={idx}>
                 <div className="swiper-slide py-1">
                   <Link
-                    to={`/yachts`}
+                    href={`/yachts`}
                     className="bg-blue-B10 w-full h-full p-24px rounded-lg shadow-4 flex-center flex-col"
                   >
                     <img

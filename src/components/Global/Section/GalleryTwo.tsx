@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import { ArrowCircleRight } from "@phosphor-icons/react";
-import { galleryFive } from "../../../../dist/data/gallery";
+import { galleryFive } from "@public/data/gallery";
 // My modules
 
 const GalleryTwo = () => {

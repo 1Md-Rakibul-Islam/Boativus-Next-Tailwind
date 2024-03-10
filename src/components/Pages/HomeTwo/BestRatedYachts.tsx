@@ -1,7 +1,7 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { yachts } from "@public/data/yachts";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const BestRatedYachts = () => {
   const ratedYachts = yachts?.filter(
@@ -23,7 +23,7 @@ const BestRatedYachts = () => {
           </FadeUp>
           <div className="md:flex hidden items-end">
             <Link
-              to="/blogs"
+              href="/blogs"
               className="btn bg-blue-B800 hover:bg-brown-B300 my-transition text-white hover:text-blue-B900"
             >
               View All
@@ -39,7 +39,7 @@ const BestRatedYachts = () => {
                   src={item?.image[0]}
                   alt="yachts"
                 />
-                <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('../media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
+                <div className="absolute lg:left-5 md:left-4 left-3 top-0 bg-[url('/media/icons/priceRectangle.svg')] bg-no-repeat bg-cover">
                   <div className="relative pt-5 px-2.5 pb-12 text-center text-white">
                     <h5 className="text-24">${item?.price}</h5>
                     <span className="text-16">Per Hour</span>
@@ -52,7 +52,7 @@ const BestRatedYachts = () => {
                         {item?.title}
                       </h4>
                       <Link
-                        to={`/yachts/${item?.id}`}
+                        href={`/yachts/${item?.id}`}
                         className="text-18 group-hover:text-white text-blue-B900 my-transition flex-centerY gap-2.5 my-transition whitespace-nowrap"
                       >
                         Book now
@@ -93,7 +93,7 @@ const BestRatedYachts = () => {
           ))}
         </div>
         <div className="md:hidden flex-center items-end">
-          <Link to="/blogs" className="btn bg-blue-B800 text-white">
+          <Link href="/blogs" className="btn bg-blue-B800 text-white">
             View All Blog
           </Link>
         </div>

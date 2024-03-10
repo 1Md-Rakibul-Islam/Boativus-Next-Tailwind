@@ -10,7 +10,7 @@ import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
 // My modules
 import { ArrowCircleRight, CaretLeft, CaretRight } from "@phosphor-icons/react";
 import { services } from "@public/data/services";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";
 // Import Swiper React components
 
@@ -36,7 +36,7 @@ const ServicesThree = () => {
           </FadeUp>
           <div className="xl:col-span-2 xl:block hidden">
             <Link
-              to="/pricing-plans"
+              href="/pricing-plans"
               className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 flex-center whitespace-nowrap gap-2"
             >
               Choose a plan
@@ -129,7 +129,7 @@ const ServicesThree = () => {
           </Swiper>
           <div className="xl:hidden flex-center">
             <Link
-              to="/pricing-plans"
+              href="/pricing-plans"
               className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 inline-flex items-center whitespace-nowrap gap-2"
             >
               Choose a plan

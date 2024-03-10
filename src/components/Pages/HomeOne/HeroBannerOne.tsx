@@ -2,7 +2,7 @@
 
 import { Listbox } from "@headlessui/react";
 import { ArrowDown } from "@phosphor-icons/react/dist/ssr";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useDropdown } from "@/hooks";
 import { FormEvent, useState } from "react";
 import { CaretDown } from "@phosphor-icons/react";
@@ -93,14 +93,14 @@ const HeroBannerOne = () => {
               </p>
               <div className="flex-centerY sm:justify-start justify-center my-gap-24">
                 <Link
-                  to={"/buy"}
+                  href={"/buy"}
                   className="btn bg-blue-B900 hover:bg-brown-B300 text-white hover:text-blue-B900 bg-opacity-70 border border-blue-B900"
                 >
                   Book now
                 </Link>
                 <Link
                   className="bg-blue-B900 hover:bg-brown-B300 text-white hover:text-blue-B900 bg-opacity-70 md:w-16 sm:w-14 w-12 md:h-16 sm:h-14 h-12 flex-center rounded-full border border-blue-B900 group"
-                  to={"/yachts"}
+                  href={"/yachts"}
                 >
                   <ArrowDown className="text-2xl group-hover:-rotate-90 my-transition" />
                 </Link>

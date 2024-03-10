@@ -1,6 +1,6 @@
 import HomePageOne from './HomePageOne';
 import HomePageTwo from './HomePageTwo';
-import NotFound from './NotFound';
+import NotFound from '../NotFound';
 import HomePageThree from './HomePageThree';
 import HomePageFour from './HomePageFour';
 import HomePageFive from './HomePageFive';

@@ -1,15 +1,37 @@
-import BestLuxuryYacht from "@/components/Global/Section/BestLuxuryYacht";
-import { HeroBannerOne } from "@/components/Pages";
+import { NavBarOne } from "@/components/Global/UI";
+import {
+  AboutUsSection,
+  BestLuxuryYachtSection,
+  FaqOne,
+  Footer,
+  GalleryOne,
+  HeroBannerOne,
+  OurTeamOne,
+  PlanNextTourOne,
+  YachtCategories,
+  TestimonialsOne,
+  BlogsOne,
+} from "@/components/Pages";
 
-const HomeOne = () => {
+const HomePageOne = () => {
   return (
     <>
-      <main className="min-h-screen bg-black">
+      <NavBarOne />
+      <main>
         <HeroBannerOne />
-        <BestLuxuryYacht />
+        <AboutUsSection />
+        <BestLuxuryYachtSection />
+        <YachtCategories />
+        <PlanNextTourOne />
+        <FaqOne />
+        <GalleryOne />
+        <OurTeamOne />
+        <TestimonialsOne />
+        <BlogsOne />
       </main>
+      <Footer bgStyle="bg-[url('../media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };
 
-export default HomeOne;
+export default HomePageOne;

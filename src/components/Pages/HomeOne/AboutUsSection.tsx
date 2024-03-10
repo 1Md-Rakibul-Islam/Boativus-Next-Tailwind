@@ -9,7 +9,7 @@ import {
   PhoneCall,
   UsersThree,
 } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const AboutUsSection = () => {
   return (
@@ -67,7 +67,7 @@ const AboutUsSection = () => {
             </ul>
             <div className="flex-centerY my-gap-24">
               <Link
-                to="/about-1"
+                href="/about-1"
                 className="btn bg-blue-B700 hover:bg-brown-B300 text-white hover:text-blue-B900"
               >
                 About Us

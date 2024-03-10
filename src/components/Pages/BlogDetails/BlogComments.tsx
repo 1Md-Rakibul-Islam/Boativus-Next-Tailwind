@@ -48,7 +48,10 @@ const BlogComments = () => {
         </h3>
         <div className="grid xl:gap-y-10 lg:gap-y-8 md:gap-y-7 sm:gap-y-6 gap-y-5 gap-x-4">
           {comments?.map((item, idx) => (
-            <div className={`${idx % 2 !== 0 && "pl-[12%]"} flex my-gap-20`}>
+            <div
+              key={idx}
+              className={`${idx % 2 !== 0 && "pl-[12%]"} flex my-gap-20`}
+            >
               <img
                 src={item?.image}
                 className="rounded-full lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 w-12 h-12"

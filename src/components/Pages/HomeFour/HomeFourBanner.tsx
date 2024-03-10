@@ -10,7 +10,7 @@ import {
   MapPin,
   Package,
 } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useDropdown } from "@/hooks";
 import { FormEvent, useState } from "react";
 import DatePicker from "react-datepicker";
@@ -63,14 +63,14 @@ const HomeFourBanner = () => {
             </p>
             <div className="flex-centerY my-gap-24">
               <Link
-                to="/buy-yacht"
+                href="/buy-yacht"
                 className="btn hover:text-blue-B900 text-white bg-blue-B900 hover:bg-brown-B300"
               >
                 Book now
               </Link>
               <Link
                 className=" bg-blue-B900 hover:bg-brown-B300 md:w-16 md:h-16 sm:w-14 sm:h-14 w-11 h-11 flex-center rounded-full group"
-                to="/yachts"
+                href="/yachts"
               >
                 <ArrowDown
                   width={24}
