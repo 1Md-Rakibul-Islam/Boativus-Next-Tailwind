@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export type NavLinkProps = {
@@ -40,48 +39,41 @@ export type ModalProps = {
 
 export type userType = {
     name: string;
-    authImage: string | StaticImageData,
-    bio: string;
-    socialLinks: string[];
-};
-
-export type gameType = {
-    id: number;
-    category: string;
-    title: string;
-    image: string | StaticImageData;
-    gameSceneImages: string[] | StaticImageData[];
-    tutorialVideo: string;
-    installs: number;
-    reviews: number;
-    us: number;
-    details: string;
-    playStore: string;
-    appleStore: string;
-};
-
-export type JobType = {
-    id: number | string;
-    type: string;
-    title: string;
-    details: string;
-    responsibilities: string;
-    requirementsDetails: string;
-    keyRequirements: string[];
-    address: string;
-    openings: number;
+    email: string;
 };
 
 export type blogType = {
     id: string | number;
-    author: userType;
-    category: string;
+    author: string;
+    authImg: string;
     title: string;
-    image: string | StaticImageData; // Assuming the image is a string URL
+    image: string;
     details: string;
+    views: number;
     publish: string;
 };
 
+export type categoryType = {
+    id: string | number;
+    title: string;
+    image: string; // Assuming the image is a string URL
+    details: string;
+};
+
+export type yachtType = {
+    id: string | number;
+    category: string;
+    title: string;
+    image: string[]; // Assuming the image paths are string
+    guests: number;
+    rating: number;
+    length: number;
+    size: number;
+    cabin: number;
+    details: string;
+    boatType: string;
+    price: number;
+}
 
 
 

@@ -21,7 +21,7 @@ const NotFound = () => {
             availability and are limited in quantity.{" "}
           </p>
           <div className="flex-center w-full">
-            <Link href="/" className="btn btn-primary">
+            <Link href="/" className="btn ">
               Back to Home
             </Link>
           </div>

@@ -6,47 +6,69 @@ export const navMenu = [
         subMenu: [
             {
                 id: 101.1,
-                name: "Home 1",
+                name: "Home One",
                 link: "/",
             },
             {
                 id: 101.2,
-                name: "Home 2",
-                link: "/home-two",
+                name: "Home Two",
+                link: "/home-2",
             },
             {
                 id: 101.3,
-                name: "Home 3",
-                link: "/home-three",
+                name: "Home Three",
+                link: "/home-3",
             },
             {
                 id: 101.4,
-                name: "Home 4",
-                link: "/home-four",
+                name: "Home Four",
+                link: "/home-4",
             },
             {
                 id: 101.5,
-                name: "Home 5",
-                link: "/home-five",
+                name: "Home Five",
+                link: "/home-5",
             },
             {
                 id: 101.6,
-                name: "Home 6",
-                link: "/home-six",
+                name: "Home Six",
+                link: "/home-6",
             },
         ],
     },
     {
         id: 102,
         name: "Yacht",
-        isSubMenu: false,
-        link: "/yacht",
+        isSubMenu: true,
+        subMenu: [
+            {
+                id: 102.1,
+                name: "Yachts",
+                link: "/yachts",
+            },
+            {
+                id: 102.2,
+                name: "Yacht Details",
+                link: "/yachts/20",
+            }
+        ]
     },
     {
         id: 103,
         name: "About",
-        isSubMenu: false,
-        link: "/about",
+        isSubMenu: true,
+        subMenu: [
+            {
+                id: 103.1,
+                name: "About One",
+                link: "/about-1",
+            },
+            {
+                id: 103.2,
+                name: "About Two",
+                link: "/about-2",
+            }
+        ]
     },
     {
         id: 104,
@@ -61,19 +83,14 @@ export const navMenu = [
         subMenu: [
             {
                 id: 105.1,
-                name: "Shop - 01",
-                link: "/shop-one",
+                name: "Buy Yachts",
+                link: "/buy-yacht",
             },
             {
                 id: 105.2,
-                name: "Shop - 02",
-                link: "/shop-two",
+                name: "Sell Yachts",
+                link: "/sell-yacht",
             },
-            {
-                id: 105.3,
-                name: "Career Details",
-                link: "/shop-one/1",
-            }
         ],
     },
     {
@@ -83,36 +100,46 @@ export const navMenu = [
         subMenu: [
             {
                 id: 106.1,
-                name: "About Us",
-                link: "/about"
-            },
-            {
-                id: 106.2,
                 name: "Blogs",
                 link: "/blogs"
             },
             {
-                id: 106.3,
+                id: 106.2,
                 name: "Blogs Details",
-                link: "/blogs/3"
+                link: "/blogs/6"
+            },
+            {
+                id: 106.3,
+                name: "Pricing Plans",
+                link: "/pricing-plans"
             },
             {
                 id: 106.4,
+                name: "Images Gallery",
+                link: "/images-gallery"
+            },
+            {
+                id: 106.5,
+                name: "Our Team",
+                link: "/our-team"
+            },
+            {
+                id: 106.6,
+                name: "Orders",
+                link: "/orders"
+            },
+            {
+                id: 106.7,
                 name: "Faq",
                 link: "/faq"
             },
             {
-                id: 106.5,
-                name: "Terms",
-                link: "/terms-conditions"
+                id: 106.8,
+                name: "Sign In",
+                link: "/login"
             },
             {
-                id: 106.6,
-                name: "Privacy Policy",
-                link: "/privacy-policy"
-            },
-            {
-                id: 106.7,
+                id: 106.9,
                 name: "Error Page",
                 link: "/404"
             },
@@ -122,6 +149,12 @@ export const navMenu = [
         id: 107,
         name: "Contact Us",
         isSubMenu: false,
-        link: "/contact",
+        link: "/contact-us",
+    },
+    {
+        id: 108,
+        name: "Sign Up",
+        isSubMenu: false,
+        link: "/register",
     }
 ];

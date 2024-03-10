@@ -1,5 +1,3 @@
-"use client";
-
 import { motionProps } from "@/config/types";
 import { motion } from "framer-motion";
 

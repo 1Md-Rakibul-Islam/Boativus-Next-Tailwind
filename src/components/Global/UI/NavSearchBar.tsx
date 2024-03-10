@@ -1,8 +1,8 @@
 "use client";
 
-import { useDropdown } from "@/hooks";
 import { MagnifyingGlass, X } from "@phosphor-icons/react";
 import { FormEvent, useState } from "react";
+import { useDropdown } from "@/hooks";
 const NavSearchBar = () => {
   const { open, handleOption, ref } = useDropdown();
   const [searchData, setSearchData] = useState("");
