@@ -18,9 +18,6 @@
         "name": "next"
       }
     ],
-    // "paths": {
-    //   "@/*": ["./src/*"]
-    // },
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],

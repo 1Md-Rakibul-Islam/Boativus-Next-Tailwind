@@ -1,5 +1,5 @@
 import HomePageTwo from './HomePageTwo';
-import NotFound from '../NotFound';
+import NotFound from '../not-found';
 import HomePageThree from './HomePageThree';
 import HomePageFour from './HomePageFour';
 import HomePageFive from './HomePageFive';

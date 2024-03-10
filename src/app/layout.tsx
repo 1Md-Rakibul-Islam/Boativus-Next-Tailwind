@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { playfair_display, barlow, montserrat } from "@/config/fonts";
+// import { playfair_display, barlow, montserrat } from "@/config/fonts";
 import { CustomCursor, ScrollToTop } from "@/components/Global/UI";
 
 export const metadata: Metadata = {
