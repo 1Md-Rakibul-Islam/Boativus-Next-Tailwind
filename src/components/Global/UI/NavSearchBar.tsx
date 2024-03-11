@@ -3,7 +3,7 @@
 import { MagnifyingGlass, X } from "@phosphor-icons/react";
 import { FormEvent, useState } from "react";
 import { useDropdown } from "@/hooks";
-const NavSearchBar = () => {
+const NavSearchBar = ({ position }: { position?: string }) => {
   const { open, handleOption, ref } = useDropdown();
   const [searchData, setSearchData] = useState("");
 
@@ -13,7 +13,7 @@ const NavSearchBar = () => {
   };
 
   return (
-    <div ref={ref} className="flex-centerY">
+    <div ref={ref} className="md:flex-centerY hidden">
       <button
         onClick={() => {
           handleOption();
@@ -24,15 +24,17 @@ const NavSearchBar = () => {
         <MagnifyingGlass className="text-white" size={30} />
       </button>
       <div
-        className={`absolute xl:-left-[50%] xl:top-16 lg:top-4 md:top-3 sm:top-2.5 top-0 left-0 md:w-auto w-full z-10 opacity-100 transition-all duration-700 ${
-          open ? "translate-y-0 " : " -translate-y-64 opacity-0"
+        className={`absolute md:top-24 sm:top-16 top-0 right-0 ${
+          position && position
+        } md:w-[320px] sm:w-[280px] w-full z-10 opacity-100 transition-all duration-700 ${
+          open ? "translate-y-0 " : "-translate-y-[500px] opacity-0"
         }`}
       >
-        <div className="bg-black shadow-[0px_1px_12px_0px_#000000b5] sm:rounded-xl rounded-b-xl  flex min-w-full items-center justify-between gap-6 p-3 max-sm:flex-col-reverse">
+        <div className="bg-blue-B400 shadow-[0px_1px_12px_0px_#000000b5] sm:rounded-xl rounded-b-xl  flex min-w-full items-center justify-between gap-6 p-3 max-sm:flex-col-reverse">
           <div className="items-center gap-2 max-sm:flex">
             <form
               onSubmit={handleFormSubmit}
-              className="bg-BG flex w-full items-center justify-between rounded-full py-2 px-3"
+              className="bg-blue-B900 flex w-full items-center justify-between rounded-full py-2 px-3"
             >
               <input
                 type="text"
@@ -49,12 +51,12 @@ const NavSearchBar = () => {
                 }}
                 aria-label="handleOption"
               >
-                <MagnifyingGlass className="icon-24 text-white" />
+                <MagnifyingGlass className="icon-24 text-brown-B300" />
               </button>
             </form>
           </div>
           <button
-            className=" rounded-full p-1 bg-primary-4  text-black "
+            className=" rounded-full p-1 bg-brown-B300  text-black "
             onClick={() => {
               setSearchData("");
               handleOption();

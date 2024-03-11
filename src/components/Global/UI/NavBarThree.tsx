@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navMenu } from "@public/data/navMenu";
 import {
@@ -15,6 +15,7 @@ import AnimateHeight from "react-animate-height";
 import Image from "next/image";
 import Link from "next/link";
 import brandLogo from "@public/media/icons/logo.png";
+import NavSearchBar from "./NavSearchBar";
 
 const NavBarThree = () => {
   const path = usePathname();
@@ -79,6 +80,11 @@ const NavBarThree = () => {
     return path === menu.link;
   };
 
+  // Handle Search
+  const handleSearch = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <header
       id="header"
@@ -91,7 +97,7 @@ const NavBarThree = () => {
       <div className="mx-auto relative">
         <div className="w-full xxl:px-[60px] xl:px-10 lg:px-8 md:px-7 sm:px-6 px-4 relative">
           <div className="flex items-center justify-between gap-x-2 mx-auto lg:py-6 md:py-5 sm:py-5 py-3.5">
-            <nav className="w-full xl:flex justify-between items-center text-black hidden text-semibold">
+            <nav className="w-full xl:flex justify-between items-center text-black hidden text-semibold relative">
               <Link href="/">
                 <Image
                   width={142}
@@ -148,34 +154,9 @@ const NavBarThree = () => {
                     2
                   </span>
                 </Link>
-                <div ref={searchRef}>
-                  <button
-                    onClick={() => {
-                      handleOptionSearch();
-                    }}
-                  >
-                    <MagnifyingGlass className="text-3xl text-white" />
-                  </button>
-                  <div
-                    className={`${
-                      searchOpen ? "translate-y-0" : "-translate-y-[500px]"
-                    } absolute -left-20 top-24 my-transition-2`}
-                  >
-                    <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
-                      <input
-                        type="text"
-                        name="search"
-                        className="bg-white p-3 px-4 outline-none text-18 rounded-tl-xl rounded-bl-xl"
-                      />
-                      <button
-                        type="submit"
-                        className="bg-blue-B700 p-2.5 rounded-tr-xl rounded-br-xl"
-                      >
-                        <MagnifyingGlass className="text-3xl text-white" />
-                      </button>
-                    </form>
-                  </div>
-                </div>
+
+                <NavSearchBar />
+
                 <Link
                   href="/register"
                   className="btn bg-[#212B4EC2] hover:bg-brown-B300 hover:text-blue-B900 text-white"
@@ -185,7 +166,7 @@ const NavBarThree = () => {
               </div>
             </nav>
             {/* Mobail Menu start */}
-            <nav className="w-full flex justify-between items-center text-black xl:hidden">
+            <nav className="w-full flex justify-between items-center text-black xl:hidden sm:relative static">
               <div className="relative">
                 <Link href="/">
                   <Image
@@ -223,7 +204,10 @@ const NavBarThree = () => {
                     </button>
                   </div>
 
-                  <form className="sm:hidden flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
+                  <form
+                    onSubmit={handleSearch}
+                    className="sm:hidden flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full"
+                  >
                     <input
                       type="text"
                       name="search"
@@ -334,7 +318,10 @@ const NavBarThree = () => {
                             </span>
                           </Link>
                         </div>
-                        <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
+                        <form
+                          onSubmit={handleSearch}
+                          className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full"
+                        >
                           <input
                             type="text"
                             name="search"
@@ -382,34 +369,9 @@ const NavBarThree = () => {
                     2
                   </span>
                 </Link>
-                <div ref={searchRef} className="hidden md:block relative">
-                  <button
-                    onClick={() => {
-                      handleOptionSearch();
-                    }}
-                  >
-                    <MagnifyingGlass className="text-3xl text-white" />
-                  </button>
-                  <div
-                    className={`${
-                      searchOpen ? "translate-y-0" : "-translate-y-[500px]"
-                    } absolute -left-20 top-20 my-transition-2`}
-                  >
-                    <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
-                      <input
-                        type="text"
-                        name="search"
-                        className="bg-white p-3 px-4 outline-none text-18 rounded-tl-xl rounded-bl-xl"
-                      />
-                      <button
-                        type="submit"
-                        className="bg-blue-B700 p-2.5 rounded-tr-xl rounded-br-xl"
-                      >
-                        <MagnifyingGlass className="text-3xl text-white" />
-                      </button>
-                    </form>
-                  </div>
-                </div>
+
+                <NavSearchBar />
+
                 <Link
                   href="/register"
                   className="hidden md:block btn bg-[#212B4EC2] hover:bg-brown-B300 hover:text-blue-B900 text-white"

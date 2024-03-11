@@ -5,7 +5,6 @@ import CounterElement from "./CounterElement";
 import Modal from "./Modal";
 import Accordion from './Accordion';
 import NavSearchBar from './NavSearchBar';
-import BookingCard from './BookingCard';
 import NavBarOne from './NavBarOne';
 import NavBarTwo from './NavBarTwo';
 import AccordionTwo from './AccordionTwo';
@@ -25,7 +24,6 @@ export {
   Accordion,
   AccordionTwo,
   NavSearchBar,
-  BookingCard,
   // 
   NavBarOne,
   NavBarTwo,

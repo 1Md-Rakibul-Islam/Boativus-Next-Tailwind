@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navMenu } from "@public/data/navMenu";
 import {
@@ -72,6 +72,11 @@ const NavBarFour = () => {
     return path === menu.link;
   };
 
+  // Handle Search
+  const handleSearch = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <header
       id="header"
@@ -85,7 +90,7 @@ const NavBarFour = () => {
         <div className="w-full xxl:px-[60px] xl:px-10 lg:px-8 md:px-7 sm:px-6 px-4 relative">
           <div className="flex items-center justify-between gap-x-2 mx-auto lg:py-6 md:py-5 sm:py-5 py-3.5">
             {/* Mobail Menu start */}
-            <nav className="w-full flex justify-between items-center text-black">
+            <nav className="w-full flex justify-between items-center text-black sm:relative static">
               <div className="relative">
                 <Link href="/">
                   <Image
@@ -124,7 +129,10 @@ const NavBarFour = () => {
                       </button>
                     </div>
 
-                    <form className="sm:hidden flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
+                    <form
+                      onSubmit={handleSearch}
+                      className="sm:hidden flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full"
+                    >
                       <input
                         type="text"
                         name="search"
@@ -235,7 +243,10 @@ const NavBarFour = () => {
                               </span>
                             </Link>
                           </div>
-                          <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
+                          <form
+                            onSubmit={handleSearch}
+                            className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full"
+                          >
                             <input
                               type="text"
                               name="search"

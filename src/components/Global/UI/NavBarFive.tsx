@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { navMenu } from "@public/data/navMenu";
 import {
@@ -20,6 +20,7 @@ import { Listbox } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
 import brandLogo from "@public/media/icons/logo.png";
+import NavSearchBar from "./NavSearchBar";
 
 const languages = ["Bangla", "English", "Hindi", "Arabic"];
 
@@ -96,6 +97,11 @@ const NavBarFive = () => {
     return path === menu.link;
   };
 
+  // Handle Search
+  const handleSearch = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <header
       id="header"
@@ -105,9 +111,9 @@ const NavBarFive = () => {
     >
       <div className="mx-auto relative">
         <div
-          className={`bg-primary-1 py-4 ${
+          className={`py-4 ${
             scrolled ? "hidden" : "lg:block hidden"
-          } container bg-transparent w-full xl:py-5 py-4`}
+          } container bg-transparent w-full xl:py-5 py-4 relative`}
         >
           <div className="flex items-center justify-between text-white">
             <div className="sm:flex-centerY hidden my-gap-24">
@@ -153,36 +159,8 @@ const NavBarFive = () => {
               ref={searchRef}
               className="flex items-center gap-x-11 py-1 z-[1]"
             >
-              <div className="flex items-center gap-5 relative">
-                <button
-                  onClick={() => {
-                    handleOptionSearch();
-                  }}
-                  className="search text-base text-white flex-centerY gap-3"
-                >
-                  <MagnifyingGlass className="text-3xl text-white" />
-                  Search
-                </button>
-                <div
-                  className={`${
-                    searchOpen ? "translate-y-0" : "-translate-y-[500px]"
-                  } absolute -left-20 top-24 my-transition-2`}
-                >
-                  <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
-                    <input
-                      type="text"
-                      name="search"
-                      className="bg-white p-3 px-4 outline-none text-18 rounded-tl-xl rounded-bl-xl"
-                    />
-                    <button
-                      type="submit"
-                      className="bg-blue-B700 p-2.5 rounded-tr-xl rounded-br-xl"
-                    >
-                      <MagnifyingGlass className="text-3xl text-white" />
-                    </button>
-                  </form>
-                </div>
-              </div>
+              <NavSearchBar position="md:top-[240px]" />
+
               <div className="bg-white h-7 w-[2px]"></div>
               <Listbox value={selectedLanguage} onChange={setSelectedLanguage}>
                 <div className="relative xxl:w-[114px] w-[100px]">
@@ -368,7 +346,10 @@ const NavBarFive = () => {
                     </button>
                   </div>
 
-                  <form className="sm:hidden flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
+                  <form
+                    onSubmit={handleSearch}
+                    className="sm:hidden flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full"
+                  >
                     <input
                       type="text"
                       name="search"
@@ -479,7 +460,10 @@ const NavBarFive = () => {
                             </span>
                           </Link>
                         </div>
-                        <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
+                        <form
+                          onSubmit={handleSearch}
+                          className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full"
+                        >
                           <input
                             type="text"
                             name="search"
@@ -521,40 +505,6 @@ const NavBarFive = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between gap-4 md:gap-5">
-                <Link href="/orders" className="hidden md:block relative">
-                  <Handbag className="text-3xl text-white" />
-                  <span className="absolute bottom-0.5 -right-0.5 w-4 h-4 rounded-full flex-center bg-blue-B500  text-xs text-white">
-                    2
-                  </span>
-                </Link>
-                <div ref={searchRef} className="hidden md:block relative">
-                  <button
-                    onClick={() => {
-                      handleOptionSearch();
-                    }}
-                  >
-                    <MagnifyingGlass className="text-3xl text-white" />
-                  </button>
-                  <div
-                    className={`${
-                      searchOpen ? "translate-y-0" : "-translate-y-[500px]"
-                    } absolute -left-20 top-20 my-transition-2`}
-                  >
-                    <form className="flex-centerY rounded-tl-xl rounded-bl-xl shadow-2xl w-full">
-                      <input
-                        type="text"
-                        name="search"
-                        className="bg-white p-3 px-4 outline-none text-18 rounded-tl-xl rounded-bl-xl"
-                      />
-                      <button
-                        type="submit"
-                        className="bg-blue-B700 p-2.5 rounded-tr-xl rounded-br-xl"
-                      >
-                        <MagnifyingGlass className="text-3xl text-white" />
-                      </button>
-                    </form>
-                  </div>
-                </div>
                 <Link
                   href="/register"
                   className="hidden md:block btn bg-[#212B4EC2] hover:bg-brown-B300 hover:text-blue-B900 text-white"
