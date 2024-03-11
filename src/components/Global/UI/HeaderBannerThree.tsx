@@ -1,8 +1,11 @@
+"use client";
+
 import { headerProps } from "@/config/types";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import headerBoat from "@public/media/images/headerBoat.png";
 
 const HeaderBannerThree = ({ headerData }: { headerData: headerProps }) => {
   const path = usePathname();
@@ -63,7 +66,7 @@ const HeaderBannerThree = ({ headerData }: { headerData: headerProps }) => {
             <Image
               draggable={false}
               className="max-w-[unset] w-[400px] lg:hidden md:block hidden sm:animate-bounce-slow-top-2"
-              src="/media/images/headerBoat.png"
+              src={headerBoat}
               alt="img"
             />
           </div>
@@ -72,10 +75,12 @@ const HeaderBannerThree = ({ headerData }: { headerData: headerProps }) => {
       <Image
         draggable={false}
         className="lg:block hidden absolute right-[3%] bottom-[20%] xl:w-[688px] lg:w-[520px] w-[600px] sm:animate-bounce-slow-top-2"
-        src="/media/images/headerBoat.png"
+        src={headerBoat}
         alt="img"
       />
       <Image
+        width={500}
+        height={500}
         draggable={false}
         className="xxl:w-[500px] xxl:h-[500px] md:w-[300px] md:h-[300px] md:block hidden absolute -left-[6%] bottom-0 sm:animate-spin-slow opacity-[0.3]"
         src="/media/icons/gallery-star-cercel.png"
@@ -83,6 +88,8 @@ const HeaderBannerThree = ({ headerData }: { headerData: headerProps }) => {
       />
       <div className="md:block hidden absolute -top-[10%] -right-[10%]">
         <Image
+          width={500}
+          height={500}
           draggable={false}
           className="xxl:w-[500px] xxl:h-[500px] md:w-[320px] md:h-[320px] sm:animate-spin-slow opacity-[0.16] rotate-180"
           src="/media/icons/gallery-star-cercel.png"

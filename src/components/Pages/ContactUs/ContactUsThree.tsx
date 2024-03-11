@@ -1,19 +1,14 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import {
-  ArrowCircleRight,
   ChatsCircle,
   Envelope,
   MapPin,
   PhoneCall,
 } from "@phosphor-icons/react/dist/ssr";
-import { FormEvent } from "react";
+import ContactUsForm from "./ContactUsForm";
 
 const ContactUsThree = () => {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
-
   return (
     <section className="section-py bg-white">
       <div className="container">
@@ -78,52 +73,7 @@ const ContactUsThree = () => {
             </FadeUp>
           </div>
           <FadeDown className="shadow-[0px_4px_20px_0px_rgba(74,73,79,0.20)] rounded-lg px-24px py-32px lg:mb-0 mb-6">
-            <form onSubmit={handleSubmit}>
-              <div className="grid md:grid-cols-2 grid-cols-1 my-gap-24 gap-mb-24">
-                <input
-                  type="text"
-                  required
-                  name="name"
-                  id="name"
-                  placeholder="Full Name ......"
-                  className="box-input-2 bg-transparent rounded-10"
-                />
-                <input
-                  type="email"
-                  required
-                  name="email"
-                  id="email"
-                  placeholder="Email Address ......"
-                  className="box-input-2 bg-transparent rounded-10"
-                />
-              </div>
-
-              <input
-                type="number"
-                required
-                name="phone"
-                id="phone"
-                placeholder="Phone Number..."
-                className="box-input-2 bg-transparent rounded-10 gap-mb-24 w-full"
-              />
-
-              <textarea
-                name="comment"
-                id="comment"
-                placeholder="How can we help you? Feel free to get in touch!"
-                className="box-input-2 px-24px py-3 bg-transparent rounded-10 w-full h-[168px] gap-mb-40"
-              ></textarea>
-
-              <div className="flex-center">
-                <button
-                  type="submit"
-                  className="btn-2 inline-flex items-center gap-2 bg-blue-B900 hover:bg-brown-B300 text-white hover:text-blue-B900"
-                >
-                  Submit Now
-                  <ArrowCircleRight className="icon-24" />
-                </button>
-              </div>
-            </form>
+            <ContactUsForm />
           </FadeDown>
         </div>
       </div>
