@@ -9,7 +9,7 @@ import {
 } from "@/components/Pages";
 import { NavLinkProps, headerProps } from "@/config/types";
 
-const ServicesPage = () => {
+const Services = () => {
   const navLinks: NavLinkProps[] = [
     { id: 1, url: "/", label: "Home" },
     { id: 2, url: "/services", label: "Services" },
@@ -45,4 +45,4 @@ const ServicesPage = () => {
   );
 };
 
-export default ServicesPage;
+export default Services;
