@@ -60,7 +60,8 @@ const Yachts = () => {
                       <div className="w-full z-[1] text-left">
                         <div className="flex-centerY justify-center gap-2 gap-mb-16">
                           <Image
-                            className="w-5 h-5"
+                            width={20}
+                            height={20}
                             src="/media/icons/yachts-feachers-icon1.png"
                             alt="icon"
                           />
@@ -70,7 +71,8 @@ const Yachts = () => {
                         </div>
                         <div className="flex-centerY justify-center gap-2">
                           <Image
-                            className="w-5 h-5"
+                            width={20}
+                            height={20}
                             src="/media/icons/yachts-feachers-icon2.png"
                             alt="icon"
                           />
@@ -80,6 +82,8 @@ const Yachts = () => {
                       <div className="w-full z-[1] text-left">
                         <div className="flex-centerY justify-center gap-2 gap-mb-16">
                           <Image
+                            width={20}
+                            height={20}
                             src="/media/icons/yachts-feachers-icon3.png"
                             alt="icon"
                           />
@@ -89,6 +93,8 @@ const Yachts = () => {
                         </div>
                         <div className="flex-centerY justify-center gap-2">
                           <Image
+                            width={20}
+                            height={20}
                             src="/media/icons/yachts-feachers-icon4.png"
                             alt="icon"
                           />

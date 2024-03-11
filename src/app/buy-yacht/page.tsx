@@ -2,7 +2,7 @@ import { HeaderBannerTwo, NavBarThree } from "@/components/Global/UI";
 import { BuyYachts, Footer } from "@/components/Pages";
 import { NavLinkProps, headerProps } from "@/config/types";
 
-const BuyYachtPage = () => {
+const BuyYacht = () => {
   const navLinks: NavLinkProps[] = [
     { id: 1, url: "/", label: "Home" },
     { id: 2, url: "/buy-yacht", label: "Buy Yachts" },
@@ -27,4 +27,4 @@ const BuyYachtPage = () => {
   );
 };
 
-export default BuyYachtPage;
+export default BuyYacht;

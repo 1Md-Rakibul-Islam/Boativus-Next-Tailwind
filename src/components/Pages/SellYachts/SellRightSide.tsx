@@ -49,7 +49,8 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                     <div className="w-full z-[1] text-left">
                       <div className="flex-centerY gap-2 mb-2">
                         <Image
-                          className="w-4 h-4"
+                          width={16}
+                          height={16}
                           src="/media/icons/yachts-feachers-icon1.png"
                           alt="icon"
                         />
@@ -57,7 +58,8 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                       </div>
                       <div className="flex-centerY gap-2">
                         <Image
-                          className="w-4 h-4"
+                          width={16}
+                          height={16}
                           src="/media/icons/yachts-feachers-icon2.png"
                           alt="icon"
                         />
@@ -67,6 +69,8 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                     <div className="w-full z-[1] text-left xxl:pl-6 xl:pl-5 lg:xl:pl-4 sm:pl-3 pl-2.5">
                       <div className="flex-centerY gap-2 mb-2">
                         <Image
+                          width={16}
+                          height={16}
                           src="/media/icons/yachts-feachers-icon3.png"
                           alt="icon"
                         />
@@ -74,6 +78,8 @@ const SellRightSide = ({ yachts }: { yachts: yachtType[] }) => {
                       </div>
                       <div className="flex-centerY gap-2">
                         <Image
+                          width={16}
+                          height={16}
                           src="/media/icons/yachts-feachers-icon4.png"
                           alt="icon"
                         />
