@@ -54,6 +54,8 @@ const BlogComments = () => {
               className={`${idx % 2 !== 0 && "pl-[12%]"} flex my-gap-20`}
             >
               <Image
+                width={20}
+                height={20}
                 src={item?.image}
                 className="rounded-full lg:w-20 lg:h-20 md:w-16 md:h-16 sm:w-14 sm:h-14 w-12 h-12"
                 alt="img"
@@ -94,6 +96,8 @@ const BlogComments = () => {
                   <form className="flex my-gap-24 max-w-[400px] lg:mb-[30px] md:mb-6 mb-5 items-center justify-between border border-primary-text-clr rounded-full p-2 my-transition gap-mt-16">
                     <div className="my-transition flex items-center md:gap-5 gap-2.5">
                       <Image
+                        width={40}
+                        height={40}
                         className="w-10 h-10 rounded-full"
                         alt=""
                         src="/media/images/user8.png"

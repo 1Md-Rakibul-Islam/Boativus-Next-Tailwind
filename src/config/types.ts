@@ -46,7 +46,7 @@ export type userType = {
 export type blogType = {
     id: string | number;
     author: string;
-    authImg: string;
+    authImg: string | StaticImageData;
     title: string;
     image: string | StaticImageData;
     details: string;

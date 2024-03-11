@@ -1,3 +1,4 @@
+import NotFound from "@/app/not-found";
 import { HeaderBannerTwo, NavBarThree } from "@/components/Global/UI";
 import {
   BestLuxuryYachtSection,
@@ -28,11 +29,17 @@ const YachtsDetailsPage = ({ params }: { params: { id: string | number } }) => {
   return (
     <>
       <NavBarThree />
-      <main className="min-h-screen ">
-        <HeaderBannerTwo headerData={headerData} />
-        <YachtDetails yacht={yacht} />
-        <BestLuxuryYachtSection />
-        <GalleryThree />
+      <main className="min-h-screen">
+        {yacht ? (
+          <>
+            <HeaderBannerTwo headerData={headerData} />
+            <YachtDetails yacht={yacht} />
+            <BestLuxuryYachtSection />
+            <GalleryThree />
+          </>
+        ) : (
+          <NotFound />
+        )}
       </main>
       <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>

@@ -64,6 +64,8 @@ const BlogDescriptions = ({ blog }: { blog: blogType }) => {
       </ul>
       <div className="overflow-hidden rounded-20 gap-mb-64">
         <Image
+          width={856}
+          height={416}
           className="w-full h-auto object-cover hover:scale-110 my-transition rounded-20"
           src="/media/images/blog-feachers-img2.png"
           alt=""
@@ -87,7 +89,13 @@ const BlogDescriptions = ({ blog }: { blog: blogType }) => {
         vestibulum .
       </p>
       <div className="flex items-center xl:flex-row flex-col my-gap-32 rounded-20 p-32px shadow-[0px_4px_20px_0px_rgba(74,73,79,0.20)] xl:text-left text-center gap-mb-64">
-        <Image className="rounded-full" src="/media/images/user8.png" alt="" />
+        <Image
+          width={40}
+          height={40}
+          className="rounded-full"
+          src="/media/images/user8.png"
+          alt=""
+        />
         <div>
           <div className="w-full flex xl:flex-row flex-col xl:justify-start items-center my-gap-24 gap-mb-24">
             <div>

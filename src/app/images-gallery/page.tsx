@@ -1,15 +1,21 @@
 import { HeaderBannerTwo, NavBarThree } from "@/components/Global/UI";
-import { Footer, SellYachts } from "@/components/Pages";
+import {
+  BlogsFive,
+  Footer,
+  GalleryThree,
+  PlanNextTourThree,
+} from "@/components/Pages";
 import { NavLinkProps, headerProps } from "@/config/types";
 
-const SellYachtPage = () => {
+const ImageGalleryPage = () => {
   const navLinks: NavLinkProps[] = [
     { id: 1, url: "/", label: "Home" },
-    { id: 2, url: "/sell-yacht", label: "Sell Yachts" },
+    { id: 2, url: "Pages", label: "Pages" },
+    { id: 3, url: "/images-gallery", label: "Image Gallery" },
   ];
 
   const headerData: headerProps = {
-    title: "Sell Yachts",
+    title: "Image Gallery",
     bgImgClasses:
       "bg-[url('/media/images/commonheaderBG2.2.png')] bg-no-repeat bg-cover bg-right",
     navLinks,
@@ -20,11 +26,13 @@ const SellYachtPage = () => {
       <NavBarThree />
       <main className="min-h-screen ">
         <HeaderBannerTwo headerData={headerData} />
-        <SellYachts />
+        <GalleryThree />
+        <PlanNextTourThree />
+        <BlogsFive />
       </main>
-      <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
+      <Footer bgStyle="bg-blue-B900" />
     </>
   );
 };
 
-export default SellYachtPage;
+export default ImageGalleryPage;
