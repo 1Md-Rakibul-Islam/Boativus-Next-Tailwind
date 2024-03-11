@@ -12,7 +12,7 @@ import {
   WhayCharterYachtOne,
 } from "@/components/Pages";
 
-const HomePageFour = () => {
+const HomeFour = () => {
   return (
     <>
       <NavBarThree />
@@ -39,4 +39,4 @@ const HomePageFour = () => {
   );
 };
 
-export default HomePageFour;
+export default HomeFour;

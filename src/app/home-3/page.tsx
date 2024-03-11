@@ -15,7 +15,7 @@ import {
   YachtRental,
 } from "@/components/Pages";
 
-const HomePageThree = () => {
+const HomeThree = () => {
   return (
     <>
       <NavBarTwo />
@@ -38,4 +38,4 @@ const HomePageThree = () => {
   );
 };
 
-export default HomePageThree;
+export default HomeThree;

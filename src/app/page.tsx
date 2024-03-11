@@ -17,7 +17,7 @@ const HomePageOne = () => {
   return (
     <>
       <NavBarOne />
-      <main>
+      <main className="min-h-screen">
         <HeroBannerOne />
         <AboutUsSection />
         <BestLuxuryYachtSection />

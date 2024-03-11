@@ -14,11 +14,11 @@ import {
   TestimonialsOne,
 } from "@/components/Pages";
 
-const HomePageTwo = () => {
+const HomeTwo = () => {
   return (
     <>
       <NavBarOne />
-      <main>
+      <main className="min-h-screen">
         <HomeTwoBanner />
         <JoinUs />
         <BestRatedYachts />
@@ -43,4 +43,4 @@ const HomePageTwo = () => {
   );
 };
 
-export default HomePageTwo;
+export default HomeTwo;

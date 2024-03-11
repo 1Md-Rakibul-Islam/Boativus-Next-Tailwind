@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.min.css";
+import videoBG from "@public/media/images/plan-next-tourBG3.png";
 
 const PlanNextTourThree = () => {
   const [isOpen, setOpen] = useState(false);
@@ -14,11 +15,7 @@ const PlanNextTourThree = () => {
     <section className="relative z-[1] section-pb overflow-hidden lg:bg-white bg-blue-B900 lg:bg-[url('/media/images/FeaBg.png')] bg-no-repeat bg-cover">
       <div className="container lg:pt-0 section-pt">
         <div className="relative">
-          <Image
-            className="lg:max-w-[unset]"
-            src="/media/images/plan-next-tourBG3.png"
-            alt="img"
-          />
+          <Image className="lg:max-w-[unset]" src={videoBG} alt="img" />
           <div className="absolute xxl:left-[54%] lg:left-[46%] top-1/2 left-1/2 lg:translate-x-0 -translate-x-1/2 -translate-y-1/2 z-10">
             <div className="relative">
               <div className="bg-[url('/media/icons/watch-tour-btn-ring.png')] bg-no-repeat bg-center bg-cover md:w-[264px] md:h-[264px] sm:w-[200px] sm:h-[200px] w-[140px] h-[140px]">
@@ -59,6 +56,8 @@ const PlanNextTourThree = () => {
           <FadeUp className="grid md:grid-cols-2 grid-cols-1 my-gap-24 lg:gap-y-16 ">
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
               <Image
+                width={60}
+                height={60}
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
                 src="/media/icons/next-tour-icon1.png"
                 alt="icon"
@@ -75,6 +74,8 @@ const PlanNextTourThree = () => {
             </div>
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
               <Image
+                width={60}
+                height={60}
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
                 src="/media/icons/next-tour-icon2.png"
                 alt="icon"
@@ -91,6 +92,8 @@ const PlanNextTourThree = () => {
             </div>
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
               <Image
+                width={60}
+                height={60}
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
                 src="/media/icons/next-tour-icon3.png"
                 alt="icon"
@@ -107,6 +110,8 @@ const PlanNextTourThree = () => {
             </div>
             <div className="flex items-start lg:gap-4 md:gap-3 gap-2.5">
               <Image
+                width={60}
+                height={60}
                 className="md:w-[60px] w-10 md:h-[60px] h-10"
                 src="/media/icons/next-tour-icon4.png"
                 alt="icon"

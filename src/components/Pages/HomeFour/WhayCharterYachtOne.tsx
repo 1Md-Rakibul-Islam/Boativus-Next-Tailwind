@@ -20,6 +20,8 @@ const WhayCharterYachtOne = () => {
           <FadeUp className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center my-gap-24 section-pb ">
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
               <Image
+                width={80}
+                height={80}
                 src="/media/icons/whay-charter-yacht-icon1.png"
                 alt="icon"
               />
@@ -27,6 +29,8 @@ const WhayCharterYachtOne = () => {
             </div>
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
               <Image
+                width={80}
+                height={80}
                 src="/media/icons/whay-charter-yacht-icon2.png"
                 alt="icon"
               />
@@ -36,6 +40,8 @@ const WhayCharterYachtOne = () => {
             </div>
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
               <Image
+                width={80}
+                height={80}
                 src="/media/icons/whay-charter-yacht-icon3.png"
                 alt="icon"
               />
@@ -45,6 +51,8 @@ const WhayCharterYachtOne = () => {
             </div>
             <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
               <Image
+                width={80}
+                height={80}
                 src="/media/icons/whay-charter-yacht-icon4.png"
                 alt="icon"
               />
@@ -55,6 +63,8 @@ const WhayCharterYachtOne = () => {
             <div className="xl:col-start-1 xl:col-end-6 lg:mb-0 gap-mb-64">
               <div className="overflow-hidden">
                 <Image
+                  width={526}
+                  height={702}
                   className="md:w-fit w-full mx-auto hover:scale-110 my-transition"
                   src="/media/images/why-charter-banner.png"
                   alt="img"
@@ -159,6 +169,8 @@ const WhayCharterYachtOne = () => {
       </div>
       <div className="absolute top-0 right-0 animate-fade-slow-right">
         <Image
+          width={552}
+          height={686}
           className="animate-bounce-slow-top-2"
           src="/media/images/boat-ilistation1.png"
           alt="boat"

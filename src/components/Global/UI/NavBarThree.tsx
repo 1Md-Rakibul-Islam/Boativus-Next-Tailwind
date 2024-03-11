@@ -14,6 +14,7 @@ import { useDropdown } from "@/hooks";
 import AnimateHeight from "react-animate-height";
 import Image from "next/image";
 import Link from "next/link";
+import brandLogo from "@public/media/icons/logo.png";
 
 const NavBarThree = () => {
   const path = usePathname();
@@ -93,8 +94,10 @@ const NavBarThree = () => {
             <nav className="w-full xl:flex justify-between items-center text-black hidden text-semibold">
               <Link href="/">
                 <Image
+                  width={142}
+                  height={34}
                   className="w-[142px] h-[34px]"
-                  src="/media/icons/logo.png"
+                  src={brandLogo}
                   alt="brand"
                 />
               </Link>
@@ -186,8 +189,10 @@ const NavBarThree = () => {
               <div className="relative">
                 <Link href="/">
                   <Image
+                    width={142}
+                    height={34}
                     className="w-[142px] h-[34px]"
-                    src="/media/icons/logo.png"
+                    src={brandLogo}
                     alt="brand"
                   />
                 </Link>
@@ -203,8 +208,10 @@ const NavBarThree = () => {
                       className="sm:hidden block"
                     >
                       <Image
+                        width={142}
+                        height={34}
                         className="w-[142px] h-[34px]"
-                        src="/media/icons/logo.png"
+                        src={brandLogo}
                         alt="boativus"
                       />
                     </Link>
@@ -313,8 +320,10 @@ const NavBarThree = () => {
                         <div className="flex-centerY justify-between gap-2 gap-mb-20">
                           <Link href="/">
                             <Image
+                              width={142}
+                              height={34}
                               className="w-[142px] h-[34px]"
-                              src="/media/icons/logo.png"
+                              src={brandLogo}
                               alt="boativus"
                             />
                           </Link>
