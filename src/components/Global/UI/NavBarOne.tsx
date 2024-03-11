@@ -14,6 +14,7 @@ import { useDropdown } from "@/hooks";
 import AnimateHeight from "react-animate-height";
 import Image from "next/image";
 import Link from "next/link";
+import brandLogo from "@public/media/icons/logo.png";
 
 const NavBarOne = () => {
   const path = usePathname();
@@ -106,7 +107,7 @@ const NavBarOne = () => {
               <Link href="/">
                 <Image
                   className="w-[142px] h-[34px]"
-                  src="/media/icons/logo.png"
+                  src={brandLogo}
                   alt="brand"
                 />
               </Link>
@@ -199,7 +200,7 @@ const NavBarOne = () => {
                 <Link href="/">
                   <Image
                     className="w-[142px] h-[34px]"
-                    src="/media/icons/logo.png"
+                    src={brandLogo}
                     alt="brand"
                   />
                 </Link>
@@ -216,7 +217,7 @@ const NavBarOne = () => {
                     >
                       <Image
                         className="w-[142px] h-[34px]"
-                        src="/media/icons/logo.png"
+                        src={brandLogo}
                         alt="boativus"
                       />
                     </Link>
@@ -326,7 +327,7 @@ const NavBarOne = () => {
                           <Link href="/">
                             <Image
                               className="w-[142px] h-[34px]"
-                              src="/media/icons/logo.png"
+                              src={brandLogo}
                               alt="boativus"
                             />
                           </Link>
