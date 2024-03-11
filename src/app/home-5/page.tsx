@@ -11,7 +11,7 @@ import {
   TopSupperYachts,
 } from "@/components/Pages";
 
-const HomePageFive = () => {
+const HomeFive = () => {
   return (
     <>
       <NavBarFive />
@@ -30,4 +30,4 @@ const HomePageFive = () => {
   );
 };
 
-export default HomePageFive;
+export default HomeFive;

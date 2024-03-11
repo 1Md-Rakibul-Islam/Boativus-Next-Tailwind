@@ -19,6 +19,7 @@ import AnimateHeight from "react-animate-height";
 import { Listbox } from "@headlessui/react";
 import Image from "next/image";
 import Link from "next/link";
+import brandLogo from "@public/media/icons/logo.png";
 
 const languages = ["Bangla", "English", "Hindi", "Arabic"];
 
@@ -274,6 +275,8 @@ const NavBarFive = () => {
                 {/* Big logo start */}
                 <Link href="/" className="absolute xxl:-left-56 -left-44 block">
                   <Image
+                    width={160}
+                    height={140}
                     className="xxl:w-[160px] w-[140px]"
                     src="/media/images/logo-big-cercel.png"
                     alt="icon"
@@ -331,8 +334,10 @@ const NavBarFive = () => {
               <div className="relative">
                 <Link href="/">
                   <Image
+                    width={142}
+                    height={34}
                     className="w-[142px] h-[34px]"
-                    src="/media/icons/logo.png"
+                    src={brandLogo}
                     alt="brand"
                   />
                 </Link>
@@ -348,9 +353,11 @@ const NavBarFive = () => {
                       className="sm:hidden block"
                     >
                       <Image
+                        width={142}
+                        height={34}
                         className="w-[142px] h-[34px]"
-                        src="/media/icons/logo.png"
-                        alt="boativus"
+                        src={brandLogo}
+                        alt="brand"
                       />
                     </Link>
                     <button
@@ -458,9 +465,11 @@ const NavBarFive = () => {
                         <div className="flex-centerY justify-between gap-2 gap-mb-20">
                           <Link href="/">
                             <Image
+                              width={142}
+                              height={34}
                               className="w-[142px] h-[34px]"
-                              src="/media/icons/logo.png"
-                              alt="boativus"
+                              src={brandLogo}
+                              alt="brand"
                             />
                           </Link>
                           <Link href="/orders" className="relative">

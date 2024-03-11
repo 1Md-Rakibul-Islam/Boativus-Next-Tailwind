@@ -1,10 +1,11 @@
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight, Checks } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import whayBoativus from "@public/media/images/why-boutivus.png";
 
 const YachtsQuality = () => {
   return (
-    <section className="lg:pb-20 md:pb-16 pb-14 bg-white overflow-x-hidden">
+    <section className="lg:pb-20 md:pb-16 pb-14 bg-white overflow-x-hidden relative">
       <div className="container">
         <div className="grid xl:grid-cols-12 grid-cols-1 items-center my-gap-24">
           <div className="xl:col-start-1 xxl:col-end-6 xl:col-end-7 flex justify-end xl:order-1 order-2 h-full xxl:mr-0 xl:mr-5 mr-0">
@@ -12,7 +13,7 @@ const YachtsQuality = () => {
               <div className="overflow-hidden">
                 <Image
                   className="xl:max-w-[unset] min-h-[400px] object-cover hover:scale-110 my-transition"
-                  src="/media/images/why-boutivus.png"
+                  src={whayBoativus}
                   alt=""
                 />
               </div>

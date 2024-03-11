@@ -106,6 +106,8 @@ const NavBarOne = () => {
             <nav className="w-full xl:flex justify-between items-center text-black hidden text-semibold">
               <Link href="/">
                 <Image
+                  width={142}
+                  height={34}
                   className="w-[142px] h-[34px]"
                   src={brandLogo}
                   alt="brand"
@@ -199,6 +201,8 @@ const NavBarOne = () => {
               <div className="relative">
                 <Link href="/">
                   <Image
+                    width={142}
+                    height={34}
                     className="w-[142px] h-[34px]"
                     src={brandLogo}
                     alt="brand"
@@ -216,6 +220,8 @@ const NavBarOne = () => {
                       className="sm:hidden block"
                     >
                       <Image
+                        width={142}
+                        height={34}
                         className="w-[142px] h-[34px]"
                         src={brandLogo}
                         alt="boativus"
@@ -326,6 +332,8 @@ const NavBarOne = () => {
                         <div className="flex-centerY justify-between gap-2 gap-mb-20">
                           <Link href="/">
                             <Image
+                              width={142}
+                              height={34}
                               className="w-[142px] h-[34px]"
                               src={brandLogo}
                               alt="boativus"

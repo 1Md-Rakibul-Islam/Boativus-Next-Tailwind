@@ -9,6 +9,8 @@ const MakeHappen = () => {
         <div className="grid xl:grid-cols-12 lg:grid-cols-2 items-center my-gap-24">
           <div className="xl:col-start-1 xl:col-end-6 overflow-hidden xl:mr-0 lg:mr-5 gap-mb-40">
             <Image
+              width={526}
+              height={676}
               className="w-full hover:scale-110 my-transition"
               src="/media/images/making-happenBaner.png"
               alt=""

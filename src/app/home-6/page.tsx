@@ -11,7 +11,7 @@ import {
   YachtsQuality,
 } from "@/components/Pages";
 
-const HomePageSix = () => {
+const HomeSix = () => {
   return (
     <>
       <NavBarFour />
@@ -30,4 +30,4 @@ const HomePageSix = () => {
   );
 };
 
-export default HomePageSix;
+export default HomeSix;
