@@ -1167,7 +1167,7 @@ button:not(:disabled) {
 }
 
 .react-datepicker__input-container {
-  display: flex;
+  display: flex !important;
   flex-direction: row-reverse;
   align-items: center;
 }
