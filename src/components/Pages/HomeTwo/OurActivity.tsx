@@ -33,6 +33,7 @@ const OurActivity = () => {
         "Phasellus porttitor libero quis diam sagittis, at vehicula ex laoreet.",
     },
   ];
+
   return (
     <section className="relative bg-white overflow-hidden">
       <div className="container lg:py-0 section-py">
@@ -40,6 +41,8 @@ const OurActivity = () => {
           <div className="xl:col-start-1 xl:col-end-6 h-full w-full flex justify-end lg:order-1 order-2">
             <FadeLeft>
               <Image
+                width={836}
+                height={1076}
                 className="lg:max-w-[unset]"
                 src="/media/images/activityBanner.png"
                 alt="img"
@@ -59,6 +62,8 @@ const OurActivity = () => {
               {activities?.map((item, idx) => (
                 <FadeUp key={idx} className="flex-center flex-col text-center">
                   <Image
+                    width={80}
+                    height={80}
                     className="max-w-20 min-w-fit gap-mb-24"
                     src={item?.image}
                     alt="icon"
@@ -77,6 +82,8 @@ const OurActivity = () => {
 
       <div className="xxl:w-[784px] xxl:h-[784px] lg:w-[664px] lg:h-[664px] sm:w-[400px] sm:h-[400px] sm:block hidden absolute xxl:-right-[20%] lg:-right-[24%] lg:top-1/2 top-1/4 -translate-y-1/2">
         <Image
+          width={784}
+          height={784}
           draggable={false}
           className="animate-spin-slow"
           src="/media/icons/compass3.png"

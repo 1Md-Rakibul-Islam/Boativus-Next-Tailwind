@@ -24,7 +24,8 @@ const YachtOfferDetails = () => {
             <div className="flex-centerY my-gap-20 text-white">
               <span className="flex-centerY gap-2.5 text-white">
                 <Image
-                  className="w-[26px] h-[13px]"
+                  width={26}
+                  height={13}
                   src="/media/images/flag1.png"
                   alt="flag"
                 />
@@ -41,23 +42,48 @@ const YachtOfferDetails = () => {
           </h5>
           <div className="flex-center md:flex-nowrap flex-wrap gap-4 md:divide-x divide-white gap-mb-40">
             <div className="md:pr-4 flex-centerY gap-2 text-white">
-              <Image src="/media/icons/sinata1.png" alt="" />
+              <Image
+                width={20}
+                height={20}
+                src="/media/icons/sinata1.png"
+                alt="icon"
+              />
               <span>4 psc</span>
             </div>
             <div className="md:px-4 flex-centerY gap-2 text-white">
-              <Image src="/media/icons/sinata2.png" alt="" />
+              <Image
+                width={20}
+                height={20}
+                src="/media/icons/sinata2.png"
+                alt="icon"
+              />
               <span>2022 year</span>
             </div>
             <div className="md:px-4 flex-centerY gap-2 text-white">
-              <Image src="/media/icons/sinata4.png" alt="" />
+              <Image
+                width={20}
+                height={20}
+                src="/media/icons/sinata4.png"
+                alt="icon"
+              />
               <span>800 litre</span>
             </div>
             <div className="md:px-4 flex-centerY gap-2 text-white">
-              <Image src="/media/icons/sinata5.png" alt="" />
+              <Image
+                width={20}
+                height={20}
+                src="/media/icons/sinata5.png"
+                alt="icon"
+              />
               <span>1000 litre</span>
             </div>
             <div className="md:pl-4 flex-centerY gap-2 text-white">
-              <Image src="/media/icons/sinata6.png" alt="" />
+              <Image
+                width={20}
+                height={20}
+                src="/media/icons/sinata6.png"
+                alt="icon"
+              />
               <span>18.3 meter</span>
             </div>
           </div>

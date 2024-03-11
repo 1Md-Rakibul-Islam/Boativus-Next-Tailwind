@@ -14,11 +14,15 @@ const JoinUs = () => {
               <div className="xxl:max-w-[unset] xxl:w-full xxl:h-full sm:w-[684px] sm:h-[536px] sm:relative ">
                 <div className="sm:absolute top-0 left-0 sm:block grid my-gap-24">
                   <Image
+                    width={275}
+                    height={275}
                     className="sm:max-w-[275px] sm:min-w-min w-full relative z-[2] hover:z-[4] sm:hover:scale-110 my-transition"
                     src="/media/images/yacthExprience1.png"
                     alt=""
                   />
                   <Image
+                    width={335}
+                    height={335}
                     className="sm:max-w-[275px] sm:min-w-min w-full relative z-0 hover:z-[4] sm:-mt-[16%] sm:-ml-[16%] sm:hover:scale-110 my-transition"
                     src="/media/images/yacthExprience2.png"
                     alt=""
@@ -40,6 +44,8 @@ const JoinUs = () => {
                     </div>
                   </div>
                   <Image
+                    width={416}
+                    height={450}
                     className="sm:max-w-[275px] sm:min-w-min w-full sm:hover:scale-110 my-transition"
                     src="/media/images/yacthExprience3.png"
                     alt=""
@@ -92,6 +98,8 @@ const JoinUs = () => {
       </div>
       <div className="absolute top-0 right-0 animate-fade-slow-right">
         <Image
+          width={552}
+          height={686}
           className="animate-bounce-slow-top-2"
           src="/media/images/boat-ilistation1.png"
           alt="boat"

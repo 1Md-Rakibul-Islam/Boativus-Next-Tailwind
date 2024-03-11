@@ -94,6 +94,8 @@ const HomeTwoBanner = () => {
             </div>
             <div className="relative">
               <Image
+                width={466}
+                height={810}
                 className="xxl:pt-[120px] xl:pt-[160px] lg:pt-[80px] w-[466px] h-auto absolute top-[52%] lg:left-1/2 right-0 -translate-y-1/2 z-[20]"
                 src="/media/images/home2-banner-featur.png"
                 alt="img"

@@ -13,7 +13,7 @@ import {
   BlogsOne,
 } from "@/components/Pages";
 
-const Home = () => {
+const HomePageOne = () => {
   return (
     <>
       <NavBarOne />
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePageOne;

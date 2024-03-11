@@ -18,6 +18,8 @@ const HowItWorks = () => {
         <FadeUp className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-gap-24">
           <div className="flex-center flex-col text-center">
             <Image
+              width={80}
+              height={80}
               className="max-w-20 min-w-fit gap-mb-24"
               src="/media/icons/works1.png"
               alt="icon"
@@ -31,6 +33,8 @@ const HowItWorks = () => {
           </div>
           <div className="flex-center flex-col text-center">
             <Image
+              width={80}
+              height={80}
               className="max-w-20 min-w-fit gap-mb-24"
               src="/media/icons/works2.png"
               alt="icon"
@@ -43,6 +47,8 @@ const HowItWorks = () => {
           </div>
           <div className="flex-center flex-col text-center">
             <Image
+              width={80}
+              height={80}
               className="max-w-20 min-w-fit gap-mb-24"
               src="/media/icons/works3.png"
               alt="icon"

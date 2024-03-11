@@ -1,3 +1,5 @@
+"use client";
+
 import CountUp from "react-countup";
 import { counterElementType } from "@/config/types";
 

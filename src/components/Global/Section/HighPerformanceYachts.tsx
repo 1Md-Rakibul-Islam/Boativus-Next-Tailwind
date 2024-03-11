@@ -1,6 +1,10 @@
-import FadeUp from "@/motion/FadeUp";
-import { CounterElement } from "../UI";
 import Image from "next/image";
+import FadeUp from "@/motion/FadeUp";
+import highPerformanceDetails1 from "@public/media/icons/high-performance-details1.png";
+import highPerformanceDetails2 from "@public/media/icons/high-performance-details2.png";
+import highPerformanceDetails3 from "@public/media/icons/high-performance-details3.png";
+import highPerformanceDetails4 from "@public/media/icons/high-performance-details4.png";
+import CounterElement from "../UI/CounterElement";
 
 const HighPerformanceYachts = () => {
   return (
@@ -20,7 +24,7 @@ const HighPerformanceYachts = () => {
               <div className="p-2.5 rounded-[15px] border border-brown-B300 gap-mb-24 bg-white">
                 <Image
                   className="min-w-fit min-h-fit max-w-[60px] max-h-[60px] "
-                  src="/media/icons/high-performance-details1.png"
+                  src={highPerformanceDetails1}
                   alt="img"
                 />
               </div>
@@ -40,7 +44,7 @@ const HighPerformanceYachts = () => {
               <div className="p-2.5 rounded-[15px] border border-brown-B300 gap-mb-24 bg-white">
                 <Image
                   className="min-w-fit min-h-fit max-w-[60px] max-h-[60px] "
-                  src="/media/icons/high-performance-details2.png"
+                  src={highPerformanceDetails2}
                   alt="img"
                 />
               </div>
@@ -60,7 +64,7 @@ const HighPerformanceYachts = () => {
               <div className="p-2.5 rounded-[15px] border border-brown-B300 gap-mb-24 bg-white">
                 <Image
                   className="min-w-fit min-h-fit max-w-[60px] max-h-[60px] "
-                  src="/media/icons/high-performance-details3.png"
+                  src={highPerformanceDetails3}
                   alt="img"
                 />
               </div>
@@ -80,7 +84,7 @@ const HighPerformanceYachts = () => {
               <div className="p-2.5 rounded-[15px] border border-brown-B300 gap-mb-24 bg-white">
                 <Image
                   className="min-w-fit min-h-fit max-w-[60px] max-h-[60px] "
-                  src="/media/icons/high-performance-details4.png"
+                  src={highPerformanceDetails4}
                   alt="img"
                 />
               </div>

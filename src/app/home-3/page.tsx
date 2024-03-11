@@ -19,7 +19,7 @@ const HomePageThree = () => {
   return (
     <>
       <NavBarTwo />
-      <main>
+      <main className="min-h-screen">
         <HomeThreeBanner />
         <YachtCategories />
         <PopularCountries />
