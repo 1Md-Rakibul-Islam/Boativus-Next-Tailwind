@@ -85,6 +85,8 @@ const ContactUsTwo = () => {
           </form>
           <div className="xxl:col-start-8 lg:col-start-7 lg:col-end-13">
             <Image
+              width={798}
+              height={658}
               className="lg:max-w-[unset] animate-bounce-slow-top"
               src="/media/images/faq-banner.png"
               alt=""

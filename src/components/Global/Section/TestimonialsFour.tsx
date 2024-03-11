@@ -55,6 +55,8 @@ const TestimonialsFour = () => {
               <SwiperSlide key={idx}>
                 <div className="flex-center flex-col">
                   <Image
+                    width={44}
+                    height={34}
                     className="gap-mb-40"
                     src="/media/icons/arrow-two-icon.png"
                     alt="icon"
@@ -64,6 +66,8 @@ const TestimonialsFour = () => {
                   </p>
                   <div className="flex-centerY gap-3">
                     <Image
+                      width={48}
+                      height={48}
                       className="md:w-12 md:h-12 sm:w-10 sm:h-10 w-8 h-8 rounded-full"
                       src={item?.userImage?.src}
                       alt="icon"

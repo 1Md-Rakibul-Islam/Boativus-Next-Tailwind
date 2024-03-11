@@ -12,7 +12,7 @@ import {
   TestimonialsFive,
 } from "@/components/Pages";
 
-const AboutPageTwo = () => {
+const AboutTwo = () => {
   const navLinks: NavLinkProps[] = [
     { id: 1, url: "/", label: "Home" },
     { id: 2, url: "/about-2", label: "about" },
@@ -44,4 +44,4 @@ const AboutPageTwo = () => {
   );
 };
 
-export default AboutPageTwo;
+export default AboutTwo;

@@ -20,6 +20,8 @@ const WhayCharterYachtTwo = () => {
             <div className="xl:col-start-1 xl:col-end-6 lg:mb-0 gap-mb-64">
               <div className="overflow-hidden">
                 <Image
+                  width={526}
+                  height={702}
                   className="md:w-fit w-full mx-auto hover:scale-110 my-transition"
                   src="/media/images/why-charter-banner.png"
                   alt="img"

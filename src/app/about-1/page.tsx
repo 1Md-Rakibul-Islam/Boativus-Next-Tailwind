@@ -27,7 +27,7 @@ const AboutPageOne = () => {
   return (
     <>
       <NavBarThree />
-      <main className="min-h-screen ">
+      <main className="min-h-screen">
         <HeaderBannerOne headerData={headerData} />
         <WhayCharterYachtTwo />
         <ReasonToBook />

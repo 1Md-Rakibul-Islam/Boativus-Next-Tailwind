@@ -84,6 +84,8 @@ const TestimonialsFive = () => {
               <div className="w-full min-h-fit max-h-full p-32px rounded-lg shadow-4 flex-center flex-col z-[1]">
                 <div className="flex-centerY sm:gap-x-3 gap-x-2 gap-mb-32">
                   <Image
+                    width={56}
+                    height={56}
                     className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden"
                     src={item?.userImage}
                     alt="img"
@@ -112,11 +114,15 @@ const TestimonialsFive = () => {
               </div>
               <div>
                 <Image
+                  width={40}
+                  height={40}
                   className="absolute right-[6%] top-[8%] sm:w-8 w-7 sm:h-w-8 h-7"
                   src="/media/icons/comma1.png"
                   alt="icon"
                 />
                 <Image
+                  width={32}
+                  height={32}
                   className="absolute left-[6%] bottom-[8%] sm:w-10 w-9 sm:h-10 h-9"
                   src="/media/icons/comma2.png"
                   alt="icon"

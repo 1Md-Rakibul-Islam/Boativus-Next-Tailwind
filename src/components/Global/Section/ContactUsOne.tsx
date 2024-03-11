@@ -1,3 +1,5 @@
+"use client";
+
 import FadeUp from "@/motion/FadeUp";
 import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
 import { FormEvent } from "react";

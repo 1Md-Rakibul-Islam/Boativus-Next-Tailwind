@@ -1,3 +1,5 @@
+"use client";
+
 import { headerProps } from "@/config/types";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
