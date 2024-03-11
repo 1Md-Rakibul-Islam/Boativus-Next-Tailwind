@@ -1,20 +1,21 @@
 import { HeaderBannerOne, NavBarThree } from "@/components/Global/UI";
+import { NavLinkProps, headerProps } from "@/config/types";
 import {
   BlogsTwo,
-  BoatTypesTwo,
-  ContactUsOne,
+  BoatTypeThree,
+  ContactUsTwo,
   Footer,
+  GalleryTwo,
+  MakeHappen,
   ReasonToBook,
   TeamTwo,
-  TestimonialsFour,
-  WhayCharterYachtTwo,
+  TestimonialsFive,
 } from "@/components/Pages";
-import { NavLinkProps, headerProps } from "@/config/types";
 
-const AboutPageOne = () => {
+const AboutTwo = () => {
   const navLinks: NavLinkProps[] = [
     { id: 1, url: "/", label: "Home" },
-    { id: 2, url: "/about-1", label: "About" },
+    { id: 2, url: "/about-two", label: "about" },
   ];
 
   const headerData: headerProps = {
@@ -27,19 +28,20 @@ const AboutPageOne = () => {
   return (
     <>
       <NavBarThree />
-      <main className="min-h-screen">
+      <main className="min-h-screen ">
         <HeaderBannerOne headerData={headerData} />
-        <WhayCharterYachtTwo />
+        <MakeHappen />
         <ReasonToBook />
         <TeamTwo padding="xl:section-pt" />
-        <TestimonialsFour />
-        <BoatTypesTwo />
-        <ContactUsOne />
+        <TestimonialsFive />
+        <BoatTypeThree />
+        <ContactUsTwo />
         <BlogsTwo />
+        <GalleryTwo />
       </main>
       <Footer bgStyle="bg-[url('/media/images/footer.png')] bg-no-repeat bg-cover" />
     </>
   );
 };
 
-export default AboutPageOne;
+export default AboutTwo;

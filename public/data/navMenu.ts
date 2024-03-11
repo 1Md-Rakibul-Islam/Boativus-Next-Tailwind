@@ -12,27 +12,27 @@ export const navMenu = [
             {
                 id: 101.2,
                 name: "Home Two",
-                link: "/home-2",
+                link: "/home-two",
             },
             {
                 id: 101.3,
                 name: "Home Three",
-                link: "/home-3",
+                link: "/home-three",
             },
             {
                 id: 101.4,
                 name: "Home Four",
-                link: "/home-4",
+                link: "/home-four",
             },
             {
                 id: 101.5,
                 name: "Home Five",
-                link: "/home-5",
+                link: "/home-five",
             },
             {
                 id: 101.6,
                 name: "Home Six",
-                link: "/home-6",
+                link: "/home-six",
             },
         ],
     },
@@ -61,12 +61,12 @@ export const navMenu = [
             {
                 id: 103.1,
                 name: "About One",
-                link: "/about-1",
+                link: "/about-one",
             },
             {
                 id: 103.2,
                 name: "About Two",
-                link: "/about-2",
+                link: "/about-two",
             }
         ]
     },

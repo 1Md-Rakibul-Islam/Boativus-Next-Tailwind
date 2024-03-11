@@ -74,7 +74,7 @@ const AboutUsSection = () => {
             </ul>
             <div className="flex-centerY my-gap-24">
               <Link
-                href="/about-1"
+                href="/about-one"
                 className="btn bg-blue-B700 hover:bg-brown-B300 text-white hover:text-blue-B900"
               >
                 About Us

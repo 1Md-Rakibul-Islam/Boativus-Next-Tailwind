@@ -18,7 +18,7 @@ const Culture = () => {
               </p>
 
               <Link
-                href="/about-1"
+                href="/about-one"
                 className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 border border-blue-B500 gap-mb-40"
               >
                 Explore now

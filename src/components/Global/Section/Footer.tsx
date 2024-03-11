@@ -68,7 +68,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
               <ul className="text-18 text-white list-inside grid md:gap-4 sm:gap-3 gap-2.5">
                 <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                   <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                  <Link href="/about-1" className="my-transition">
+                  <Link href="/about-one" className="my-transition">
                     About Us
                   </Link>
                 </li>
@@ -87,7 +87,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
                 <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                   <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
                   <Link href="/yachts" className="my-transition">
-                    Yatch Rent
+                    Yatch Rental
                   </Link>
                 </li>
               </ul>
@@ -115,7 +115,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
                 </li>
                 <li className="group hover:translate-x-5 -translate-x-5 inline-flex items-center gap-1 my-transition-2 max-w-fit">
                   <CaretRight className="group-hover:visible invisible group-hover:opacity-100 opacity-0 my-transition-2" />
-                  <Link href="/blogs/20" className="my-transition">
+                  <Link href="/blogs/6" className="my-transition">
                     Blog Details
                   </Link>
                 </li>
