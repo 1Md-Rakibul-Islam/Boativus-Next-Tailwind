@@ -62,7 +62,7 @@ const OurActivity = () => {
                     className="max-w-20 min-w-fit gap-mb-24"
                     src={item?.image}
                     alt="icon"
-                    draggable="false"
+                    draggable={false}
                   />
                   <h4 className="text-24 text-blue-B900 gap-mb-16">
                     {item?.title}
@@ -77,7 +77,7 @@ const OurActivity = () => {
 
       <div className="xxl:w-[784px] xxl:h-[784px] lg:w-[664px] lg:h-[664px] sm:w-[400px] sm:h-[400px] sm:block hidden absolute xxl:-right-[20%] lg:-right-[24%] lg:top-1/2 top-1/4 -translate-y-1/2">
         <Image
-          draggable="false"
+          draggable={false}
           className="animate-spin-slow"
           src="/media/icons/compass3.png"
           alt="img"

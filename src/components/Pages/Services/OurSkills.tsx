@@ -33,7 +33,7 @@ const OurSkills = () => {
                 />
                 <div className="sm:absolute 3xl:bottom-[18%] bottom-0 left-[20%] z-[1] sm:animate-bounce-slow-left animate-bounce-slow-right flex-centerY gap-2.5  bg-white rounded-full py-1.5 px-4 shadow-md sm:mb-0 gap-mb-40">
                   <Image
-                    draggable="false"
+                    draggable={false}
                     src="/media/icons/location.png"
                     alt="icon"
                   />
@@ -41,7 +41,7 @@ const OurSkills = () => {
                 </div>
                 <div className="sm:absolute 3xl:top-[30%] top-0 3xl:-right-[20%] ring-0 z-[1] animate-bounce-slow-left flex-centerY gap-2.5  bg-white rounded-full py-1.5 px-4 shadow-md">
                   <Image
-                    draggable="false"
+                    draggable={false}
                     src="/media/icons/star.png"
                     alt="icon"
                   />

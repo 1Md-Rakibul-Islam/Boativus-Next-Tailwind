@@ -3,7 +3,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   TwitchLogo,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";

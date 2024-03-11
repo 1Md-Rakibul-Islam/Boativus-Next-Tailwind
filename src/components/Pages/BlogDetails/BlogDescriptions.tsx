@@ -4,7 +4,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   TwitchLogo,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 const BlogDescriptions = ({ blog }: { blog: blogType }) => {

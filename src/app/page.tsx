@@ -16,7 +16,7 @@ import {
 const Home = () => {
   return (
     <>
-      <NavBarOne />
+      {/* <NavBarOne /> */}
       <main>
         <HeroBannerOne />
         <AboutUsSection />

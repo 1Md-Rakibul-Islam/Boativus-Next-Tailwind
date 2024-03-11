@@ -1,5 +1,5 @@
 import FadeUp from "@/motion/FadeUp";
-import { ArrowCircleRight } from "@phosphor-icons/react";
+import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
 import pricing1 from "@public/media/images/pricing1.png";
 import pricing2 from "@public/media/images/pricing2.png";
 import pricing3 from "@public/media/images/pricing3.png";

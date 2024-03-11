@@ -1,5 +1,5 @@
 import FadeUp from "@/motion/FadeUp";
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { blogs } from "@public/data/blogs";
 import Image from "next/image";
 import Link from "next/link";

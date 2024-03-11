@@ -4,7 +4,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
   TwitterLogo,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { team } from "@public/data/team";
 import Image from "next/image";
 

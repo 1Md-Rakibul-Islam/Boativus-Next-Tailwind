@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

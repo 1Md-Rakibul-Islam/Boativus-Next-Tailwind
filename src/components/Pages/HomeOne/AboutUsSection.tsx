@@ -1,4 +1,10 @@
 import FadeLeft from "@/motion/FadeLeft";
+import aboutUs1 from "@public/media/images/aboutUs1.png";
+import aboutUs2 from "@public/media/images/aboutUs2.png";
+import aboutUs3 from "@public/media/images/aboutUs3.png";
+import aboutUsIcon1 from "@public/media/images/cloud.png";
+import aboutUsIcon2 from "@public/media/icons/location.png";
+import aboutUsIcon3 from "@public/media/icons/star.png";
 import FadeRight from "@/motion/FadeRight";
 import {
   Anchor,
@@ -8,7 +14,7 @@ import {
   MapPinLine,
   PhoneCall,
   UsersThree,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -88,38 +94,30 @@ const AboutUsSection = () => {
             <div className=" 3xl:max-w-[unset] 3xl:w-full 3xl:h-full sm:w-[560px] sm:h-[536px] sm:relative">
               <Image
                 className="sm:absolute top-0 left-0 rounded-full border-[12px] border-white z-[1] sm:max-w-[310px] sm:min-w-fit sm:block hidden animate-bounce-slow-left"
-                src="/media/images/aboutUs1.png"
+                src={aboutUs1}
                 alt="about"
               />
               <Image
                 className="sm:absolute sm:left-1/3 left-0 bottom-0 rounded-full sm:max-w-[504px] sm:min-w-fit animate-bounce-slow-down"
-                src="/media/images/aboutUs2.png"
+                src={aboutUs2}
                 alt="about"
               />
               <Image
                 className="sm:absolute bottom-0 md:-right-1/3 md:left-auto left-0 rounded-full border-[12px] border-white z-[1] sm:max-w-[310px] sm:min-w-fit sm:block hidden animate-bounce-slow-right"
-                src="/media/images/aboutUs3.png"
+                src={aboutUs3}
                 alt="about"
               />
               <Image
                 className="sm:absolute 3xl:top-[18%] top-0 right-0 z-[1] animate-bounce-slow-top sm:block hidden"
-                src="/media/images/cloud.png"
+                src={aboutUsIcon1}
                 alt="about"
               />
               <div className="sm:absolute 3xl:bottom-[18%] bottom-0 left-[20%] z-[1] animate-bounce-slow-left sm:flex-centerY gap-2.5 hidden bg-white rounded-full py-1.5 px-4 shadow-md">
-                <Image
-                  draggable="false"
-                  src="/media/icons/location.png"
-                  alt="icon"
-                />
+                <Image draggable={false} src={aboutUsIcon2} alt="icon" />
                 <span className="text-18 text-black">New York</span>
               </div>
               <div className="sm:absolute 3xl:top-[30%] top-0 3xl:-right-[20%] ring-0 z-[1] animate-bounce-slow-left sm:flex-centerY gap-2.5 hidden bg-white rounded-full py-1.5 px-4 shadow-md">
-                <Image
-                  draggable="false"
-                  src="/media/icons/star.png"
-                  alt="icon"
-                />
+                <Image draggable={false} src={aboutUsIcon3} alt="icon" />
                 <span className="text-18 text-black">5.0</span>
               </div>
             </div>

@@ -1,4 +1,8 @@
-import { ArrowCircleRight, ArrowLeft, ArrowRight } from "@phosphor-icons/react";
+import {
+  ArrowCircleRight,
+  ArrowLeft,
+  ArrowRight,
+} from "@phosphor-icons/react/dist/ssr";
 import { yachtType } from "@/config/types";
 import Link from "next/link";
 import FadeUp from "@/motion/FadeUp";

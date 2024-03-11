@@ -1,6 +1,6 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
-import { ArrowCircleDown } from "@phosphor-icons/react";
+import { ArrowCircleDown } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
 

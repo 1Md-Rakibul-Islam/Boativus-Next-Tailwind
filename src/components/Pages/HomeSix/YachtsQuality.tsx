@@ -1,5 +1,5 @@
 import FadeUp from "@/motion/FadeUp";
-import { ArrowCircleRight, Checks } from "@phosphor-icons/react";
+import { ArrowCircleRight, Checks } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
 const YachtsQuality = () => {

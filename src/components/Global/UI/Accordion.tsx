@@ -21,6 +21,8 @@ const Accordion = ({ faqItems }: { faqItems: faqType[] }) => {
             <div className="flex my-gap-24 items-center justify-between accordion-header cursor-pointer">
               <div className="flex-centerY my-gap-20">
                 <Image
+                  width={40}
+                  height={40}
                   className="sm:w-10 sm:h-10 w-8 h-8"
                   src="/media/icons/faq-icon.png"
                   alt="faq"

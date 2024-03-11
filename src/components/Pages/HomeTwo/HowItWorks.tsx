@@ -21,7 +21,7 @@ const HowItWorks = () => {
               className="max-w-20 min-w-fit gap-mb-24"
               src="/media/icons/works1.png"
               alt="icon"
-              draggable="false"
+              draggable={false}
             />
             <h4 className="text-24 text-blue-B900 gap-mb-16">Make a Request</h4>
             <p className="text-18 text-blue-B100">
@@ -34,7 +34,7 @@ const HowItWorks = () => {
               className="max-w-20 min-w-fit gap-mb-24"
               src="/media/icons/works2.png"
               alt="icon"
-              draggable="false"
+              draggable={false}
             />
             <h4 className="text-24 text-blue-B900 gap-mb-16">Get Offers</h4>
             <p className="text-18 text-blue-B100">
@@ -46,7 +46,7 @@ const HowItWorks = () => {
               className="max-w-20 min-w-fit gap-mb-24"
               src="/media/icons/works3.png"
               alt="icon"
-              draggable="false"
+              draggable={false}
             />
             <h4 className="text-24 text-blue-B900 gap-mb-16">Enjoy!</h4>
             <p className="text-18 text-blue-B100">

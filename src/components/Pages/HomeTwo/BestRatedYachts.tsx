@@ -1,5 +1,5 @@
 import FadeUp from "@/motion/FadeUp";
-import { ArrowCircleRight } from "@phosphor-icons/react";
+import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
 import { yachts } from "@public/data/yachts";
 import Image from "next/image";
 import Link from "next/link";

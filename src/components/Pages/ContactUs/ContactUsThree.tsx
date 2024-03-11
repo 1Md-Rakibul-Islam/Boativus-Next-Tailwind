@@ -6,7 +6,7 @@ import {
   Envelope,
   MapPin,
   PhoneCall,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { FormEvent } from "react";
 
 const ContactUsThree = () => {

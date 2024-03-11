@@ -87,13 +87,17 @@ const GalleryOne = () => {
         </FadeUp>
       </div>
       <Image
-        draggable="false"
+        width={400}
+        height={400}
+        draggable={false}
         className="xxl:w-[400px] xxl:h-[400px] md:w-[300px] md:h-[300px] md:block hidden absolute left-0 top-[7%] animate-spin-slow"
         src="/media/icons/gallery-star-cercel.png"
         alt="img"
       />
       <Image
-        draggable="false"
+        width={400}
+        height={400}
+        draggable={false}
         className="xxl:w-[400px] xxl:h-[400px] md:w-[300px] md:h-[300px] md:block hidden absolute -right-[9%] -top-44 animate-spin-slow"
         src="/media/icons/gallery-star-cercel.png"
         alt="img"

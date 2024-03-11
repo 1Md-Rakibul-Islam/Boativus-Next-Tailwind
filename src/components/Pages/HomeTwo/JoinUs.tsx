@@ -1,6 +1,6 @@
 import Link from "next/link";
 import CounterElement from "../../Global/UI/CounterElement";
-import { ArrowDown } from "@phosphor-icons/react";
+import { ArrowDown } from "@phosphor-icons/react/dist/ssr";
 import FadeUp from "@/motion/FadeUp";
 import FadeDown from "@/motion/FadeDown";
 import Image from "next/image";

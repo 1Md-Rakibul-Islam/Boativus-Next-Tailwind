@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { blogs } from "@public/data/blogs";
-import { ArrowRight, Calendar, User } from "@phosphor-icons/react";
+import { ArrowRight, Calendar, User } from "@phosphor-icons/react/dist/ssr";
 import FadeUp from "@/motion/FadeUp";
 import Image from "next/image";
 const BlogsOne = () => {

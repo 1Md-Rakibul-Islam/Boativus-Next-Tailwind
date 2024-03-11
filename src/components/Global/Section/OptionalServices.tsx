@@ -12,7 +12,7 @@ import {
   Fish,
   SealCheck,
   VideoCamera,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import FadeUp from "@/motion/FadeUp";
 import Image from "next/image";
 

@@ -1,6 +1,6 @@
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
-import { ArrowCircleRight, ArrowDown } from "@phosphor-icons/react";
+import { ArrowCircleRight, ArrowDown } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 const HomeFiveBanner = () => {

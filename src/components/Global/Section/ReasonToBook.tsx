@@ -10,7 +10,7 @@ import {
   ShieldCheck,
   Smiley,
   UsersThree,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import { CounterElement } from "../UI";
 import FadeUp from "@/motion/FadeUp";
 

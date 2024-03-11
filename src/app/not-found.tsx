@@ -1,4 +1,4 @@
-import { ArrowCircleRight } from "@phosphor-icons/react";
+import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 const NotFound = () => {

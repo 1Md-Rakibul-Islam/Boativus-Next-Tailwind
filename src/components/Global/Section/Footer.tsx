@@ -6,10 +6,11 @@ import {
   InstagramLogo,
   LinkedinLogo,
   TwitterLogo,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import Preloader from "../UI/Preloader";
 import Image from "next/image";
+import brandLogo from "@public/media/icons/logo.png";
 
 const Footer = ({ bgStyle }: { bgStyle: string }) => {
   const currentYear = new Date().getFullYear();
@@ -21,7 +22,7 @@ const Footer = ({ bgStyle }: { bgStyle: string }) => {
           <div className="section-pt">
             <div className="flex flex-col sm:flex-row justify-between sm:items-center my-gap-32 gap-mb-60">
               <Link href="/">
-                <Image src="/media/icons/logo.png" alt="logo" />
+                <Image src={brandLogo} alt="logo" />
               </Link>
               <div className="flex-centerY my-gap-24">
                 <a

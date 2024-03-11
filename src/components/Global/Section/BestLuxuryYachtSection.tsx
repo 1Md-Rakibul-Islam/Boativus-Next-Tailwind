@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Star } from "@phosphor-icons/react/dist/ssr";
-import { ArrowCircleRight } from "@phosphor-icons/react";
+import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
 import { yachts } from "@public/data/yachts";
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";

@@ -1,5 +1,9 @@
 import FadeUp from "@/motion/FadeUp";
-import { ArrowCircleRight, CalendarCheck, Timer } from "@phosphor-icons/react";
+import {
+  ArrowCircleRight,
+  CalendarCheck,
+  Timer,
+} from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
 
