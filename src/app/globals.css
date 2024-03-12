@@ -1,13 +1,4 @@
-/* Project Name: Sadio 
- Techonologys: HTML, Tailwind CSS, Odomiter, jquery, Swiper.js
-
- Version: 
- Tailwind CSS: 3.3.5
- jquery: v3.7.1
- Odomiter: 0.4.8
- Swiper: v8.4.5
- Odomiter Counter: v8.4.5
-*/
+/* Project Name: Boativus Next.js */
 
 :root {
   --font-playfair_display: "Playfair Display", serif;
@@ -30,10 +21,6 @@
   .btn-2 {
     @apply my-transition text-18 font-semibold capitalize text-center cursor-pointer lg:py-5 md:py-4 sm:py-3 py-2.5 lg:px-8 md:px-7 sm:px-6 px-4 rounded-10;
   }
-
-  /* .btn-primary {
-    @apply shadow-[0px_5px_0px_#0b85cf, 0px_16px_4px_rgba(56, 174, 246, 0.27)] hover:shadow-[0px_5px_0px_#ff7a1f, 0px_16px_4px_#ff791f87] bg-[linear-gradient(0deg, #357eff_0%, #357eff_1%, #1be9ff_100%)] hover:bg-black border-2 border-solid border-brown-B300 hover:border-black rounded-full text-white hover:text-black my-transition;
-  } */
 
   .btn-secondary {
     @apply bg-black hover:bg- hover:text-black text- border border-black;
