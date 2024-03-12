@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import { playfair_display, barlow, montserrat } from "@/config/fonts";
 import { CustomCursor, ScrollToTop } from "@/components/Global/UI";
 
 export const metadata: Metadata = {
@@ -16,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-      // className={`${playfair_display?.variable} ${montserrat?.variable} ${barlow?.variable}`}
-      >
+      <body>
         {children}
         <CustomCursor />
         <ScrollToTop />
