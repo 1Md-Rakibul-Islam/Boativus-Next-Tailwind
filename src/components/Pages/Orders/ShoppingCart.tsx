@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const ShoppingCart = () => {
   //   const orders = yachts?.slice(0, 3);
-  const [orders, setOrders] = useState(yachts?.slice(0, 3));
+  const [orders, setOrders] = useState(yachts?.slice(0, 2));
   // State to store quantity of each product
   const [quantities, setQuantities] = useState<number[]>(
     new Array(yachts.length).fill(1)

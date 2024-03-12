@@ -10,7 +10,6 @@ import {
   MagnifyingGlass,
   X,
 } from "@phosphor-icons/react";
-import { useDropdown } from "@/hooks";
 import AnimateHeight from "react-animate-height";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,12 +22,6 @@ const NavBarThree = () => {
   const [hamburgerToggle, setHamburgerToggle] = useState(false);
   const [height, setHeight] = useState<string | number>(0);
   const [scrolled, setScrolled] = useState(false);
-
-  const {
-    handleOption: handleOptionSearch,
-    open: searchOpen,
-    ref: searchRef,
-  } = useDropdown();
 
   const toggleHandle = (idx: number) => {
     if (toggle === idx) {

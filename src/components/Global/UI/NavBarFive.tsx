@@ -308,7 +308,7 @@ const NavBarFive = () => {
               </div>
             </nav>
             {/* Mobail Menu start */}
-            <nav className="w-full flex justify-between items-center text-black xl:hidden">
+            <nav className="w-full flex justify-between items-center text-black xl:hidden sm:relative static">
               <div className="relative">
                 <Link href="/">
                   <Image

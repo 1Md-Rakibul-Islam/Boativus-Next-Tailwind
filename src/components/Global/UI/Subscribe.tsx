@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 const Subscribe = () => {
   const [email, setEmail] = useState<string>("");
