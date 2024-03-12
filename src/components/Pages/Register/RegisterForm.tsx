@@ -1,11 +1,36 @@
 "use client";
 
+import { Eye, EyeSlash } from "@phosphor-icons/react";
 import Link from "next/link";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 const RegisterForm = () => {
+  const [passType1, setPassType1] = useState("password");
+  const [passType2, setPassType2] = useState("password");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    new_password1: "",
+    confirm_password: "",
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   const handleRegister = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Log form data to console
+
+    // Clear form data after submission (optional)
+    setFormData({
+      name: "",
+      email: "",
+      new_password1: "",
+      confirm_password: "",
+    });
   };
 
   return (
@@ -17,6 +42,8 @@ const RegisterForm = () => {
           placeholder="Your Name"
           name="name"
           id="name"
+          value={formData.name}
+          onChange={handleInputChange}
           required
         />
         <input
@@ -25,24 +52,86 @@ const RegisterForm = () => {
           placeholder="Your Email"
           name="email"
           id="email"
+          value={formData.email}
+          onChange={handleInputChange}
           required
         />
-        <input
-          className="py-4 px-4 text-white rounded-xl outline-none bg-blue-B700"
-          type="password"
-          placeholder="New Password"
-          name="new_password"
-          id="new_password"
-          required
-        />
-        <input
-          className="py-4 px-4 text-white rounded-xl outline-none bg-blue-B700"
-          type="password"
-          placeholder="Confirm Password"
-          name="confirm_password"
-          id="confirm_password"
-          required
-        />
+
+        {/* Password Field 1 */}
+        <div className="flex-centerY py-4 px-4 text-white rounded-xl bg-blue-B700">
+          <input
+            type={passType1}
+            className="w-full outline-none bg-transparent"
+            placeholder="New Password"
+            name="new_password1"
+            id="new_password1"
+            value={formData.new_password1}
+            onChange={handleInputChange}
+            required
+          />
+          <div
+            onClick={() =>
+              setPassType1((prevType) =>
+                prevType === "password" ? "text" : "password"
+              )
+            }
+          >
+            {passType1 === "password" && (
+              <EyeSlash
+                width={24}
+                height={24}
+                weight="fill"
+                className="hover:cursor-pointer"
+              />
+            )}
+            {passType1 === "text" && (
+              <Eye
+                width={24}
+                height={24}
+                weight="fill"
+                className="hover:cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
+
+        {/* Password Field 2 */}
+        <div className="flex-centerY py-4 px-4 text-white rounded-xl bg-blue-B700">
+          <input
+            type={passType2}
+            className="w-full outline-none bg-transparent"
+            placeholder="Confirm Password"
+            name="confirm_password"
+            id="confirm_password"
+            value={formData.confirm_password}
+            onChange={handleInputChange}
+            required
+          />
+          <div
+            onClick={() =>
+              setPassType2((prevType) =>
+                prevType === "password" ? "text" : "password"
+              )
+            }
+          >
+            {passType2 === "password" && (
+              <EyeSlash
+                width={24}
+                height={24}
+                weight="fill"
+                className="hover:cursor-pointer"
+              />
+            )}
+            {passType2 === "text" && (
+              <Eye
+                width={24}
+                height={24}
+                weight="fill"
+                className="hover:cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
 
         <div className="flex gap-2 items-center customck">
           <div className="flex relative">

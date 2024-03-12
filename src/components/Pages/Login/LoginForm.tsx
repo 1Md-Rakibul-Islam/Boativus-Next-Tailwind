@@ -1,11 +1,34 @@
 "use client";
 
+import { Eye, EyeSlash } from "@phosphor-icons/react";
 import Link from "next/link";
-import { FormEvent } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 const LoginForm = () => {
+  const [passType, setPassType] = useState("password");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   const handleLogin = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Log form data to console
+    console.log(formData);
+
+    // Clear form data after submission
+    setFormData({
+      name: "",
+      email: "",
+      password: "",
+    });
   };
 
   return (
@@ -17,6 +40,8 @@ const LoginForm = () => {
           placeholder="Your Name"
           name="name"
           id="name"
+          value={formData.name}
+          onChange={handleInputChange}
           required
         />
         <input
@@ -25,16 +50,47 @@ const LoginForm = () => {
           placeholder="Your Email"
           name="email"
           id="email"
+          value={formData.email}
+          onChange={handleInputChange}
           required
         />
-        <input
-          className="p-4 rounded-xl text-white outline-none bg-blue-B700"
-          type="password"
-          placeholder="Password"
-          name="password"
-          id="password"
-          required
-        />
+
+        <div className="flex-centerY py-4 px-4 text-white rounded-xl bg-blue-B700">
+          <input
+            type={passType}
+            className="w-full outline-none bg-transparent"
+            placeholder="Password"
+            name="password"
+            id="password"
+            value={formData.password}
+            onChange={handleInputChange}
+            required
+          />
+          <div
+            onClick={() =>
+              setPassType((prevType) =>
+                prevType === "password" ? "text" : "password"
+              )
+            }
+          >
+            {passType === "password" && (
+              <EyeSlash
+                width={24}
+                height={24}
+                weight="fill"
+                className="hover:cursor-pointer"
+              />
+            )}
+            {passType === "text" && (
+              <Eye
+                width={24}
+                height={24}
+                weight="fill"
+                className="hover:cursor-pointer"
+              />
+            )}
+          </div>
+        </div>
 
         <div className="flex gap-2 items-center customck">
           <div className="flex relative">
