@@ -117,12 +117,9 @@ const HomeFourBanner = () => {
                   />
                 </span>
                 <div className="w-full">
-                  <label
-                    htmlFor="date"
-                    className="text-18 text-brown-B400 font-semibold font-playfair gap-mb-16 block"
-                  >
+                  <span className="text-18 text-brown-B400 font-semibold font-playfair gap-mb-16 block">
                     Date
-                  </label>
+                  </span>
                   <div className="w-full">
                     <DatePicker
                       closeOnScroll={true}

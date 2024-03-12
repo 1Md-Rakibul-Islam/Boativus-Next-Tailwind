@@ -208,7 +208,7 @@ const HeroBannerOne = () => {
             </div>
             <div className="w-full">
               <label
-                htmlFor="yacht-type"
+                htmlFor="yacht-name"
                 className="text-18 text-blue-B800 gap-mb-16 block"
               >
                 Yacht Name

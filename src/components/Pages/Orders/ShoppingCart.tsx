@@ -45,6 +45,12 @@ const ShoppingCart = () => {
     return subtotal;
   };
 
+  const handleQuantityChange = (index: number, newQuantity: string) => {
+    const newQuantities = [...quantities];
+    newQuantities[index] = parseInt(newQuantity);
+    setQuantities(newQuantities);
+  };
+
   // Constants for delivery charge and subtotal
   const deliveryCharge = 45.0;
   const subtotal = calculateSubtotal();
@@ -113,12 +119,15 @@ const ShoppingCart = () => {
                   >
                     <Minus className=" text-blue-B900 text-[22px]" />
                   </button>
+
                   <input
                     type="number"
                     value={quantities[idx]}
+                    onChange={(e) => handleQuantityChange(idx, e.target.value)}
                     className="qtyValue border-y border-gray-200 outline-none text-blue-B900 font-semibold text-lg w-full max-w-[118px] min-w-[80px] placeholder:text-blue-B900 py-[15px] text-center bg-transparent"
                     placeholder="1"
                   />
+
                   <button
                     onClick={() => increaseQuantity(idx)}
                     className="group rounded-r-full px-6 py-[18px] border border-gray-200 flex items-center justify-center shadow-sm shadow-transparent my-transition hover:shadow-gray-200 hover:border-gray-300 hover:bg-gray-50 increaseQty"

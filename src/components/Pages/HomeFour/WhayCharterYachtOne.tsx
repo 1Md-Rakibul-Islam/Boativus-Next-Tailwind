@@ -11,6 +11,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
+import boatIlistation1 from "@public/media/images/boat-ilistation1.png";
 
 const WhayCharterYachtOne = () => {
   return (
@@ -172,7 +173,7 @@ const WhayCharterYachtOne = () => {
           width={552}
           height={686}
           className="animate-bounce-slow-top-2"
-          src="/media/images/boat-ilistation1.png"
+          src={boatIlistation1}
           alt="boat"
         />
       </div>
