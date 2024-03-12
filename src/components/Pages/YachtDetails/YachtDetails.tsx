@@ -1,10 +1,7 @@
-"use client";
-
 import { yachtType } from "@/config/types";
 import FadeDown from "@/motion/FadeDown";
 import FadeUp from "@/motion/FadeUp";
 import {
-  CalendarCheck,
   Coins,
   CompassTool,
   Diamond,
@@ -12,19 +9,13 @@ import {
   Star,
   StarHalf,
   User,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
+
 import Image from "next/image";
-import { FormEvent, useState } from "react";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import BookingForm from "./BookingForm";
 
 const YachtDetails = ({ yacht }: { yacht: yachtType }) => {
-  const [checkIn, setCheckIn] = useState<Date | null>(null); // Specify the type as Date | null
-  const [checkOut, setCheckOut] = useState<Date | null>(null); // Specify the type as Date | null
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
   return (
     <section className="section-py bg-white">
       <div className="container">
@@ -163,71 +154,8 @@ const YachtDetails = ({ yacht }: { yacht: yachtType }) => {
               <p className="text-center text-18 text-blue-B300 gap-mb-32">
                 Kindly Give Us A Call To Make Sure
               </p>
-              <form onSubmit={handleSubmit}>
-                <div className="grid gap-mb-32">
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Your Name..."
-                    className="box-input-2 sm:mb-4 mb-3"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email Address...."
-                    className="box-input-2 sm:mb-4 mb-3"
-                  />
-                  <div className="sm:mb-4 mb-3 w-full">
-                    <DatePicker
-                      closeOnScroll={true}
-                      selected={checkIn}
-                      onChange={(date: Date | null) => setCheckIn(date)} // Adjust the type of the argument
-                      placeholderText="Check-in:"
-                      className="box-input-2 w-full md:!px-5 !px-4 !py-3 "
-                      showIcon
-                      icon={<CalendarCheck width={16} height={16} />}
-                      name="check-in"
-                      id="check-in"
-                    />
-                  </div>
-                  <div className="sm:mb-4 mb-3 w-full">
-                    <DatePicker
-                      closeOnScroll={true}
-                      selected={checkOut}
-                      onChange={(date: Date | null) => setCheckOut(date)} // Adjust the type of the argument
-                      placeholderText="Check-out:"
-                      className="box-input-2 w-full md:!px-5 !px-4 !py-3"
-                      name="check-out"
-                      id="check-out"
-                      showIcon
-                      icon={<CalendarCheck width={16} height={16} />}
-                    />
-                  </div>
-                  <input
-                    type="number"
-                    name="people"
-                    id="people"
-                    placeholder="People......"
-                    className="box-input-2 sm:mb-4 mb-3"
-                  />
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Your Question..........."
-                    className="w-full h-[120px] box-input-2 sm:mb-4 mb-3"
-                  ></textarea>
-                </div>
-                <div className="flex-center">
-                  <button
-                    type="submit"
-                    className="btn bg-blue-B900 hover:bg-brown-B300 text-white hover:text-blue-B900"
-                  >
-                    Book Now
-                  </button>
-                </div>
-              </form>
+
+              <BookingForm />
             </FadeDown>
           </div>
         </div>
