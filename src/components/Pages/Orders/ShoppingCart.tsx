@@ -5,6 +5,7 @@ import { yachts } from "@public/data/yachts";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { init } from "next/dist/compiled/webpack/webpack";
 
 const ShoppingCart = () => {
   //   const orders = yachts?.slice(0, 3);
@@ -51,16 +52,16 @@ const ShoppingCart = () => {
   const totalPrice = subtotal + deliveryCharge;
 
   return (
-    <section className="section-py relative">
+    <section className="section-py relative bg-white">
       <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
-        <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black">
+        <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-blue-B900">
           Shopping Cart
         </h2>
         <div className="hidden lg:grid grid-cols-2 py-6">
-          <div className="font-normal text-xl leading-8 text-gray-500">
+          <div className="font-normal text-xl leading-8 text-blue-B500">
             Product
           </div>
-          <p className="font-normal text-xl leading-8 text-gray-500 flex items-center justify-between">
+          <p className="font-normal text-xl leading-8 text-blue-B500 flex items-center justify-between">
             <span className="w-full max-w-[200px] text-center">
               Delivery Charge
             </span>
@@ -87,11 +88,11 @@ const ShoppingCart = () => {
                 <div className="pro-data w-full max-w-sm ">
                   <Link
                     href={`/yachts/${item?.id}`}
-                    className="font-semibold text-xl leading-8 text-black max-[550px]:text-center"
+                    className="font-semibold text-xl leading-8 text-blue-B900 max-[550px]:text-center"
                   >
                     {item?.title}
                   </Link>
-                  <p className="font-normal text-lg leading-8 text-gray-500 my-2 min-[550px]:my-3 max-[550px]:text-center">
+                  <p className="font-normal text-lg leading-8 text-blue-B500 my-2 min-[550px]:my-3 max-[550px]:text-center">
                     Price
                   </p>
                   <h6 className="font-medium text-lg leading-8 text-blue-B600  max-[550px]:text-center">
@@ -100,9 +101,9 @@ const ShoppingCart = () => {
                 </div>
               </div>
               <div className="flex items-center flex-col min-[550px]:flex-row w-full max-xl:max-w-xl max-xl:mx-auto gap-2">
-                <h6 className="font-manrope font-bold text-2xl leading-9 text-black w-full max-w-[176px] text-center delivery-charge">
-                  $15.00{" "}
-                  <span className="text-sm text-gray-300 ml-3 lg:hidden whitespace-nowrap">
+                <h6 className="font-manrope font-bold text-2xl leading-9 text-blue-B900 w-full max-w-[176px] text-center delivery-charge">
+                  ${deliveryCharge}{" "}
+                  <span className="text-sm text-blue-B300 ml-3 lg:hidden whitespace-nowrap">
                     (Delivery Charge)
                   </span>
                 </h6>
@@ -146,7 +147,7 @@ const ShoppingCart = () => {
 
         <div className="bg-gray-50 rounded-xl p-6 w-full mb-8 max-lg:max-w-xl max-lg:mx-auto">
           <div className="flex items-center justify-between w-full mb-6">
-            <p className="font-normal text-xl leading-8 text-gray-400">
+            <p className="font-normal text-xl leading-8 text-blue-B400">
               Sub Total
             </p>
             <h6 className="font-semibold text-xl leading-8 text-blue-B900 subtotal">
@@ -154,7 +155,7 @@ const ShoppingCart = () => {
             </h6>
           </div>
           <div className="flex items-center justify-between w-full pb-6 border-b border-gray-200">
-            <p className="font-normal text-xl leading-8 text-gray-400">
+            <p className="font-normal text-xl leading-8 text-blue-B400">
               Delivery Charge
             </p>
             <h6 className="font-semibold text-xl leading-8 text-blue-B900 delivery-charge">
