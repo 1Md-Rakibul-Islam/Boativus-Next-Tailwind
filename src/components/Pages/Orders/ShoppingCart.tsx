@@ -5,7 +5,6 @@ import { yachts } from "@public/data/yachts";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { init } from "next/dist/compiled/webpack/webpack";
 
 const ShoppingCart = () => {
   //   const orders = yachts?.slice(0, 3);
