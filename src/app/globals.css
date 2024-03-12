@@ -756,7 +756,7 @@ input[type="number"] {
   content: "";
   border-radius: 50%;
   /* add tailwind width, height class*/
-  background-color: #ff7a1f;
+  background-color: #aa8453;
 }
 
 .btn-play-ring-interface::before {
@@ -764,7 +764,7 @@ input[type="number"] {
   content: "";
   /* add tailwind width, height class*/
   border-radius: 50%;
-  border: 3px solid #ff7a1f;
+  border: 3px solid #aa8453;
   animation: stretch 5s linear infinite;
   /* Animation is applied here */
 }
@@ -791,12 +791,12 @@ input[type="number"] {
   margin-top: -16px;
   width: 32px;
   height: 32px;
-  border: 1.2px solid #ff7a1f;
+  border: 1.2px solid #d5ae82;
   box-sizing: border-box;
   z-index: 10000000;
   opacity: 1;
-  transition: all 0.3s ease-out;
-  mix-blend-mode: color-dodge;
+  transition: all 0.5s ease-out;
+  mix-blend-mode: difference;
 }
 
 .cursor-outer.cursor-hover {
@@ -826,11 +826,11 @@ input[type="number"] {
   width: 10px;
   height: 10px;
   z-index: 50;
-  background-color: #ff7a1f;
+  background-color: white;
   opacity: 1;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
-    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  mix-blend-mode: color-dodge;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out,
+    margin 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  mix-blend-mode: difference;
 }
 
 .cursor-inner span {
@@ -847,7 +847,7 @@ input[type="number"] {
   margin-top: -15px;
   width: 30px;
   height: 30px;
-  background-color: #ff7a1f;
+  background-color: white;
   opacity: 0;
 }
 
