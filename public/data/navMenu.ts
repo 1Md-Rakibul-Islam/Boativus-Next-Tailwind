@@ -141,7 +141,7 @@ export const navMenu = [
             {
                 id: 106.9,
                 name: "Error Page",
-                link: "/error"
+                link: "/not-found"
             },
         ],
     },
