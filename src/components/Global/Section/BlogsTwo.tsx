@@ -2,6 +2,7 @@ import Link from "next/link";
 import { blogs } from "@public/data/blogs";
 import FadeUp from "@/motion/FadeUp";
 import Image from "next/image";
+import { CaretCircleRight } from "@phosphor-icons/react/dist/ssr";
 
 const BlogsTwo = () => {
   return (
@@ -23,9 +24,10 @@ const BlogsTwo = () => {
           <div className="lg:col-span-4 lg:flex justify-end hidden items-end">
             <Link
               href="/blogs"
-              className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
+              className="btn flex-centerY gap-2 bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
             >
               View All Blog
+              <CaretCircleRight size={24} />
             </Link>
           </div>
         </div>
@@ -70,9 +72,10 @@ const BlogsTwo = () => {
         <div className="lg:hidden flex-center">
           <Link
             href="/blogs"
-            className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
+            className="btn flex-centerY gap-2 bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900"
           >
             View All Blog
+            <CaretCircleRight size={24} />
           </Link>
         </div>
       </div>
