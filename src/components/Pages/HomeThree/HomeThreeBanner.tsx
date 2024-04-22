@@ -115,10 +115,7 @@ const HomeThreeBanner = () => {
                     className="btn-prev-home-3-hero-banner flex-center sm:w-10 sm:h-10 w-8 h-8 text-white pr-2 border-r border-white hover:text-brown-B300 my-transition relative z-[11]"
                     aria-label="Previous slide"
                   >
-                    <ArrowLeft
-                      width={32}
-                      className="sm:text-[32px] text-2xl sm:p-2 p-1.5"
-                    />
+                    <ArrowLeft size={32} />
                   </button>
                   <div className="px-[60px]">
                     <div className="swiper-pagination"></div>
@@ -127,7 +124,7 @@ const HomeThreeBanner = () => {
                     className="btn-next-home-3-hero-banner flex-center sm:w-10 sm:h-10 w-8 h-8 text-white pl-2 border-l border-white hover:text-brown-B300 my-transition relative z-[10]"
                     aria-label="Next slide"
                   >
-                    <ArrowRight className="sm:text-[32px] text-2xl sm:p-2 p-1.5" />
+                    <ArrowRight size={32} />
                   </button>
                 </div>
               </div>
