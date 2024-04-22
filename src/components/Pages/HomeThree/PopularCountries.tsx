@@ -44,7 +44,7 @@ const PopularCountries = () => {
               className="btn bg-blue-B800 hover:bg-brown-B300 text-white hover:text-blue-B900 flex-centerY gap-2 "
             >
               View All
-              <ArrowCircleRight width={24} />
+              <ArrowCircleRight size={24} />
             </Link>
           </div>
         </div>

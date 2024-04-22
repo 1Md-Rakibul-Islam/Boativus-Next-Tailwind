@@ -23,6 +23,7 @@ const config: Config = {
       colors: {
         "brown-B50": "#fbf7f3",
         "brown-B75": "#eedecc",
+        "brown-B90": "#E0D0BD",
         "brown-B100": "#e7d0b7",
         "brown-B200": "#dcbc97",
         "brown-B300": "#d5ae82",
@@ -150,7 +151,7 @@ const config: Config = {
         4: "0px 1px 2px 0px rgba(0, 0, 0, 0.20)",
         5: "1px 1px 1px 0px rgba(0, 0, 0, 0.15)",
         6: "0px 5px 24px 0px rgba(0, 0, 0, 0.10)",
-        7: "0px 0px 0px 1px rgba(68, 68, 68, .11)",
+        7: "0px 4px 16px 0px rgba(0, 0, 0, 0.10)",
       },
     },
     fontFamily: {

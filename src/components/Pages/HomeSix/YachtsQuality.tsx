@@ -26,10 +26,10 @@ const YachtsQuality = () => {
                   <div className="w-[2px] h-[50px] bg-white  md:block hidden"></div>
                   <a
                     href="#"
-                    className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-white flex-center whitespace-nowrap gap-2"
+                    className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-white flex-center whitespace-nowrap gap-2 group"
                   >
                     Choose a plan
-                    <ArrowCircleRight className="text-white sm:text-4xl text-3xl" />
+                    <ArrowCircleRight size={24} />
                   </a>
                 </div>
               </div>

@@ -37,7 +37,7 @@ const MakeHappen = () => {
                   <CounterElement
                     counter={{
                       style:
-                        " text-43 font-playfair font-semibold text-blue-B900 gap-mb-16",
+                        " text-32 font-playfair font-semibold text-blue-B900 gap-mb-16",
                       counterNumber: 75,
                       sizeText: "+",
                     }}
@@ -51,7 +51,7 @@ const MakeHappen = () => {
                   <CounterElement
                     counter={{
                       style:
-                        " text-43 font-playfair font-semibold text-blue-B900 gap-mb-16",
+                        " text-32 font-playfair font-semibold text-blue-B900 gap-mb-16",
                       counterNumber: 290,
                       sizeText: "+",
                     }}
@@ -65,7 +65,7 @@ const MakeHappen = () => {
                   <CounterElement
                     counter={{
                       style:
-                        " text-43 font-playfair font-semibold text-blue-B900 gap-mb-16",
+                        " text-32 font-playfair font-semibold text-blue-B900 gap-mb-16",
                       counterNumber: 50,
                       sizeText: "+",
                     }}
@@ -79,7 +79,7 @@ const MakeHappen = () => {
                   <CounterElement
                     counter={{
                       style:
-                        " text-43 font-playfair font-semibold text-blue-B900 gap-mb-16",
+                        " text-32 font-playfair font-semibold text-blue-B900 gap-mb-16",
                       counterNumber: 80,
                       sizeText: "+",
                     }}

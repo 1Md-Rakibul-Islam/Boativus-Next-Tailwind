@@ -1,13 +1,16 @@
 import FadeUp from "@/motion/FadeUp";
+import Image from "next/image";
 import Link from "next/link";
+import culture1 from "@public/media/images/culture1.png";
+import culture2 from "@public/media/images/culture2.png";
 
 const Culture = () => {
   return (
     <section className="bg-white">
       <FadeUp className="grid md:grid-cols-2 grid-cols-1 ">
         <div>
-          <div className="relative w-full h-full px-8 bg-[url('/media/images/culture2.png')] bg-no-repeat bg-cover">
-            <div className="relative z-[1] flex-center flex-col text-center">
+          <div className="relative w-full h-full min-h-min max-h-[480px] px-8 group  overflow-hidden">
+            <div className="relative z-[3] flex-center flex-col text-center">
               <h6 className="text-18 text-white gap-mt-60 gap-mb-16">
                 Culture
               </h6>
@@ -24,12 +27,17 @@ const Culture = () => {
                 Explore now
               </Link>
             </div>
-            <div className="absolute inset-0 bg-gradient-to-b from-[rgba(6,17,56,0.00)_19.26%] to-[rgba(6,17,56,0.81)_89.31%]"></div>
+            <div className="absolute inset-0 z-[2] bg-gradient-to-b from-[rgba(6,17,56,0.00)_19.26%] to-[rgba(6,17,56,0.81)_89.31%]"></div>
+            <Image
+              className="absolute inset-0 w-full h-full group-hover:scale-110 my-transition"
+              src={culture2}
+              alt=""
+            />
           </div>
         </div>
         <div>
-          <div className="relative w-full h-full px-8 bg-[url('/media/images/culture1.png')] bg-no-repeat bg-cover">
-            <div className="relative z-[1] flex-center flex-col text-center">
+          <div className="relative w-full h-full min-h-min max-h-[480px] px-8 group  overflow-hidden">
+            <div className="relative z-[3] flex-center flex-col text-center">
               <h6 className="text-18 text-white gap-mt-60 gap-mb-16">
                 Culture
               </h6>
@@ -47,6 +55,12 @@ const Culture = () => {
               </Link>
             </div>
             <div className="absolute inset-0 bg-gradient-to-b from-[rgba(6,17,56,0.00)_19.26%] to-[rgba(6,17,56,0.81)_89.31%]"></div>
+            <div className="absolute inset-0 z-[2] bg-gradient-to-b from-[rgba(6,17,56,0.00)_19.26%] to-[rgba(6,17,56,0.81)_89.31%]"></div>
+            <Image
+              className="absolute inset-0 w-full h-full group-hover:scale-110 my-transition"
+              src={culture1}
+              alt=""
+            />
           </div>
         </div>
       </FadeUp>

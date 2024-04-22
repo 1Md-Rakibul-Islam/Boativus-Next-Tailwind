@@ -21,7 +21,7 @@ const HomePageOne = () => {
         <HeroBannerOne />
         <AboutUsSection />
         <BestLuxuryYachtSection />
-        <YachtCategories />
+        <YachtCategories cardStyle="bg-blue-B10 shadow-4" />
         <PlanNextTourOne />
         <FaqOne />
         <GalleryOne />

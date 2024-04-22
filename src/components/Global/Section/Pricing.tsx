@@ -67,7 +67,7 @@ const Pricing = () => {
           {pricingData?.map((item, idx) => (
             <div
               key={idx}
-              className="bg-brown-B50 flex flex-col justify-between"
+              className="bg-brown-B50 flex flex-col justify-between border border-brown-B50 hover:border-brown-B300 my-transition"
             >
               <div>
                 <div className="overflow-hidden">

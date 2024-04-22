@@ -16,7 +16,7 @@ import FadeUp from "@/motion/FadeUp";
 import Image from "next/image";
 // My modules
 
-const YachtCategories = () => {
+const YachtCategories = ({ cardStyle }: { cardStyle?: string }) => {
   return (
     <section className="bg-white section-py yacht-categories">
       <div className="container">
@@ -84,7 +84,9 @@ const YachtCategories = () => {
                 <div className="swiper-slide py-1">
                   <Link
                     href={`/yachts`}
-                    className="bg-blue-B10 w-full h-full p-24px rounded-lg shadow-4 flex-center flex-col"
+                    className={`${
+                      cardStyle && cardStyle
+                    } w-full h-full p-24px rounded-lg my-transition flex-center flex-col `}
                   >
                     <Image
                       className="min-w-fit max-w-16 gap-mb-16"

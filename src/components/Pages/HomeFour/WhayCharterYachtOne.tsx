@@ -19,7 +19,7 @@ const WhayCharterYachtOne = () => {
       <div className="container relative">
         <div className="relative z-[1]">
           <FadeUp className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center my-gap-24 section-pb ">
-            <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
+            <div className="p-24px flex-centerY my-gap-24 bg-white hover:shadow-3 my-transition rounded-10">
               <Image
                 width={80}
                 height={80}
@@ -28,7 +28,7 @@ const WhayCharterYachtOne = () => {
               />
               <h5 className="text-24 text-blue-B900">Expert instructors</h5>
             </div>
-            <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
+            <div className="p-24px flex-centerY my-gap-24 bg-white hover:shadow-3 my-transition rounded-10">
               <Image
                 width={80}
                 height={80}
@@ -39,7 +39,7 @@ const WhayCharterYachtOne = () => {
                 Best Yachts For Charter
               </h5>
             </div>
-            <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
+            <div className="p-24px flex-centerY my-gap-24 bg-white hover:shadow-3 my-transition rounded-10">
               <Image
                 width={80}
                 height={80}
@@ -50,7 +50,7 @@ const WhayCharterYachtOne = () => {
                 Satisfaction Guaranteed
               </h5>
             </div>
-            <div className="p-24px flex-centerY xxl:flex-row flex-col xxl:text-left text-center my-gap-24 bg-white hover:shadow-md my-transiton rounded-10">
+            <div className="p-24px flex-centerY my-gap-24 bg-white hover:shadow-3 my-transition rounded-10">
               <Image
                 width={80}
                 height={80}

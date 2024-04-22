@@ -43,7 +43,7 @@ const ServicesThree = () => {
               className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 flex-center whitespace-nowrap gap-2"
             >
               Choose a plan
-              <ArrowCircleRight className="icon-24" />
+              <ArrowCircleRight size={24} />
             </Link>
           </div>
         </div>
@@ -136,7 +136,7 @@ const ServicesThree = () => {
               className="btn text-white hover:text-blue-B900 bg-blue-B900 hover:bg-brown-B300 inline-flex items-center whitespace-nowrap gap-2"
             >
               Choose a plan
-              <ArrowCircleRight className="icon-24" />
+              <ArrowCircleRight size={24} />
             </Link>
           </div>
         </div>

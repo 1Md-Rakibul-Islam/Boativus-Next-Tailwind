@@ -584,7 +584,21 @@ input[type="number"] {
   --swiper-pagination-bullet-size: 30px;
   --swiper-pagination-bullet-width: 30px;
   --swiper-pagination-bullet-height: 2px;
-  /* border-radius: 10px !important; */
+  transition: all 0.3s ease-in-out;
+}
+
+.home-2-hero-banner .swiper-pagination-bullet {
+  --swiper-pagination-bullet-size: 10px;
+  background-color: #D9D9D9 !important;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+}
+
+.home-2-hero-banner .swiper-pagination-bullet-active {
+  background-color: #D5AE82 !important;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
   transition: all 0.3s ease-in-out;
 }
 

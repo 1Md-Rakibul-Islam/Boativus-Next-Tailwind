@@ -21,7 +21,7 @@ const HomeThree = () => {
       <NavBarTwo />
       <main className="min-h-screen">
         <HomeThreeBanner />
-        <YachtCategories />
+        <YachtCategories cardStyle="hover:shadow-7 border hover:border-transparent border-brown-B90" />
         <PopularCountries />
         <YachtOfferDetails />
         <DealOfWeek />

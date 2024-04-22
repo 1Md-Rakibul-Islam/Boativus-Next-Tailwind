@@ -84,7 +84,7 @@ const HomeFourBanner = () => {
         <div className="lg:absolute 4xl:left-[30%] 3xl:left-[24%] xl:left-[16%] lg:left-[20%] right-0 bottom-0 lg:mx-0 mx-5">
           <form
             onSubmit={handleSubmit}
-            className="w-full xl:p-[30px] p-32px bg-[#F4F8FC] z-[2] shadow-3"
+            className="w-full xl:p-[30px] p-32px bg-[#F4F8FC] z-[2]"
           >
             <div className="grid xxl:grid-cols-5 xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 my-gap-16 gap-4 relative z-[1]">
               <div className="flex-centerY my-gap-20">
