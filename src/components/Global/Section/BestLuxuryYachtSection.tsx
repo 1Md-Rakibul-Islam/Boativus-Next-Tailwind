@@ -34,7 +34,10 @@ const BestLuxuryYachtSection = () => {
         <FadeUp>
           <div className="grid lg:grid-cols-2 grid-cols-1 my-gap-24">
             {bestYachts?.map((item, idx) => (
-              <div key={idx} className="rounded-lg bg-blue-B800">
+              <div
+                key={idx}
+                className="rounded-lg bg-blue-B800 border border-transparent hover:border-brown-B300 my-transition"
+              >
                 <div className="relative">
                   <div className="overflow-hidden max-h-[297px] min-h-fit rounded-t-lg w-full">
                     <Image

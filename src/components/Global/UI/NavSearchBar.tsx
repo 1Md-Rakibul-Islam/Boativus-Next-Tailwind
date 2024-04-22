@@ -10,6 +10,7 @@ const NavSearchBar = ({ position }: { position?: string }) => {
   // Handle form submit
   const handleFormSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSearchData("");
   };
 
   return (
@@ -40,17 +41,11 @@ const NavSearchBar = ({ position }: { position?: string }) => {
                 type="text"
                 placeholder="Search"
                 value={searchData}
+                required
                 onChange={(e) => setSearchData(e.target.value)}
                 className=" w-full placeholder:text-foundation-blue-60 text-white focus:outline-none bg-transparent pr-2"
               />
-              <button
-                type="submit"
-                onClick={() => {
-                  setSearchData("");
-                  handleOption();
-                }}
-                aria-label="handleOption"
-              >
+              <button type="submit" aria-label="handleOption">
                 <MagnifyingGlass className="icon-24 text-brown-B300" />
               </button>
             </form>

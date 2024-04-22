@@ -88,7 +88,10 @@ const NavBarThree = () => {
       } absolute w-full z-50`}
     >
       <div className="mx-auto relative">
-        <div className="w-full xxl:px-[60px] xl:px-10 lg:px-8 md:px-7 sm:px-6 px-4 relative">
+        <div
+          id="header-nav"
+          className="w-full xxl:px-[60px] xl:px-10 lg:px-8 md:px-7 sm:px-6 px-4 relative"
+        >
           <div className="flex items-center justify-between gap-x-2 mx-auto lg:py-6 md:py-5 sm:py-5 py-3.5">
             <nav className="w-full xl:flex justify-between items-center text-black hidden text-semibold relative">
               <Link href="/">

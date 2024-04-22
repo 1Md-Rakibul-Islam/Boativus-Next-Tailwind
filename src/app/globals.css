@@ -22,34 +22,6 @@
     @apply my-transition text-18 font-semibold capitalize text-center cursor-pointer lg:py-5 md:py-4 sm:py-3 py-2.5 lg:px-8 md:px-7 sm:px-6 px-4 rounded-10;
   }
 
-  .btn-secondary {
-    @apply bg-black hover:bg- hover:text-black text- border border-black;
-  }
-
-  .btn-outline-round {
-    @apply border border-white hover:border-white rounded-full xxl:p-3 p-2 my-transition cursor-pointer;
-  }
-
-  .btn-outline {
-    @apply border-2 rounded-full hover:text-black hover:bg-brown-B300 border-brown-B300 text-white;
-  }
-
-  .btn-pagination {
-    @apply my-transition border bg-secendory-black hover:bg-white border-white-2 sm:rounded-md rounded-sm text-white hover:text-secendory-black w-8 h-8 flex items-center justify-center;
-  }
-
-  .btn-linebar-effect {
-    @apply relative overflow-hidden before:content-[""] before:absolute before:w-0 before:h-0.5 before:bg-black before:transition-[width] before:duration-[0.3s] before:ease-[ease-out] before:left-0 before:bottom-0 group-hover:before:w-full;
-  }
-
-  .btn-play-ring {
-    @apply after:xl:w-[99px] after:xl:h-[99px] after:lg:w-[90px] after:lg:h-[90px] after:md:w-[80px] after:md:h-[80px] after:sm:w-[72px] after:sm:h-[72px] after:w-16 after:h-16 before:xl:w-[140px] before:xl:h-[140px] before:lg:w-[128px] before:lg:h-[128px] before:md:w-[120px] before:md:h-[120px] before:sm:w-[100px] before:sm:h-[100px] before:w-[90px] before:h-[90px] cursor-pointer btn-play-ring-interface;
-  }
-
-  .form-input {
-    @apply block w-full sm:py-4 xl:px-7 lg:px-6 md:p-5 sm:p-4 p-3.5 rounded-20 outline-none border border-[#4b3583] bg-[#372170] text-white text-18 placeholder:text-[#b4acc8] focus:outline-none;
-  }
-
   .my-transition {
     @apply duration-500 ease-in-out transition-all;
   }
@@ -395,17 +367,23 @@ li {
   font-family: var(--font-montserrat) !important;
 }
 
+/* header start */
+#header-nav nav ul li a,
+#header-nav nav ul li span {
+  font-family: var(--font-playfair_display);
+}
+
 .header-animation {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 399;
-  animation-name: FadeUp;
+  animation-name: fadeDown;
   animation-duration: 1s;
 }
 
-@keyframes FadeUp {
+@keyframes fadeDown {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -416,6 +394,8 @@ li {
     transform: translateY(0);
   }
 }
+
+/* header end */
 
 /* button play effect start */
 
